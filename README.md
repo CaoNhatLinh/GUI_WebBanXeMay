@@ -120,41 +120,41 @@ sau khi **create pull requests** xong thì báo lại trưởng nhóm để conf
 
 ![](./readme-img/img10.png)
 
-cách fix conflict :
+**cách fix conflict :**
 
-lấy code mới về :
+1. đầu tiên lấy code mới nhất về sử dụng lệnh:
 ```
 git pull origin main
 ```
 
-nó sẽ báo conflict ở terminal:
+Nếu  xảy ra **conflict** nó sẽ báo **conflict** ở terminal:
 
 ![](./readme-img/img11.png)
 
-bấm vào biểu tượng như trên hình
+2. Bấm vào biểu tượng git có sẵn trên visual studio code như trên hình:
 
 ![](./readme-img/img12.png)
 
-bấm vào file có biểu tượng dấu chấm than
+3. Bấm vào file có biểu tượng dấu chấm than (!).
 
 ![](./readme-img/img13.png)
 
-nó sẽ hiện phần bị conflict
+nó sẽ hiện phần bị conflict!
 
-trao đổi với người vừa đẩy code lên trước đó xem nên lấy phần nào:
+4. Trao đổi với người vừa đẩy code lên trước đó xem nên lấy phần nào:
+  rồi lựa chọn 1 trong những lựa chọn sau
+- **Accept Current change** : lấy theo phần của main(code chính).
+- **Accept imcoming change** : lấy theo phần của mình đã sửa.
 
-- Accept Current change : lấy theo phần của main(code chính).
-- Accept imcoming change : lấy theo phần của mình đã sửa.
-- 
   ![](./readme-img/img14.png)
 
-sau khi thay đổi xong lưu file lại:
+5. Sau khi thay đổi xong lưu file lại.
 
 ![](./readme-img/img16.png)
 
 ![](./readme-img/img17.png)
 
-chạy lại các lệnh
+6. Chạy lại các lệnh
 ```
 git pull 
 ```
@@ -171,7 +171,6 @@ hoặc
 ```
 git push -u origin tên nhánh
 ```
-
-xong báo lại với trưởng nhóm
+[x] Nếu không có conflict thì bạn đã fix conflict thành công và báo lại với trưởng nhóm.
 
 ## Mô tả dự án
