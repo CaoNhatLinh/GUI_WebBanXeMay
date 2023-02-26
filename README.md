@@ -28,7 +28,9 @@ _Nếu không có **git bash here** thì có vẻ cái đặt git chưa thành c
 
 Mở **git bash here** lên và chạy lệnh sau:
 
-`git clone https://github.com/CaoNhatLinh/tkweb-project.git`
+```
+git clone https://github.com/CaoNhatLinh/tkweb-project.git
+```
 
 nó sẽ tạo ra một thư mục và file chứa sẵn từ github về
 
@@ -78,7 +80,8 @@ lần đẩy code đầu tiên dùng lệnh:
 ```
 git push -u origin tên nhánh 
 ```
-lần đẩy code sau dùng lệnh :```
+lần đẩy code sau dùng lệnh :
+```
 git push
 ```
 
@@ -137,10 +140,22 @@ sau khi thay đổi xong lưu file lại:
 ![](./readme-img/img17.png)
 
 chạy lại các lệnh
-```git pull ```
-```git add . ```
-```git commit -m "fix conflict ABC" ```
-```git push``` hoặc ```git push -u origin tên nhánh```
+```
+git pull 
+```
+```
+git add .
+```
+```
+git commit -m "fix conflict ABC" 
+```
+```
+git push
+``` 
+hoặc 
+```
+git push -u origin tên nhánh
+```
 
 xong báo lại với trưởng nhóm
 
