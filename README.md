@@ -19,9 +19,11 @@ chuột phải chọn **git bash here**
 
 đối với win 11 thì:
 show more options để hiện **git bash here**
+
 ![](./readme-img/img1.png)
 
 ![](./readme-img/img2.png)
+
 _Nếu không có **git bash here** thì có vẻ cái đặt git chưa thành công_.
 
 ---
@@ -37,7 +39,8 @@ nó sẽ tạo ra một thư mục và file chứa sẵn từ github về
 sau đó, vào visual studio code để mở dự án lên
 
 file -> add folder to workspace
-![add folder to workspace](./readme-img/img3.png)
+
+![](./readme-img/img3.png)
 
 lần đầu tiên chạy dự án đầu tiền , các thành viên trừ nhóm trưởng sẽ phải tạo nhánh dự án bằng cách:
 
@@ -93,10 +96,12 @@ chọn **pull requests**
 ![](./readme-img/img5.png)
 
 chọn **new pull requests**
+
 ![](./readme-img/img6.png)
 
 ở phần compare chọn lên nhánh của mình
 ví dụ:
+
 ![](./readme-img/img7.png)
 
 Xong bấm **create pull requests**
@@ -111,6 +116,7 @@ sau khi **create pull requests** xong thì báo lại trưởng nhóm để conf
 ## Hiện tượng conflict khi đẩy code lên :
 
 ![](./readme-img/img10.png)
+
 cách fix conflict :
 
 lấy code mới về :
@@ -119,12 +125,15 @@ git pull origin main
 ```
 
 nó sẽ báo conflict ở terminal:
+
 ![](./readme-img/img11.png)
 
 bấm vào biểu tượng như trên hình
+
 ![](./readme-img/img12.png)
 
 bấm vào file có biểu tượng dấu chấm than
+
 ![](./readme-img/img13.png)
 
 nó sẽ hiện phần bị conflict
@@ -133,10 +142,13 @@ trao đổi với người vừa đẩy code lên trước đó xem nên lấy p
 
 - Accept Current change : lấy theo phần của main(code chính).
 - Accept imcoming change : lấy theo phần của mình đã sửa.
+- 
   ![](./readme-img/img14.png)
 
 sau khi thay đổi xong lưu file lại:
+
 ![](./readme-img/img16.png)
+
 ![](./readme-img/img17.png)
 
 chạy lại các lệnh
