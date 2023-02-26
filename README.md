@@ -6,7 +6,7 @@ link:
 
 # HD cài đặt dự án
 
-tải git thông qua link sau:
+****tải git thông qua link sau:****
 [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
 chọn 64-bit Git for Windows Setup.
