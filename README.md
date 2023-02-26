@@ -19,9 +19,9 @@ chuột phải chọn **git bash here**
 
 đối với win 11 thì:
 show more options để hiện **git bash here**
-![](./readme-img/img1.jpg)
+![](./readme-img/img1.png)
 
-![](./readme-img/img2.jpg)
+![](./readme-img/img2.png)
 _Nếu không có **git bash here** thì có vẻ cái đặt git chưa thành công_.
 
 ---
@@ -35,7 +35,7 @@ nó sẽ tạo ra một thư mục và file chứa sẵn từ github về
 sau đó, vào visual studio code để mở dự án lên
 
 file -> add folder to workspace
-![add folder to workspace](./readme-img/img3.jpg)
+![add folder to workspace](./readme-img/img3.png)
 
 lần đầu tiên chạy dự án đầu tiền , các thành viên trừ nhóm trưởng sẽ phải tạo nhánh dự án bằng cách:
 
@@ -43,14 +43,14 @@ Terminal -> new terminal -> nếu đang mở nhiều dự án khác chọn tên 
 
 bấm vào dấu mũi lên bên cạnh dấu cộng chọn git bash
 
-![](./readme-img/img5.jpg)
+![](./readme-img/img5.png)
 
 chạy lệnh :
 
 `git checkout -b tên thanh vien`
 
 ví dụ:
-![](./readme-img/img4.jpg)
+![](./readme-img/img4.png)
 
 đã xong giờ bắt đầu làm phần của bạn thân thôi
 
@@ -73,50 +73,62 @@ lần đẩy code sau dùng lệnh :`git push`
 sau mỗi lần các bạn đẩy code lên vào github: [https://github.com/CaoNhatLinh/tkweb-project](https://github.com/CaoNhatLinh/tkweb-project)
 chọn **pull requests**
 
-![](./readme-img/img5.jpg)
+![](./readme-img/img5.png)
 
 chọn **new pull requests**
-![](./readme-img/img6.jpg)
+![](./readme-img/img6.png)
 
 ở phần compare chọn lên nhánh của mình
 ví dụ:
-![](./readme-img/img7.jpg)
+![](./readme-img/img7.png)
 
 Xong bấm **create pull requests**
 
-![](./readme-img/img8.jpg)
+![](./readme-img/img8.png)
 
 mô tả phần mình làm trước khi bấm vào **create pull requests** ở dưới cùng lần nữa:
-![](./readme-img/img9.jpg)
+![](./readme-img/img9.png)
 
 sau khi **create pull requests** xong thì báo lại trưởng nhóm để confirm lên nhanh main
 
 ## Lưu ý
 
+- mỗi lần viết xong hay thay đổi gì muốn dẩy code lên nhớ lưu file lại nhé : ctrl + s.
 - Mỗi lần viết code bạn có thể lấy code mới trên local về bằng lệnh:
   `git pull origin main`
 
 ## Hiện tượng conflict khi đẩy code lên :
 
-![](./readme-img/img10.jpg)
+![](./readme-img/img10.png)
 cách fix conflict :
 
 lấy code mới về :
 `git pull origin main`
 
 nó sẽ báo conflict ở terminal:
-![](./readme-img/img11.jpg)
+![](./readme-img/img11.png)
 
 bấm vào biểu tượng như trên hình
-![](./readme-img/img12.jpg)
+![](./readme-img/img12.png)
 
 bấm vào file có biểu tượng dấu chấm than
-![](./readme-img/img13.jpg)
+![](./readme-img/img13.png)
 
 nó sẽ hiện phần bị conflict
 
-- Accept Current change : lấy theo phần của main(code chính)
-- Accept imcoming change : lấy theo phần mình của mình
-  ![](./readme-img/img14.jpg)
+trao đổi với người vừa đẩy code lên trước đó xem nên lấy phần nào:
+
+- Accept Current change : lấy theo phần của main(code chính).
+- Accept imcoming change : lấy theo phần của mình đã sửa.
+  ![](./readme-img/img14.png)
+
+sau khi thay đổi xong lưu file lại:
+![](./readme-img/img16.png)
+![](./readme-img/img17.png)
+
+chạy lại các lệnh
+`git add .`
+`git commit -m "tên phần vừa làm" `
+`git push`
 
 ## Mô tả dự án
