@@ -93,12 +93,30 @@ sau khi **create pull requests** xong thì báo lại trưởng nhóm để conf
 
 ## Lưu ý
 
-- Mỗi lần viết code bạn có thể lấy code mới đã được các thành viên khách đẩy lên bằng lệnh:
-  `git pull`
+- Mỗi lần viết code bạn có thể lấy code mới trên local về bằng lệnh:
+  `git pull origin main`
 
 ## Hiện tượng conflict khi đẩy code lên :
 
 ![](./readme-img/img10.jpg)
-hỏi trong nhóm ai vừa đẩy code lên trước đó, bàn bạc để sửa cho phù hợp
+cách fix conflict :
+
+lấy code mới về :
+`git pull origin main`
+
+nó sẽ báo conflict ở terminal:
+![](./readme-img/img11.jpg)
+
+bấm vào biểu tượng như trên hình
+![](./readme-img/img12.jpg)
+
+bấm vào file có biểu tượng dấu chấm than
+![](./readme-img/img13.jpg)
+
+nó sẽ hiện phần bị conflict
+
+- Accept Current change : lấy theo phần của main(code chính)
+- Accept imcoming change : lấy theo phần mình của mình
+  ![](./readme-img/img14.jpg)
 
 ## Mô tả dự án
