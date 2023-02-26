@@ -127,8 +127,11 @@ sau khi thay đổi xong lưu file lại:
 ![](./readme-img/img17.png)
 
 chạy lại các lệnh
+`git pull`
 `git add .`
-`git commit -m "tên phần vừa làm" `
-`git push origin main`
+`git commit -m "fix conflict ABC" `
+`git push` hoặc `git push -u origin tên nhánh`
+
+xong báo lại với trưởng nhóm
 
 ## Mô tả dự án
