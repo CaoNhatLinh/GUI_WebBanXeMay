@@ -5,8 +5,17 @@
 link:
 
 # HD cài đặt dự án
+## Cài đặt Git
+kiểm tra có git chưa bằng cách: 
+mở **command Prompt** chạy lệnh
+```
+git
+```
+![](./readme-img/img18.png)
 
-****Cài đặt Git thông qua link sau:****
+nếu ra như hình thì bạn đã có **Git** trước đó rồi.
+
+****Cài đặt Git nếu chưa có git thông qua link sau:****
 [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
 chọn 64-bit Git for Windows Setup.
