@@ -52,7 +52,7 @@ chạy lệnh :
 ví dụ:
 ![](./readme-img/img4.jpg)
 
-đã xong giờ bắt đầu làm phần của bạn thân thôi
+đã xong giờ bắt đầu làm phần của bản thân thôi
 
 mỗi khi làm xong 1 chức nhắn bạn có thể đẩy code lên cho nhóm trưởng bằng các lệnh sau:
 
