@@ -6,7 +6,7 @@ link:
 
 # HD cài đặt dự án
 
-****tải git thông qua link sau:****
+****Cài đặt Git thông qua link sau:****
 [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
 chọn 64-bit Git for Windows Setup.
@@ -57,6 +57,7 @@ git checkout -b tên thanh vien
 ```
 
 ví dụ:
+
 ![](./readme-img/img4.png)
 
 ## đã xong giờ bắt đầu làm phần của bạn thân thôi
@@ -65,7 +66,9 @@ ví dụ:
 
 - mỗi lần viết xong hay thay đổi gì muốn dẩy code lên nhớ lưu file lại nhé : ctrl + s.
 - Mỗi lần viết code bạn có thể lấy code mới trên local về bằng lệnh:
-  `git pull origin main`
+  ```
+  git pull origin main
+  ```
 
 mỗi khi làm xong 1 chức nhắn bạn có thể đẩy code lên cho nhóm trưởng bằng các lệnh sau:
 
