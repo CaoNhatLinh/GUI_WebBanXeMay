@@ -47,7 +47,9 @@ bấm vào dấu mũi lên bên cạnh dấu cộng chọn git bash
 
 chạy lệnh :
 
-`git checkout -b tên thanh vien`
+```
+git checkout -b tên thanh vien
+```
 
 ví dụ:
 ![](./readme-img/img4.png)
@@ -63,7 +65,9 @@ ví dụ:
 mỗi khi làm xong 1 chức nhắn bạn có thể đẩy code lên cho nhóm trưởng bằng các lệnh sau:
 
 lệnh đẩy file lên ở đây dấu chấm có nghĩa là tất cả:
-`git add .`
+```
+git add .
+```
 
 thêm mô tả cho lần đẩy code này lên:
 `git commit -m "tên phần vừa làm" `
@@ -71,8 +75,12 @@ thêm mô tả cho lần đẩy code này lên:
 ví dụ :`git commit -m "tạo header"`
 
 lần đẩy code đầu tiên dùng lệnh:
-`git push -u origin tên nhánh `
-lần đẩy code sau dùng lệnh :`git push`
+```
+git push -u origin tên nhánh 
+```
+lần đẩy code sau dùng lệnh :```
+git push
+```
 
 ## ví dụ: ở đây mình có tạo tên nhánh trước đó có tên nhatlinh `git push -u origin nhatlinh `.
 
@@ -103,7 +111,9 @@ sau khi **create pull requests** xong thì báo lại trưởng nhóm để conf
 cách fix conflict :
 
 lấy code mới về :
-`git pull origin main`
+```
+git pull origin main
+```
 
 nó sẽ báo conflict ở terminal:
 ![](./readme-img/img11.png)
@@ -127,10 +137,10 @@ sau khi thay đổi xong lưu file lại:
 ![](./readme-img/img17.png)
 
 chạy lại các lệnh
-`git pull`
-`git add .`
-`git commit -m "fix conflict ABC" `
-`git push` hoặc `git push -u origin tên nhánh`
+```git pull ```
+```git add . ```
+```git commit -m "fix conflict ABC" ```
+```git push``` hoặc ```git push -u origin tên nhánh```
 
 xong báo lại với trưởng nhóm
 
