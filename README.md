@@ -105,16 +105,16 @@ git push
 sau mỗi lần các bạn đẩy code lên vào github: [https://github.com/CaoNhatLinh/tkweb-project](https://github.com/CaoNhatLinh/tkweb-project)
 chọn **pull requests**
 
-![](./readme-img/img5.png)
+![](./readme-img/img6.png)
 
 chọn **new pull requests**
 
-![](./readme-img/img6.png)
+![](./readme-img/img7.png)
 
 ở phần compare chọn lên nhánh của mình
 ví dụ:
 
-![](./readme-img/img7.png)
+![](./readme-img/img0.png)
 
 Xong bấm **create pull requests**
 
