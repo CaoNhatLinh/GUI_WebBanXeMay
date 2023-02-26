@@ -52,7 +52,13 @@ chạy lệnh :
 ví dụ:
 ![](./readme-img/img4.png)
 
-đã xong giờ bắt đầu làm phần của bản thân thôi
+## đã xong giờ bắt đầu làm phần của bạn thân thôi
+
+## Lưu ý
+
+- mỗi lần viết xong hay thay đổi gì muốn dẩy code lên nhớ lưu file lại nhé : ctrl + s.
+- Mỗi lần viết code bạn có thể lấy code mới trên local về bằng lệnh:
+  `git pull origin main`
 
 mỗi khi làm xong 1 chức nhắn bạn có thể đẩy code lên cho nhóm trưởng bằng các lệnh sau:
 
@@ -91,12 +97,6 @@ mô tả phần mình làm trước khi bấm vào **create pull requests** ở 
 
 sau khi **create pull requests** xong thì báo lại trưởng nhóm để confirm lên nhanh main
 
-## Lưu ý
-
-- mỗi lần viết xong hay thay đổi gì muốn dẩy code lên nhớ lưu file lại nhé : ctrl + s.
-- Mỗi lần viết code bạn có thể lấy code mới trên local về bằng lệnh:
-  `git pull origin main`
-
 ## Hiện tượng conflict khi đẩy code lên :
 
 ![](./readme-img/img10.png)
@@ -129,6 +129,6 @@ sau khi thay đổi xong lưu file lại:
 chạy lại các lệnh
 `git add .`
 `git commit -m "tên phần vừa làm" `
-`git push`
+`git push origin main`
 
 ## Mô tả dự án
