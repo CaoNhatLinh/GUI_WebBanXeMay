@@ -50,6 +50,12 @@ sau đó, vào visual studio code để mở dự án lên
 file -> add folder to workspace.
 
 ![](./readme-img/img3.png)
+## Tạo user cho người lần đầu dùng git
+```
+git config --global user.name "nhatlinh"
+git config --global user.email "email@.com"
+```
+
 
 ### Tạo nhánh của mỗi thành viên trước khi bắt đầu
 
