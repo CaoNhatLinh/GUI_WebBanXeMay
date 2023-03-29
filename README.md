@@ -2,7 +2,7 @@
 
 ## tên đề tài:
 
-link:
+link: [https://caonhatlinh.github.io/tkweb-project/](https://caonhatlinh.github.io/tkweb-project/)
 
 # HD cài đặt dự án
 ## Cài đặt Git
@@ -21,12 +21,12 @@ nếu ra như hình thì bạn đã có **Git** trước đó rồi.
 chọn 64-bit Git for Windows Setup.
 
 cài đặt bấm next tất cả.
+## Clone dự án
 
-vào một thư mục chọn để clone dự án về, bằng cách:
+ Vào một thư mục chọn để clone dự án về, bằng cách:
 
-chuột phải chọn **git bash here**
-
-đối với win 11 thì:
+- Chuột phải chọn **git bash here**
+*đối với win 11 thì:*
 show more options để hiện **git bash here**
 
 ![](./readme-img/img1.png)
@@ -47,60 +47,69 @@ nó sẽ tạo ra một thư mục và file chứa sẵn từ github về
 
 sau đó, vào visual studio code để mở dự án lên
 
-file -> add folder to workspace
+file -> add folder to workspace.
 
 ![](./readme-img/img3.png)
+## Tạo user cho người lần đầu dùng git
+```
+git config --global user.name "nhatlinh"
+git config --global user.email "email@.com"
+```
 
-lần đầu tiên chạy dự án đầu tiền , các thành viên trừ nhóm trưởng sẽ phải tạo nhánh dự án bằng cách:
+
+### Tạo nhánh của mỗi thành viên trước khi bắt đầu
+
+- Lần đầu tiên chạy dự án đầu tiền , các thành viên trừ nhóm trưởng sẽ phải tạo nhánh dự án bằng cách:
 
 Terminal -> new terminal -> nếu đang mở nhiều dự án khác chọn tên dự án đang làm , ở đây là tkweb-project.
 
-bấm vào dấu mũi lên bên cạnh dấu cộng chọn git bash
+- Bấm vào dấu mũi lên bên cạnh dấu cộng chọn git bash
 
 ![](./readme-img/img5.png)
 
-chạy lệnh :
+- chạy lệnh :
 
 ```
 git checkout -b tên thanh vien
 ```
 
-ví dụ:
+*ví dụ:*
 
 ![](./readme-img/img4.png)
 
-## đã xong giờ bắt đầu làm phần của bạn thân thôi
+** Đã xong giờ bắt đầu làm phần của bạn thân thôi! **
 
-## Lưu ý
+### Lưu ý
 
-- mỗi lần viết xong hay thay đổi gì muốn dẩy code lên nhớ lưu file lại nhé : ctrl + s.
+- mỗi lần viết xong hay thay đổi gì muốn dẩy code lên nhớ lưu file lại nhé : `ctrl + s`.
 - Mỗi lần viết code bạn có thể lấy code mới trên local về bằng lệnh:
   ```
   git pull origin main
   ```
 
-mỗi khi làm xong 1 chức nhắn bạn có thể đẩy code lên cho nhóm trưởng bằng các lệnh sau:
+## Đẩy code lên github
+### Mỗi khi làm xong 1 chức nhắn bạn có thể đẩy code lên cho nhóm trưởng bằng các lệnh sau:
 
-lệnh đẩy file lên ở đây dấu chấm có nghĩa là tất cả:
+- Lệnh đẩy file lên ở đây dấu chấm có nghĩa là tất cả:
 ```
 git add .
 ```
 
-thêm mô tả cho lần đẩy code này lên:
+- Thêm mô tả cho lần đẩy code này lên:
 `git commit -m "tên phần vừa làm" `
 
 ví dụ :`git commit -m "tạo header"`
 
-lần đẩy code đầu tiên dùng lệnh:
+- Lần đẩy code đầu tiên dùng lệnh:
 ```
 git push -u origin tên nhánh 
 ```
-lần đẩy code sau dùng lệnh :
+- Lần đẩy code sau dùng lệnh :
 ```
 git push
 ```
 
-## ví dụ: ở đây mình có tạo tên nhánh trước đó có tên nhatlinh `git push -u origin nhatlinh `.
+### ví dụ: ở đây mình có tạo tên nhánh trước đó có tên nhatlinh `git push -u origin nhatlinh `.
 
 sau mỗi lần các bạn đẩy code lên vào github: [https://github.com/CaoNhatLinh/tkweb-project](https://github.com/CaoNhatLinh/tkweb-project)
 chọn **pull requests**
@@ -111,19 +120,19 @@ chọn **new pull requests**
 
 ![](./readme-img/img7.png)
 
-ở phần compare chọn lên nhánh của mình
-ví dụ:
+- Ở phần compare chọn lên nhánh của mình
+*Ví dụ:*
 
 ![](./readme-img/img0.png)
 
-Xong bấm **create pull requests**
+- Xong bấm **create pull requests**
 
 ![](./readme-img/img8.png)
 
-mô tả phần mình làm trước khi bấm vào **create pull requests** ở dưới cùng lần nữa:
+- Mô tả phần mình làm trước khi bấm vào **create pull requests** ở dưới cùng lần nữa:
 ![](./readme-img/img9.png)
 
-sau khi **create pull requests** xong thì báo lại trưởng nhóm để confirm lên nhanh main
+- Sau khi **create pull requests** xong thì báo lại trưởng nhóm để confirm lên nhanh main
 
 ## Hiện tượng conflict khi đẩy code lên :
 
