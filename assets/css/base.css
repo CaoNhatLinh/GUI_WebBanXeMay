@@ -2,8 +2,31 @@
   --bg-color1: #d47725;
   --bg-color2: #333;
   --primary-color: #64bf2e;
+  --primary-fade-color: #7acb4c;
   --text-desc-color: #b7a3b7;
-  --text-color1: #fff;
-  --text-color2: #1e1d1d;
-  --bg-navbar-color: #f5ffeb;
+  --text-color: #1e1d1d;
+  --bg-header-color: #f5ffeb;
+  --white-color: #fff;
+  --black-color: #000;
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --bg-input-color: #ffffff;
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+
+body.dark {
+  --body-color: #261f26;
+  --sidebar-color: #242526;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+  --bg-input-color: #6c6c6c;
 }
