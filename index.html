@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      var loader = function () {
+        setTimeout(function () {
+          $("#loader").css({ opacity: 0, visibility: "hidden" });
+        }, 1000);
+      };
+      $(function () {
+        loader();
+      });
+    </script>
     <!-- link fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +38,13 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
+    <div id="loader">
+      <div class="dotted">
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
+    </div>
     <header class="header fixed">
       <div class="main-content">
         <div class="body">
@@ -63,8 +81,6 @@
     </header>
     <nav class="sidebar close">
       <i class="bx bx-chevron-right toggle"></i>
-
-      <header></header>
 
       <div class="menu-bar">
         <div class="menu">
@@ -136,7 +152,45 @@
       </div>
     </nav>
 
-    <main main>
+    <main id="main-wrap">
+      <div class="banner-wrapper">
+        <!-- Banner -->
+        <img
+          src="https://images.unsplash.com/photo-1578047798395-2cbf6263c467?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt=""
+          class="banner__img"
+        />
+      </div>
+      <div class="main-content">
+        <selection class="sec sec-bike-list">
+          <div class="all">
+            <div class="sec__header">
+              <h2 class="sec__title animate-item animate-item__left">
+                DANH MỤC XE
+              </h2>
+              <ul class="sec__list">
+                <li class="sec__item active animate-item animate-item__left">
+                  <a href="#!">XE TAY GA</a>
+                </li>
+                <li class="sec__item animate-item animate-item__top">
+                  <a href="#!">XE SỐ</a>
+                </li>
+                <li class="sec__item animate-item animate-item__right">
+                  <a href="#!">XE CÔN TAY</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu__motorbike animate-item animate-item__left">
+            <ul class="box__list list__motorbike list__motorbike-motorScooter">
+              <li class="box__item motorbike__item">
+                <div class="motorbike__item-img"></div>
+              </li>
+            </ul>
+          </div>
+        </selection>
+      </div>
+    </main>
     <footer></footer>
     <script src="./assets/js/index.js"></script>
   </body>
