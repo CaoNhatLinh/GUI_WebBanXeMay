@@ -1,9 +1,7 @@
 :root {
-  /**
-     * COLORS
-     */
+ 
 
-  /* background color */
+
   --bg-purple: hsla(267, 100%, 63%, 1);
   --bg-purple-alpha-30: hsla(267, 100%, 63%, 0.3);
   --bg-dark-purple: hsla(279, 42%, 9%, 1);
@@ -12,7 +10,6 @@
   --bg-oxford-blue-alpha-90: hsla(240, 63%, 13%, 0.9);
   --bg-oxford-blue-alpha-80: hsla(240, 63%, 13%, 0.8);
 
-  /* gradient color */
   --gradient-1: linear-gradient(
     to right bottom,
     hsl(299, 100%, 52%),
@@ -45,9 +42,7 @@
   --border-space-cadet: hsl(240, 45%, 17%);
   --border-purple-alpha-30: hsla(267, 100%, 63%, 0.3);
 
-  /**
-     * TYPOGRAPHY
-     */
+  
 
   /* font family */
   --fontFamily-oxanium: "Oxanium", cursive;
@@ -68,29 +63,21 @@
   --weight-semiBold: 600;
   --weight-bold: 700;
 
-  /**
-     * SPACING
-     */
+
 
   --section-spacing: 60px;
 
-  /**
-     * BOX SHADOW
-     */
+  
 
   --shadow: 0px 2px 5px 0px hsla(0, 0%, 0%, 0.2);
 
-  /**
-     * BORDER RADIUS
-     */
+  
 
   --radius-circle: 50%;
   --radius-5: 5px;
   --radius-3: 3px;
 
-  /**
-     * CLIP PATH
-     */
+  
 
   --clip-path-1: polygon(0 0, 100% 0, 100% 0, 0 0);
   --clip-path-2: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -103,9 +90,7 @@
   --clip-path-9: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
   --clip-path-10: polygon(100% 36%, 88% 1%, 0% 0%, 0 73%, 11% 100%, 100% 100%);
 
-  /**
-     * TRANSITION
-     */
+  
 
   --transition-1: 250ms ease;
   --transition-2: 500ms ease;
@@ -113,7 +98,7 @@
 }
 
 /*-----------------------------------*\
-    #RESET
+    #RESET Css
   \*-----------------------------------*/
 
 *,
