@@ -232,10 +232,9 @@ body {
   text-transform: uppercase;
 }
 
-.btn,
-.btn-1 {
+.btn {
   position: relative;
-  background-image: var(--gradient-1);
+
   color: var(--text-white);
   font-size: var(--fontSize-6);
   font-weight: var(--weight-semiBold);
@@ -257,7 +256,7 @@ body {
 }
 
 .bg-btn {
-  background-color: var(--bg-purple);
+  background-image: var(--gradient-1);
 }
 
 .btn::before {
@@ -267,14 +266,14 @@ body {
   left: var(--left, 50%);
   width: 250%;
   padding-block-end: 250%;
-
+  background-color: var(--bg-purple);
   transform: translate(-50%, -50%) scale(0);
   border-radius: var(--radius-circle);
   z-index: -1;
   transition: transform var(--transition-2);
 }
 
-.btn:is(:hover, :focus-visible)::before, {
+.btn:is(:hover, :focus-visible)::before {
   transform: translate(-50%, -50%) scale(1);
 }
 
