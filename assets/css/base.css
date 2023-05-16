@@ -232,10 +232,9 @@ body {
   text-transform: uppercase;
 }
 
-.btn,
-.btn-1 {
+.btn {
   position: relative;
-  background-image: var(--gradient-1);
+
   color: var(--text-white);
   font-size: var(--fontSize-6);
   font-weight: var(--weight-semiBold);
@@ -258,6 +257,8 @@ body {
 
 .bg-btn {
   background-color: var(--bg-purple);
+  background-image: var(--gradient-1);
+  
 }
 
 .btn::before {
