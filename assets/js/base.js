@@ -67,14 +67,7 @@ window.addEventListener("scroll", () => {
 
 // scroll select menu 
 
-function smoothScroll(event) {
-    event.preventDefault();
-    const targetId = event.target.getAttribute("href");
-    document.querySelector(targetId).scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
-}
+
 
 const links = document.querySelectorAll("header a");
 for (let i = 0; i < links.length; i++) {

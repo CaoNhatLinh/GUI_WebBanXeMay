@@ -179,7 +179,9 @@ body {
 /*-----------------------------------*\
     #REUSED STYLE
   \*-----------------------------------*/
-
+body {
+  scroll-behavior: smooth;
+}
 .container {
   padding-inline: 12px;
 }
