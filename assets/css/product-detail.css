@@ -68,13 +68,13 @@
     top: 1;
     left: 1;
     color: var(--text-white);
-  font-size: var(--fontSize-6);
-  font-weight: var(--weight-semiBold);
-  max-width: max-content;
-  min-width: 140px;
-  height: 50px;
-  display: grid;
-  place-items: center;
+    font-size: var(--fontSize-6);
+    font-weight: var(--weight-semiBold);
+    max-width: max-content;
+    min-width: 140px;
+    height: 50px;
+    display: grid;
+    place-items: center;
     z-index: -2;
     background-color: #fff;
 }
@@ -88,3 +88,21 @@
     background-color: #6620db;
     color: #fff;
 } */
+
+.product__buy{
+    display: flex;
+}
+
+.product__buy button{
+    width: 35px;
+    padding: 3px 10px;
+    border: 1px solid blueviolet;
+}
+
+.product__buy input{
+    width: 35px;
+    padding: 3px 10px;
+    border: 1px solid blueviolet;
+    border-left-width: 0;
+    border-right-width: 0;
+}
