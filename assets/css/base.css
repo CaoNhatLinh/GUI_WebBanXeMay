@@ -256,9 +256,7 @@ body {
 }
 
 .bg-btn {
-  background-color: var(--bg-purple);
   background-image: var(--gradient-1);
-  
 }
 
 .btn::before {
@@ -268,7 +266,7 @@ body {
   left: var(--left, 50%);
   width: 250%;
   padding-block-end: 250%;
-
+  background-color: var(--bg-purple);
   transform: translate(-50%, -50%) scale(0);
   border-radius: var(--radius-circle);
   z-index: -1;
