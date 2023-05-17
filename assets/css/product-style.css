@@ -88,3 +88,20 @@
     background-color: #6620db;
     color: #fff;
 } */
+.product__buy{
+    display: flex;
+}
+
+.product__buy button{
+    width: 35px;
+    padding: 3px 10px;
+    border: 1px solid blueviolet;
+}
+
+.product__buy input{
+    width: 35px;
+    padding: 3px 10px;
+    border: 1px solid blueviolet;
+    border-left-width: 0;
+    border-right-width: 0;
+}
