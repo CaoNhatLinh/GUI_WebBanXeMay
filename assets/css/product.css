@@ -15,8 +15,14 @@
   margin-top: 20px;
 }
 .sec__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 10px 30px;
   position: relative;
@@ -33,6 +39,8 @@
 }
 .sec__list {
   float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -51,6 +59,14 @@
   width: 30%;
   height: 5px;
   border-radius: 999px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#a2eea4),
+    to(var(--primary-color))
+  );
+  background-image: -o-linear-gradient(#a2eea4, var(--primary-color));
   background-image: linear-gradient(#a2eea4, var(--primary-color));
 }
 
@@ -60,6 +76,7 @@
 
 .sec__list .sec__item {
   background-image: none;
+  -webkit-clip-path: var(--clip-path-10);
   clip-path: var(--clip-path-10);
   border: #3c67e3 2px solid;
 }
@@ -69,11 +86,15 @@
   color: var(--text-white);
   font-size: var(--fontSize-6);
   font-weight: var(--weight-semiBold);
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
   max-width: max-content;
   min-width: 140px;
   height: 50px;
+  display: -ms-grid;
   display: grid;
   place-items: center;
+  -webkit-clip-path: var(--clip-path-10);
   clip-path: var(--clip-path-10);
   overflow: hidden;
 }
@@ -86,6 +107,7 @@
   margin-left: auto;
   margin-right: auto;
   gap: 40px;
+  -ms-grid-columns: 250px;
   grid-template-columns: 250px;
   place-content: center;
 }
@@ -97,6 +119,9 @@
   border-radius: 6px;
   font-size: 1.5em;
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -111,7 +136,11 @@
   padding: 5px;
   position: relative;
   border-radius: 6px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   font-size: 1.5em;
@@ -123,21 +152,30 @@
   width: 100%;
   height: 70%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .product__item .product__item-content .product__item-bg img {
   scale: 1.15;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: scale 0.4s ease;
+  -o-transition: scale 0.4s ease;
   transition: scale 0.4s ease;
 }
 .product__item .product__item-content .product__item-bg:hover img {
   scale: 1.3;
+  -o-object-fit: cover;
   object-fit: cover;
 }
-.product__item .product__item-content .product__item-bg:hover ~ .name-item a,.product__item .product__item-content .name-item:hover a {
+.product__item .product__item-content .product__item-bg:hover ~ .name-item a,
+.product__item .product__item-content .name-item:hover a {
   color: var(--primary-color);
   background: var(--gradient-1);
   -webkit-background-clip: text;
@@ -154,10 +192,13 @@
 }
 .product__item:hover {
   color: rgb(88 199 250 / 100%);
+  -webkit-transition: color 1s;
+  -o-transition: color 1s;
   transition: color 1s;
 }
 .product__item:hover:before,
 .product__item:hover:after {
+  -webkit-filter: scale(3);
   filter: scale(3);
 }
 
@@ -166,6 +207,21 @@
   width: 102%;
   height: 101%;
   border-radius: 8px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--rotate)),
+    color-stop(#5ddcff),
+    color-stop(43%, #3c67e3),
+    to(#4e00c2)
+  );
+  background-image: -o-linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
   background-image: linear-gradient(
     var(--rotate),
     #5ddcff,
@@ -176,7 +232,18 @@
   z-index: 0;
   top: -0.5%;
   left: -1%;
+  -webkit-animation: spin 2.5s linear infinite;
   animation: spin 2.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+
+  100% {
+    --rotate: 360deg;
+  }
 }
 
 @keyframes spin {
@@ -195,7 +262,9 @@
 }
 
 .product__list.show-item {
+  display: -ms-grid;
   display: grid;
+  -webkit-animation: fadeIn 1s cubic-bezier(0.42, 0, 0.01, 0.85);
   animation: fadeIn 1s cubic-bezier(0.42, 0, 0.01, 0.85);
 }
 
