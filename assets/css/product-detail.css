@@ -1,7 +1,13 @@
+.product-info{
+    background-color: #abbee0; 
+    padding-top: 95px;
+    width: 100%;
+}
+
 .title{
     color: #333;
     /* padding: 18px 0 0 150px; */
-    padding: 12px 0px;
+    padding: 12px 0;
     text-align: center;
 }
 
@@ -9,16 +15,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
 .product__image img{
-    min-width: 500px;
-    height: 470px;
+    min-width: 300px;
+    max-height: 470px;
     margin: 12px;
 }
 
 .product__details{
-    margin: 12px;
+    margin: 8px;
     width: 720px;
     color: #333;
 }
@@ -26,7 +33,7 @@
 .product__id span{
     display: inline;
     margin-left: 8px;
-    color: #ff0000;
+    color: #f00;
 }
 
 .product__property{
@@ -38,14 +45,6 @@
 .product__property input{
     display: none;
 }
-
-/* .product__property label
-{
-    border: 1px solid blueviolet;
-    padding: 6px 18px;
-    margin: 3px 8px 3px;
-    clip-path: var(--clip-path-3);
-} */
 
 .product__property .btn{
     min-width: 100px;
@@ -65,8 +64,8 @@
 {
     content: "";
     position: absolute;
-    top: 1;
-    left: 1;
+    top: 0;
+    left: 0;
     color: var(--text-white);
     font-size: var(--fontSize-6);
     font-weight: var(--weight-semiBold);
@@ -76,27 +75,35 @@
     display: grid;
     place-items: center;
     z-index: -2;
-    background-color: #fff;
+    background-color: rgb(175, 174, 174);
 }
 
 .product__property input:checked + .btn::after{
     background-color: #6620db;
+}
+
+.product__property input:checked + .btn{
     color: #fff;
 }
 
-/* .product__property label:hover{
-    background-color: #6620db;
-    color: #fff;
-} */
+.quantity-select{
+    display: flex;
+    align-items: center;
+}
+
+.quantity-select span{
+    margin-right: 12px;
+}
 
 .product__buy{
     display: flex;
+    margin: 4px 35px 4px 0;
 }
 
 .product__buy button{
-    width: 35px;
     padding: 3px 10px;
     border: 1px solid blueviolet;
+    color: #333;
 }
 
 .product__buy input{
@@ -105,4 +112,258 @@
     border: 1px solid blueviolet;
     border-left-width: 0;
     border-right-width: 0;
+}
+
+.product__buy .product__buy-minus,
+.product__buy .product__buy-plus{
+    width: 35px;
+    font-weight: 650;
+    font-size: 18px;
+}
+
+.product__buy .product__buy-minus:hover,
+.product__buy .product__buy-plus:hover{
+    background-color: #d5d4d4;
+}
+
+.product__buy .product__buy-minus{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.product__buy .product__buy-plus{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.product__buy .add-to-cart,
+.product__buy .buy-now{
+    margin: 4px 6px 6px 0;
+    color: #fff;
+    background-color: #9b58e6;
+    border-radius: 10px;
+}
+
+.product__buy .add-to-cart:hover,
+.product__buy .buy-now:hover{
+    background-color: #6620db;
+}
+
+/* Ưu đãi */
+.promotion{
+    color: #333;
+    border: 2px dashed #f00;
+    max-width: 700px;
+    padding: 6px;
+}
+
+.promotion--icon{
+    padding: 8px 12px;
+    color: #03bf03;
+    font-size: 30px;
+}
+
+.promotion__delivery,
+.promotion__reward,
+.promotion__payments,
+.promotion__contact{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.promotion__delivery p:nth-child(1),
+.promotion__reward p,
+.promotion__payments p:nth-child(1),
+.promotion__contact p:nth-child(1){
+    font-weight: 600;
+}
+
+.promotion__delivery p:not(:nth-child(1)),
+.promotion__payments p:not(:nth-child(1)),
+.promotion__contact p:not(:nth-child(1)){
+    font-size: 15px;
+}
+
+.promotion__reward span,
+.promotion__contact span{
+    display: inline;
+    color: #f00;
+    font-weight: 600;
+}
+
+.details{
+    background-color: #fff;
+    color: #333;
+}
+
+.tabs{
+    display: flex;
+    margin-left: 65px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.tabs .tab-line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #6620db;
+    transition: all 0.2s ease;
+}
+
+.tabs .tab-item{
+    font-size: 18px;
+    padding: 16px 20px 11px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    transition: all 0.5s ease;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.tabs .tab-icon{
+    padding-right: 3px ;
+}
+
+.tabs .tab-item:hover{
+    opacity: 1;
+    border-color: #af98d4;
+    background-color: #ece1f8;
+}
+
+.tabs .tab-item.active{
+    opacity: 1;
+    background-color: #dbcdf3;
+}
+
+/* Mô tả sản phẩm */
+.tab-content{
+    margin: 15px auto;
+    max-width: 1200px;
+}
+
+.tab-content .tab-panel{
+    display: none;
+}
+
+.tab-panel.active{
+    display: block;
+}
+
+.tab-banner{
+    max-width: 1200px;
+    padding: 0 auto;
+}
+
+.tab-overview{
+    border-left: 1px solid #d4d2d2;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.tab-overview div{
+    padding: 5px 30px;
+    color: #f00;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.description{
+    margin: 12px;
+}
+
+.description h1{
+    font-size: 25px;
+}
+
+.description p{
+    padding: 12px;
+    line-height: 1.25;
+}
+
+.description img{
+    margin: 0 auto;
+    padding: 12px;
+    max-width: 550px;
+}
+
+/* Thông số kỹ thuật */
+.specifications-title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #6620db;
+}
+
+.specifications-table{
+    width: 100%;
+    margin: 12px 0;
+}
+
+.specifications-table, td{
+    border-collapse: collapse;
+}
+
+.specifications-table tr td{
+    padding: 12px;
+}
+
+.image-all img{
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.image-all p{
+    text-align: center;
+    padding: 6px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header{
+        /* max-width: 1050px; */
+    }
+    .product-info{
+        max-width: 100vw;
+        border: 2px solid black;
+    }
+    .promotion{
+        min-width: 30px;
+    }
+    .tab-banner{
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .product__details{
+        width: 100%;
+    }
+    .promotion{
+        min-width: 480px;
+    }
+    
 }
