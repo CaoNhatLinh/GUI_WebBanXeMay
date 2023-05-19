@@ -140,6 +140,7 @@
   border: 1px solid blueviolet;
   border-left-width: 0;
   border-right-width: 0;
+  border-radius: 0;
 }
 
 .product__buy .product__buy-minus,
@@ -327,22 +328,22 @@
 }
 
 .description img {
-  margin: 0 auto;
-  padding: 12px;
-  width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+    width: 100%;
 }
 
 /* Thông số kỹ thuật */
 .specifications-title {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #6620db;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #6620db;
 }
 
 .specifications-table {
-  width: 100%;
-  margin: 12px 0;
+    width: 100%;
+    margin: 12px 0;
 }
 
 .specifications-table,
@@ -465,10 +466,6 @@ td {
 
   .product__image {
     margin-top: 8%;
-  }
-
-  .product__details {
-    /* width: 65%; */
   }
 
   .product__property:not(:last-child) {
