@@ -135,12 +135,15 @@
 }
 
 .product__buy input {
-  width: 35px;
+  width: 50px;
   padding: 3px 10px;
   border: 1px solid blueviolet;
   border-left-width: 0;
   border-right-width: 0;
   border-radius: 0;
+  text-align: center;
+  font-weight: 500;
+  color: #333;
 }
 
 .product__buy .product__buy-minus,

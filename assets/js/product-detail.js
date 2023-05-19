@@ -35,7 +35,11 @@ const values = $("#quantity");
 plus.addEventListener("click",function(){
    let a = values.value;
    a++;
+   if(a < 999){
    values.setAttribute("value",a);
+   }
+   else
+   a = 999
 } )
 minus.addEventListener("click",function(){
     let a = values.value;
