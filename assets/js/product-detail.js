@@ -27,3 +27,26 @@ tabs.forEach((tab, index) => {
     pane.classList.add("active");
     };
 });
+
+const plus = $(".product__buy-plus")
+const minus = $(".product__buy-minus")
+const quantity = $("#quantity")
+
+plus.addEventListener("click",
+    function(){
+        let a = quantity.value;
+        a++;
+        quantity.setAttribute("value",a);
+    }
+)
+
+minus.addEventListener("click",
+    function(){
+        let a = quantity.value;
+        if(a > 0)
+        { 
+            a--;
+            quantity.setAttribute("value",a);
+        }
+        else a = 0;
+})
