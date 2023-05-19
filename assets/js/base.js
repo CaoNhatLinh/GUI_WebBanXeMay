@@ -69,10 +69,10 @@ window.addEventListener("scroll", () => {
 
 
 
-const links = document.querySelectorAll("header a");
-for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", smoothScroll);
-}
+// const links = document.querySelectorAll("header a");
+// for (let i = 0; i < links.length; i++) {
+//     links[i].addEventListener("click", smoothScroll);
+// }
 
 
 

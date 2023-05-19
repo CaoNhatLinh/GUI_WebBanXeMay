@@ -1,29 +1,29 @@
-    
-const showItem = document.querySelector(".product"),
-SecMotorbike = document.querySelectorAll(".sec__item"),
-motorbike = document.querySelectorAll(".sec__item a"),
-productList = document.querySelectorAll(".product__list");
-console.log(motorbike);
-console.log(SecMotorbike);
-SecMotorbike.forEach((item, index, arr)=> {
-   SecMotorbike[index].addEventListener("click",()=>{
-       
-       for(let i = 0; i <= motorbike.length; i++)
-       {
-           if (index == i)
-           {
-               SecMotorbike[i].classList.add("active");
-               productList[i].classList.add("show-item");
-           }
-           else 
-           {
-               SecMotorbike[i].classList.remove("active");
-               productList[i].classList.remove("show-item");
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 
+const tabs = $$(".tab-item");
+const panes = $$(".tab-panel");
 
-           }
+const tabActive = $(".tab-item.active");
+const line = $(".tabs .tab-line");
 
-       }
-   })
-   
-})
+//Active size wrong size on first load.
+requestIdleCallback(function () {
+    line.style.left = tabActive.offsetLeft + "px";
+    line.style.width = tabActive.offsetWidth + "px";
+});
+
+tabs.forEach((tab, index) => {
+    const pane = panes[index];
+
+    tab.onclick = function () {
+    $(".tab-item.active").classList.remove("active");
+    $(".tab-panel.active").classList.remove("active");
+
+    line.style.left = this.offsetLeft + "px";
+    line.style.width = this.offsetWidth + "px";
+
+    this.classList.add("active");
+    pane.classList.add("active");
+    };
+});
