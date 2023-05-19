@@ -28,4 +28,21 @@ tabs.forEach((tab, index) => {
     };
 });
 
+const plus = $(".product__buy-plus");
 
+const minus = $(".product__buy-minus");
+const values = $("#quantity");
+plus.addEventListener("click",function(){
+   let a = values.value;
+   a++;
+   values.setAttribute("value",a);
+} )
+minus.addEventListener("click",function(){
+    let a = values.value;
+    if(a>0)
+    { a--;
+        values.setAttribute("value",a);
+    }
+    else a=0;
+   
+ } )

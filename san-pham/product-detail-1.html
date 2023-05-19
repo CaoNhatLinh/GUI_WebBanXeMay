@@ -116,22 +116,25 @@
               </div>
               <div class="product__property">
                 <span>Phiên bản:</span>
-                <input type="radio" name="version" id="version1" checked />
-                <label class="btn clip-path-3" data-btn for="version1"
-                  >Đặt biệt</label
-                >
-                <input type="radio" name="version" id="version2" />
-                <label class="btn clip-path-3" data-btn for="version2"
-                  >Thể Thao</label
-                >
-                <input type="radio" name="version" id="version3" />
-                <label class="btn clip-path-3" data-btn for="version3"
-                  >Tiêu chuẩn</label
-                >
+                <div class="product-option">
+                  <input type="radio" name="version" id="version1" checked />
+                  <label class="btn clip-path-3" data-btn for="version1"
+                    >Đặt biệt</label
+                  >
+                  <input type="radio" name="version" id="version2" />
+                  <label class="btn clip-path-3" data-btn for="version2"
+                    >Thể Thao</label
+                  >
+                  <input type="radio" name="version" id="version3" />
+                  <label class="btn clip-path-3" data-btn for="version3"
+                    >Tiêu chuẩn</label
+                  >
+                </div>
               </div>
               <div class="product__property">
                 <span>Màu sắc:</span>
-                <input type="radio" name="color" id="color1" checked />
+                <div class="product-option">
+                  <input type="radio" name="color" id="color1" checked />
                 <label class="btn clip-path-3" data-btn for="color1"
                   >Đen xám</label
                 >
@@ -141,26 +144,22 @@
                 <label class="btn clip-path-3" data-btn for="color3"
                   >Đen đỏ</label
                 >
+                </div>
               </div>
               <div class="product__property">
                 <span>Giá:</span>
-                <span style="color: red">73,290,000₫</span>
+                <span style="color: red; font-weight: 600;">73,290,000₫</span>
               </div>
             </div>
 
             <div class="quantity-select">
-              <span>Số lượng:</span>
-              <div>
-                <div class="product__buy">
-                  <button class="product__buy-minus">-</button>
-                  <input
-                    type="text"
-                    min="1"
-                    value="1"
-                    name="SoLuong"
-                    id="quantity"
-                  />
-                  <button class="product__buy-plus">+</button>
+                <span>Số lượng:</span>
+                <div>
+                  <div class="product__buy">
+                    <button class="product__buy-minus">-</button>
+                    <input type="text" min="0" value="0" name="SoLuong" id="quantity">
+                    <button class="product__buy-plus">+</button>
+                  </div>
                 </div>
               </div>
             </div>
