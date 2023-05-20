@@ -13,10 +13,25 @@ requestIdleCallback(function () {
     line.style.width = tabActive.offsetWidth + "px";
 });
 
+tabs.forEach((tab, index) => {
+    const pane = panes[index];
+
+    tab.onclick = function () {
+    $(".tab-item.active").classList.remove("active");
+    $(".tab-panel.active").classList.remove("active");
+
+    line.style.left = this.offsetLeft + "px";
+    line.style.width = this.offsetWidth + "px";
+
+    this.classList.add("active");
+    pane.classList.add("active");
+    };
+});
+
 // tabs.forEach((tab, index) => {
 //     const pane = panes[index];
 
-//     tab.onclick = function () {
+//     tab.addEventListener("touchstart", function () {
 //     $(".tab-item.active").classList.remove("active");
 //     $(".tab-panel.active").classList.remove("active");
 
@@ -25,37 +40,22 @@ requestIdleCallback(function () {
 
 //     this.classList.add("active");
 //     pane.classList.add("active");
-//     };
-// });
+//     });
 
-tabs.forEach((tab, index) => {
-    const pane = panes[index];
-
-    tab.addEventListener("touchstart", function () {
-    $(".tab-item.active").classList.remove("active");
-    $(".tab-panel.active").classList.remove("active");
-
-    line.style.left = this.offsetLeft + "px";
-    line.style.width = this.offsetWidth + "px";
-
-    this.classList.add("active");
-    pane.classList.add("active");
-    });
-
-    // Nếu bạn muốn giữ lại sự kiện click trên desktop,
-    // hãy thêm sự kiện click vào đây.
+//     // Nếu bạn muốn giữ lại sự kiện click trên desktop,
+//     // hãy thêm sự kiện click vào đây.
     
-    tab.addEventListener("click", function () {
-    $(".tab-item.active").classList.remove("active");
-    $(".tab-panel.active").classList.remove("active");
+//     tab.addEventListener("click", function () {
+//     $(".tab-item.active").classList.remove("active");
+//     $(".tab-panel.active").classList.remove("active");
 
-    line.style.left = this.offsetLeft + "px";
-    line.style.width = this.offsetWidth + "px";
+//     line.style.left = this.offsetLeft + "px";
+//     line.style.width = this.offsetWidth + "px";
 
-    this.classList.add("active");
-    pane.classList.add("active");
-    });
-});
+//     this.classList.add("active");
+//     pane.classList.add("active");
+//     });
+// });
 
 
 const plus = $(".product__buy-plus");
