@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    color: #333;
+}
+
+.container-form{
+    margin-top: 95px;
+}
+
+.form-title{
+    margin: 25px 0;
+    font-size: 25px;
+}
