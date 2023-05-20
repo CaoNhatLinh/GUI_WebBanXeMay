@@ -1,12 +1,7 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+
 
 :root {
-  --bg-purple: hsla(267, 100%, 63%, 1);
+  --bg-purple: #9742ff;
   --bg-purple-alpha-30: hsla(267, 100%, 63%, 0.3);
   --bg-dark-purple: hsla(279, 42%, 9%, 1);
   --bg-oxford-blue: hsla(240, 63%, 13%, 1);
@@ -42,7 +37,7 @@
     #9841ff 50%,
     transparent 100%
   );
-
+  --gradient-4:linear-gradient(to left top, #0cd6e9, #00c9ff, #00b2ff, #8187ff, #fb0aff);
   /* text color */
   --text-white: hsla(0, 0%, 100%, 1);
   --text-gainsboro: hsla(0, 0%, 87%, 1);
@@ -55,7 +50,7 @@
 
   /* font family */
   --fontFamily-oxanium: "Oxanium", cursive;
-  --fontFamily-work-sans: "Work Sans", sans-serif;
+  --fontFamily-work-sans: FontZin ,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 
   /* font size */
   --fontSize-1: 3.6rem;

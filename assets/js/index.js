@@ -3,8 +3,7 @@ const showItem = document.querySelector(".product"),
 SecMotorbike = document.querySelectorAll(".sec__item"),
 motorbike = document.querySelectorAll(".sec__item a"),
 productList = document.querySelectorAll(".product__list");
-console.log(motorbike);
-console.log(SecMotorbike);
+
 SecMotorbike.forEach((item, index, arr)=> {
    SecMotorbike[index].addEventListener("click",()=>{
        
