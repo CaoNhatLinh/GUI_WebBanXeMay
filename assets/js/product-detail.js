@@ -33,7 +33,7 @@ tabs.forEach((tab, index) => {
 
     tab.addEventListener("touchstart", function () {
     $(".tab-item.active").classList.remove("active");
-    $(".tab-pane.active").classList.remove("active");
+    $(".tab-panel.active").classList.remove("active");
 
     line.style.left = this.offsetLeft + "px";
     line.style.width = this.offsetWidth + "px";
@@ -47,7 +47,7 @@ tabs.forEach((tab, index) => {
     
     tab.addEventListener("click", function () {
     $(".tab-item.active").classList.remove("active");
-    $(".tab-pane.active").classList.remove("active");
+    $(".tab-panel.active").classList.remove("active");
 
     line.style.left = this.offsetLeft + "px";
     line.style.width = this.offsetWidth + "px";
