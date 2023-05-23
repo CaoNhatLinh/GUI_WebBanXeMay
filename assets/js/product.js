@@ -1,7 +1,34 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 // data
+    
+const showItem = $(".product"),
+SecMotorbike = $$(".sec__item"),
+motorbike = $$(".sec__item a"),
+productList = $$(".product__list");
 
+SecMotorbike.forEach((item, index, arr)=> {
+   SecMotorbike[index].addEventListener("click",()=>{
+       
+       for(let i = 0; i <= motorbike.length; i++)
+       {
+           if (index == i)
+           {
+               SecMotorbike[i].classList.add("active");
+               productList[i].classList.add("show-item");
+           }
+           else 
+           {
+               SecMotorbike[i].classList.remove("active");
+               productList[i].classList.remove("show-item");
+
+
+           }
+
+       }
+   })
+   
+})
 let dataMotorbike = {
     xeTayGa: [
         {

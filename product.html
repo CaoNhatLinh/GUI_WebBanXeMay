@@ -35,6 +35,7 @@
   -->
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/product.css" />
+    <link rel="stylesheet" href="./assets/css/signUp.css" />
 
     <!-- 
     - preload images
@@ -54,7 +55,7 @@
 
     <header class="header active" data-header>
       <div class="container">
-        <a href="./index.html" class="logo">
+        <a href="#" class="logo">
           <img
             src="./assets/images/logo.svg"
             width="110"
@@ -70,19 +71,35 @@
             </li>
 
             <li class="navbar-item">
-              <a href="#top" class="navbar-link" data-nav-link>Products</a>
+              <a href="#top" class="navbar-link" data-nav-link>SẢN PHẨM</a>
             </li>
-
             <li class="navbar-item">
-              <a href="./reviews" class="navbar-link" data-nav-link>Reviews</a>
+              <a href="#!" class="navbar-link" id="service" data-nav-link
+                >DỊCH VỤ<i class="arrow-down-icon fa-solid fa-arrow-down"></i>
+              </a>
+
+              <ul class="service">
+                <li class="service-item">đặt lịch lái thử</li>
+                <li class="service-item">đặt lịch bảo dưỡng</li>
+                <li class="service-item">linh kiện chính hẵng</li>
+                <li class="service-item">vệ sinh và chăm sóc</li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="./reviews.html" class="navbar-link" data-nav-link
+                >VỀ CHÚNG TÔI
+              </a>
             </li>
           </ul>
         </nav>
-
-        <a href="./sign-up.html" class="btn clip-path-3 bg-btn" data-btn
-          >Đăng Ký</a
-        >
-
+        <div class="nav-login">
+          <a href="#!" class="btn clip-path-3 bg-btn" id="signIn" data-btn
+            >Đăng Nhập</a
+          >
+          <a href="#!" class="btn clip-path-6 bg-btn" id="signUp" data-btn
+            >Đăng Ký</a
+          >
+        </div>
         <button
           class="nav-toggle-btn"
           aria-label="toggle menu"
@@ -109,22 +126,13 @@
                 DANH MỤC XE
               </h2>
               <ul class="sec__list">
-                <li
-                  class="sec__item btn clip-path-10 bg-btn active animate-item animate-item__left"
-                  data-btn
-                >
+                <li class="sec__item btn clip-path-10 bg-btn active" data-btn>
                   <a href="#!">XE TAY GA</a>
                 </li>
-                <li
-                  class="sec__item btn clip-path-10 bg-btn animate-item animate-item__top"
-                  data-btn
-                >
+                <li class="sec__item btn clip-path-10 bg-btn" data-btn>
                   <a href="#!">XE SỐ</a>
                 </li>
-                <li
-                  class="sec__item btn clip-path-10 bg-btn animate-item animate-item__right"
-                  data-btn
-                >
+                <li class="sec__item btn clip-path-10 bg-btn" data-btn>
                   <a href="#!">XE CÔN TAY</a>
                 </li>
               </ul>
@@ -172,7 +180,6 @@
     - custom js link
   -->
     <script src="./assets/js/base.js"></script>
-    <script src="./assets/js/index.js"></script>
     <script src="./assets/js/product.js"></script>
 
     <!-- 

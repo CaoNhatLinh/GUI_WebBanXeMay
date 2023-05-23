@@ -113,17 +113,15 @@ const navClose = () => {
 
 
 
-const header = document.querySelectorAll("[data-header]");
+const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 const activeEl = function () {
   if (window.scrollY > 100) {
-    header[0].classList.add("active");
-    header[1].classList.add("active");
+    header.classList.add("active");
     backTopBtn.classList.add("active");
   } else {
-    header[0].classList.remove("active");
-    header[1].classList.remove("active");
+    header.classList.remove("active");
     backTopBtn.classList.remove("active");
   }
 }

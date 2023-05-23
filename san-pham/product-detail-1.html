@@ -35,6 +35,7 @@
     <!--custom css link-->
     <link rel="stylesheet" href="../assets/css/base.css" />
     <link rel="stylesheet" href="../assets/css/product-detail.css" />
+    <link rel="stylesheet" href="../assets/css/signUp.css" />
 
     <!--preload images-->
     <link
@@ -49,7 +50,7 @@
 
     <header class="header active" data-header>
       <div class="container">
-        <a href="../index.html" class="logo">
+        <a href="#" class="logo">
           <img
             src="../assets/images/logo.svg"
             width="110"
@@ -61,27 +62,41 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="../index.html" class="navbar-link" data-nav-link>Trang chủ</a>
+              <a href="../index.html" class="navbar-link" data-nav-link>home</a>
             </li>
 
             <li class="navbar-item">
               <a href="../product.html" class="navbar-link" data-nav-link
-                >Danh mục</a
+                >SẢN PHẨM</a
               >
             </li>
-
             <li class="navbar-item">
-              <a href="#news" class="navbar-link" data-nav-link>Tin tức</a>
+              <a href="#!" class="navbar-link" id="service" data-nav-link
+                >DỊCH VỤ<i class="arrow-down-icon fa-solid fa-arrow-down"></i>
+              </a>
+
+              <ul class="service">
+                <li class="service-item">đặt lịch lái thử</li>
+                <li class="service-item">đặt lịch bảo dưỡng</li>
+                <li class="service-item">linh kiện chính hẵng</li>
+                <li class="service-item">vệ sinh và chăm sóc</li>
+              </ul>
             </li>
-
             <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Liên hệ</a>
+              <a href="../reviews.html" class="navbar-link" data-nav-link
+                >VỀ CHÚNG TÔI
+              </a>
             </li>
           </ul>
         </nav>
-
-        <a href="../sign-up.html" class="btn bg-btn clip-path-3" data-btn>Đăng Ký</a>
-
+        <div class="nav-login">
+          <a href="#!" class="btn clip-path-3 bg-btn" id="signIn" data-btn
+            >Đăng Nhập</a
+          >
+          <a href="#!" class="btn clip-path-6 bg-btn" id="signUp" data-btn
+            >Đăng Ký</a
+          >
+        </div>
         <button
           class="nav-toggle-btn"
           aria-label="toggle menu"
@@ -95,6 +110,50 @@
     </header>
 
     <main>
+      <div class="login">
+        <div id="signUp-modal">
+          <div class="login-container">
+            <form action="#">
+              <input type="checkbox" class="input-check" id="input-check" />
+              <label for="input-check" class="toggle">
+                <span class="text off">Off</span>
+                <span class="text on">On</span>
+              </label>
+              <div class="login-light"></div>
+              <h2>Login</h2>
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required="required" />
+                <label>Email</label>
+                <div class="input-line"></div>
+              </div>
+
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required="required" />
+                <label>Password</label>
+                <div class="input-line"></div>
+              </div>
+
+              <div class="remember-forgot">
+                <label>
+                  <input type="checkbox" />
+                  Nhớ đăng nhập
+                </label>
+                <a href="#">Quên Mật Khẩu?</a>
+              </div>
+              <button type="submit">Đăng nhập</button>
+              <div class="register-link">
+                <p>Bạn chưa có tài khoảng? <a href="#">Đăng ký</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
       <section class="product-info">
         <div class="title">
           <h2>Thông tin sản phẩm</h2>
@@ -174,7 +233,9 @@
 
             <div class="product__buy">
               <button class="add-to-cart">Thêm giỏ hàng</button>
-              <button class="buy-now"><a href="../payment.html"> Mua ngay</a></button>
+              <button class="buy-now">
+                <a href="../payment.html"> Mua ngay</a>
+              </button>
             </div>
 
             <div class="promotion">
@@ -543,8 +604,8 @@
     <!-- 
 - custom js link
 -->
-    <script src="../assets/js/product-detail.js"></script>
     <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/product-detail.js"></script>
 
     <!-- 
 - ionicon link

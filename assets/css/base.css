@@ -75,7 +75,7 @@
   --radius-5: 5px;
   --radius-3: 3px;
 
-  --clip-path-1: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --clip-path-1: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   --clip-path-2:  polygon(85% 0, 100% 40%, 100% 100%, 15% 100%, 0 60%, 0% 0%);
   --clip-path-3: polygon(0% 0%, 90% 0, 100% 30%, 100% 100%, 0 100%);
   --clip-path-4: polygon(90% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
@@ -523,14 +523,14 @@ body {
 }
 
 .navbar.active {
-  -webkit-clip-path: var(--clip-path-2);
-  clip-path: var(--clip-path-2);
+
   visibility: visible;
   max-width: max-content;
   min-width: 40%;
   text-align: center;
   margin-left: auto;
   border-radius: 10px;
+  clip-path: var(--clip-path-1);
 
 }
 
