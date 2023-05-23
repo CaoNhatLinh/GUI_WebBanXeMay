@@ -108,24 +108,22 @@ const navClose = () => {
   navToggler.classList.remove("active");
 }
 
-addEventOnElements(navLinks, "click", navClose);
 
 
 
-/**
- * HEADER and BACK TOP BTN
- * header and back top btn will be active after scrolled down to 100px of screen
- */
 
-const header = document.querySelector("[data-header]");
+
+const header = document.querySelectorAll("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 const activeEl = function () {
   if (window.scrollY > 100) {
-    header.classList.add("active");
+    header[0].classList.add("active");
+    header[1].classList.add("active");
     backTopBtn.classList.add("active");
   } else {
-    header.classList.remove("active");
+    header[0].classList.remove("active");
+    header[1].classList.remove("active");
     backTopBtn.classList.remove("active");
   }
 }
@@ -192,3 +190,35 @@ addEventOnElements(hoverElements, "mouseover", function () {
 addEventOnElements(hoverElements, "mouseout", function () {
   cursor.classList.remove("hovered");
 });
+
+//sign modal
+
+
+const signUpModal = document.querySelector("#signUp-modal");
+const signInModal = document.querySelector("#signIn-modal");
+
+const btnsignUp = document.querySelector("#signUp");
+const btnsignIn = document.querySelector("#signIn");
+btnsignUp.addEventListener("click", ()=> {
+  signUpModal.classList.add("active");
+}) 
+btnsignIn.addEventListener("click", ()=> {
+  signInModal.classList.add("active");
+})
+
+window.addEventListener("click", ()=> {
+  if (window.event.target == signUpModal) {
+    signUpModal.classList.remove("active")
+  }
+  if (window.event.target == signInModal) {
+    signInModal.classList.remove("active")
+  }
+}) 
+
+const serviceClose = document.querySelector("#service");
+
+const serviceList = document.querySelector(".service");
+
+serviceClose.addEventListener("click",()=>{
+  serviceList.classList.toggle("active");
+})

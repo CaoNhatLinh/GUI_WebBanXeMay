@@ -42,6 +42,38 @@
   background-attachment: fixed;
   background-size: cover;
 }
+.news .splide__wrapper {
+  padding: 50px 15px;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+.news .splide__slide {
+  height: max-content !important;
+}
+
+.news .splide .img_box img {
+  width: 100%;
+  object-fit: cover;
+}
+.news .splide__pagination {
+  bottom: -4.2rem;
+  display: none;
+}
+
+.news .sale-info {
+  background-color: aliceblue;
+  padding: 2rem 2rem;
+  height: 90px;
+  font-weight: 500;
+}
+
+.news .sale-info .sale-title {
+  color: var(--bg-purple);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .contact {
   background-image: var(--gradient-3);
 }
@@ -190,5 +222,8 @@
   }
   .contact .container {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .news .splide__pagination {
+    display: flex;
   }
 }

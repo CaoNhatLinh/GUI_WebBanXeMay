@@ -76,11 +76,11 @@
   --radius-3: 3px;
 
   --clip-path-1: polygon(0 0, 100% 0, 100% 0, 0 0);
-  --clip-path-2: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  --clip-path-2:  polygon(85% 0, 100% 40%, 100% 100%, 15% 100%, 0 60%, 0% 0%);
   --clip-path-3: polygon(0% 0%, 90% 0, 100% 30%, 100% 100%, 0 100%);
   --clip-path-4: polygon(90% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
   --clip-path-5: polygon(100% 0, 100% 100%, 10% 100%, 0 60%, 0 0);
-  --clip-path-6: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+  --clip-path-6: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 30%);
   --clip-path-7: polygon(100% 0, 100% 60%, 90% 100%, 0 100%, 0 0);
   --clip-path-8: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
   --clip-path-9: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
@@ -246,7 +246,7 @@ body {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  min-width: 140px;
+  min-width: 120px;
   height: 50px;
   display: -ms-grid;
   display: grid;
@@ -254,12 +254,42 @@ body {
   /* padding-inline: 30px; */
   overflow: hidden;
 }
-
+.clip-path-1 {
+  -webkit-clip-path: var(--clip-path-1);
+  clip-path: var(--clip-path-1);
+}
+.clip-path-2 {
+  -webkit-clip-path: var(--clip-path-2);
+  clip-path: var(--clip-path-2);
+}
 .clip-path-3 {
   -webkit-clip-path: var(--clip-path-3);
   clip-path: var(--clip-path-3);
 }
-
+.clip-path-4 {
+  -webkit-clip-path: var(--clip-path-4);
+  clip-path: var(--clip-path-4);
+}
+.clip-path-5 {
+  -webkit-clip-path: var(--clip-path-5);
+  clip-path: var(--clip-path-5);
+}
+.clip-path-6 {
+  -webkit-clip-path: var(--clip-path-6);
+  clip-path: var(--clip-path-6);
+}
+.clip-path-7 {
+  -webkit-clip-path: var(--clip-path-7);
+  clip-path: var(--clip-path-7);
+}
+.clip-path-8 {
+  -webkit-clip-path: var(--clip-path-8);
+  clip-path: var(--clip-path-8);
+}
+.clip-path-9 {
+  -webkit-clip-path: var(--clip-path-9);
+  clip-path: var(--clip-path-9);
+}
 .clip-path-10 {
   -webkit-clip-path: var(--clip-path-10);
   clip-path: var(--clip-path-10);
@@ -496,29 +526,53 @@ body {
   -webkit-clip-path: var(--clip-path-2);
   clip-path: var(--clip-path-2);
   visibility: visible;
+  max-width: max-content;
+  min-width: 40%;
+  text-align: center;
+  margin-left: auto;
+  border-radius: 10px;
+
 }
 
-.navbar-link {
+.nav-login{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.navbar-link,.service-item {
   padding: 12px 25px;
   text-transform: uppercase;
   font-size: var(--fontSize-7);
   font-weight: var(--weight-semiBold);
   color: var(--text-white);
 }
-
 .navbar-link:hover {
   color: var(--text-purple);
 }
 
-.navbar-item {
+.navbar-item,.service-item {
   -webkit-border-before: 1px solid var(--border-space-cadet);
   border-block-start: 1px solid var(--border-space-cadet);
+  text-transform: uppercase;
 }
 
-.navbar-item:last-child {
+.navbar-item:last-child,.service-item:last-child {
   -webkit-border-after: 1px solid var(--border-space-cadet);
   border-block-end: 1px solid var(--border-space-cadet);
 }
+.service{
+  display: none;
+}
+.service.active{
+  display: block;
+}
+
+.arrow-down-icon{
+ margin-left: 10px;
+}
+
+
+
 
 /*-----------------------------------*\
   #FOOTER
@@ -571,26 +625,18 @@ body {
 
 @-webkit-keyframes fadeIn {
   from {
-    -webkit-transform: translateX(60px);
-    transform: translateX(60px);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
   from {
-    -webkit-transform: translateX(60px);
-    transform: translateX(60px);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -711,7 +757,7 @@ body {
   }
 
   .container {
-    max-width: 960px;
+    max-width: 1040px;
   }
 
   .h2 {
@@ -732,7 +778,9 @@ body {
   .navbar-item:last-child {
     border: none;
   }
-
+  .navbar-item{
+    position: relative;
+  }
   .navbar-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -743,5 +791,35 @@ body {
     display: -ms-grid;
     display: grid;
     text-align: center;
+  }
+  .navbar-item:hover > .service{
+    -webkit-animation: fadeIn 1s ease forwards;
+    animation: fadeIn 1s ease forwards;
+    scale: 1;
+    display: block !important;
+    
+  }
+  .service{
+    top: 40px;
+    padding: 20px 20px 10px;
+    min-width: max-content;
+    position: absolute;
+    scale: 0;
+    transition: all .5s ease;
+    transform-origin: 50% -3%;
+    display: none;
+    background-color: var(--bg-oxford-blue);
+  
+  }
+  
+  .service-item{
+    padding: 10px;
+    font-weight: 500;
+  }
+  .service-item:hover{
+    color:var(--bg-purple)
+  }
+  .service.active {
+    background-color: var(--bg-oxford-blue);
   }
 }
