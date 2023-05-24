@@ -43,7 +43,7 @@ let dataMotorbike = {
             id: 2,
             name: "Air Blade 160",
             subName: "Xe tay ga",
-            price: "2500000",
+            price: 2500000,
             img: "https://phattien.com/wp-content/uploads/2020/01/ab.png",
             tag: 1
         },
@@ -51,7 +51,7 @@ let dataMotorbike = {
             id: 3,
             name: "Honda LEAD 125",
             subName: "Xe tay ga",
-            price: "56490000",
+            price: 56490000,
             img: "https://phattien.com/wp-content/uploads/2019/10/lead-550x400.png",
             tag: 1
         },
@@ -59,7 +59,7 @@ let dataMotorbike = {
             id: 4,
             name: "Honda SH125i",
             subName: "Xe tay ga",
-            price: "56490000",
+            price: 56490000,
             img: "https://phattien.com/wp-content/uploads/2019/10/sh125i-xam-den-removebg-preview.png",
             tag: 1
         },
@@ -67,7 +67,7 @@ let dataMotorbike = {
             id: 5,
             name: "SH 125i/160i",
             subName: "Xe tay ga",
-            price: "56490000",
+            price: 56490000,
             img: "https://phattien.com/wp-content/uploads/2019/10/sh160.png",
             tag: 1
         },
@@ -75,7 +75,7 @@ let dataMotorbike = {
             id: 6,
             name: "Honda SH350i",
             subName: "Xe tay ga",
-            price:"56490000",
+            price:56490000,
             img: "https://phattien.com/wp-content/uploads/2019/10/SH350i-ban-dac-biet-bac-den.png",
             tag: 1
         },
@@ -84,7 +84,7 @@ let dataMotorbike = {
             id: 7,
             name: "Honda VARIO 160",
             subName: "Xe tay ga",
-            price: "56490000",
+            price: 56490000,
             img: "https://phattien.com/wp-content/uploads/2022/12/vario-the-thao-xam-den-bac1-e1672364326339-550x400.png",
             tag: 1
         },
@@ -93,7 +93,7 @@ let dataMotorbike = {
             id: 8,
             name: "Sh Mode 125",
             subName: "Xe tay ga",
-            price: "56490000",
+            price: 56490000,
             img: "https://phattien.com/wp-content/uploads/2020/07/gf8B4s14htSXebW5PrFy-1-768x558.png",
             tag: 1
         }
@@ -113,7 +113,7 @@ let dataMotorbike = {
             id: 2,
             name: "Wave ALPHA 110",
             subName: "Xe Số",
-            price: "2500000",
+            price: 2500000,
             img: "https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-dac-biet-den-mo.png",
             tag: 2
         },
@@ -121,7 +121,7 @@ let dataMotorbike = {
             id: 3,
             name: "Wave RSX FI",
             subName: "Xe Số",
-            price: "56490000",
+            price: 56490000,
             img: "https://phattien.com/wp-content/uploads/2019/10/wave-den-phanh-dia.png",
             tag: 2
         },
@@ -129,7 +129,7 @@ let dataMotorbike = {
             id: 4,
             name: "Honda FUTURE",
             subName: "Xe Số",
-            price: "56490000",
+            price: 56490000,
             img: "https://phattien.com/wp-content/uploads/2019/10/Fu-dac-biet-xanh-den.png",
             tag: 2
         },
@@ -137,7 +137,7 @@ let dataMotorbike = {
             id: 5,
             name: "SUPER CUB C125",
             subName: "Xe Số",
-            price:"54490000",
+            price:54490000,
             img: "https://phattien.com/wp-content/uploads/2019/10/20211025-Super-Cub-C125-chi-tiet-xe-ban-tieu-chuan-xanh-trang.png",
             tag: 2
         }
@@ -156,7 +156,7 @@ let dataMotorbike = {
             id: 2,
             name: "Honda WINNER X",
             subName: "Xe Côn Tay",
-            price: "2500000",
+            price: 2500000,
             img: "https://phattien.com/wp-content/uploads/2021/10/11102021-cbr150r-chi-tiet-xe-den-xam.png",
             tag: 3
         },
@@ -164,7 +164,7 @@ let dataMotorbike = {
             id: 3,
             name: "Honda WINNER X",
             subName: "Xe Côn Tay",
-            price: "56490000",
+            price: 56490000,
             img: "https://phattien.com/wp-content/uploads/2019/10/20211224-winner-x-chitietxe-dacbiet-dodenxanh.png",
             tag: 3
         },
@@ -271,43 +271,7 @@ function renderConTay(motorbike, index) {
     </div>`
 }
 
-function addCart(tag, indexData, indexList) {
-    if (tag == 1) {
-        if (listCartData[indexList] == null) {
-            listCartData[indexList] = dataMotorbike.xeTayGa[indexData];
-            listCartData[indexList].quantity = 1;
-            listCartData[indexList].ID__LIST = indexList;
-        }
-    } else if (tag == 2) {
-        if (listCartData[indexList] == null) {
-            listCartData[indexList] = dataMotorbike.xeSo[indexData];
-            listCartData[indexList].quantity = 1;
-            listCartData[indexList].ID__LIST = indexList;
-        }
-    } else if (tag == 3) {
-        if (listCartData[indexList] == null) {
-            listCartData[indexList] = dataMotorbike.xeConTay[indexData];
-            listCartData[indexList].quantity = 1;
-            listCartData[indexList].ID__LIST = indexList;
-        }
-    } 
-    statusAddCart.style.display = 'block';
-    let status = document.createElement('li');
-    status.classList.add('item__status');
-    status.innerHTML = `
-                        <div class="item__status-container">
-                            <h3>THÊM SẢN PHẨM THÀNH CÔNG</h3>
-                            <div class="icon__success">
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                            <div class="item__status-message">
-                                “Bạn đã thêm sản phẩm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i>”
-                            </div>
-                        </div>`
-    listStatus.appendChild(status);
-    removeStatus(status);
-    resetCart();
-}
+
 
 function convert(number) {
     let vnd = number.toLocaleString('vi', { style: 'currency', currency: 'VND' });
@@ -315,5 +279,4 @@ function convert(number) {
     return vnd;
 }
 
-// get data form
 

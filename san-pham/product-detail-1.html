@@ -5,12 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--primary meta tags-->
-    <title>Thông Tin Sản Phẩm</title>
-    <meta name="title" content="Unigine - Epic Games Made For True Gamers!" />
-    <meta
-      name="description"
-      content="This is an esports and gaming html template made by codewithsadee"
-    />
+    <title>Unigine - Chi Tiết sẳn phẩm</title>
+    <meta name="title" content="Unigine - tốc độ vượt rội!" />
 
     <!--favicon-->
     <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml" />
@@ -22,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css" />
 
     <!-- Font-awesome -->
     <link
@@ -177,15 +174,15 @@
                 <span>Phiên bản:</span>
                 <div class="product-option">
                   <input type="radio" name="version" id="version1" checked />
-                  <label class="btn clip-path-3" data-btn for="version1"
+                  <label class="btn clip-path-2" data-btn for="version1"
                     >Đặt biệt</label
                   >
                   <input type="radio" name="version" id="version2" />
-                  <label class="btn clip-path-3" data-btn for="version2"
+                  <label class="btn clip-path-2" data-btn for="version2"
                     >Thể Thao</label
                   >
                   <input type="radio" name="version" id="version3" />
-                  <label class="btn clip-path-3" data-btn for="version3"
+                  <label class="btn clip-path-2" data-btn for="version3"
                     >Tiêu chuẩn</label
                   >
                 </div>
@@ -194,15 +191,15 @@
                 <span>Màu sắc:</span>
                 <div class="product-option">
                   <input type="radio" name="color" id="color1" checked />
-                  <label class="btn clip-path-3" data-btn for="color1"
+                  <label class="btn clip-path-2" data-btn for="color1"
                     >Đen xám</label
                   >
                   <input type="radio" name="color" id="color2" />
-                  <label class="btn clip-path-3" data-btn for="color2"
+                  <label class="btn clip-path-2" data-btn for="color2"
                     >Đỏ</label
                   >
                   <input type="radio" name="color" id="color3" />
-                  <label class="btn clip-path-3" data-btn for="color3"
+                  <label class="btn clip-path-2" data-btn for="color3"
                     >Đen đỏ</label
                   >
                 </div>
@@ -230,9 +227,14 @@
                 </div>
               </div>
             </div>
-
+            <div class="status">
+              <ul class="list__status"></ul>
+            </div>
             <div class="product__buy">
-              <button class="add-to-cart">Thêm giỏ hàng</button>
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-plus cart-plus-icon"></i>Thêm giỏ
+                hàng
+              </button>
               <button class="buy-now">
                 <a href="../payment.html"> Mua ngay</a>
               </button>
@@ -573,7 +575,7 @@
     <!--#FOOTER-->
 
     <footer class="footer">
-      <div class="footer-bottom">
+      <div class="footer-main">
         <div class="container">
           <p class="copyright">
             &copy; 2023 coding.stella All Rights Reserved.

@@ -16,7 +16,7 @@ const animateItems = document.querySelectorAll('.animate-item');
 window.addEventListener("scroll", function () {
     animateItems.forEach(item => {
         const itemTop = item.getBoundingClientRect().top;
-        if (itemTop < window.innerHeight * 0.9) {
+        if (itemTop < window.innerHeight * 0.8) {
             item.classList.add("animate-item-show");
         }
     });

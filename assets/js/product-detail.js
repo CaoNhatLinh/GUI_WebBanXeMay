@@ -28,6 +28,7 @@ tabs.forEach((tab, index) => {
     };
 });
 
+
 // tabs.forEach((tab, index) => {
 //     const pane = panes[index];
 
@@ -80,3 +81,26 @@ minus.addEventListener("click",function(){
     else a=0;
     
 } )
+
+const statusAddCart = $('.status');
+const listStatus = $('.list__status');
+const addCart = $('.add-to-cart');
+
+addCart.addEventListener("click",()=>{
+    statusAddCart.style.display = 'block';
+    let status = document.createElement('li');
+    status.classList.add('item__status');
+    status.innerHTML = `
+                        <div class="item__status-container">
+                            <h3>THÊM SẢN PHẨM THÀNH CÔNG</h3>
+                            <div class="icon__success">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="item__status-message">
+                                “Bạn đã thêm sản phẩm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i>”
+                            </div>
+                        </div>`
+    listStatus.appendChild(status);
+    removeStatus(status);
+    resetCart();
+})

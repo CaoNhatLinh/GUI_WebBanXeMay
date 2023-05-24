@@ -1,5 +1,3 @@
-
-
 :root {
   --bg-purple: #9742ff;
   --bg-purple-alpha-30: hsla(267, 100%, 63%, 0.3);
@@ -37,7 +35,14 @@
     #9841ff 50%,
     transparent 100%
   );
-  --gradient-4:linear-gradient(to left top, #0cd6e9, #00c9ff, #00b2ff, #8187ff, #fb0aff);
+  --gradient-4: linear-gradient(
+    to left top,
+    #0cd6e9,
+    #00c9ff,
+    #00b2ff,
+    #8187ff,
+    #fb0aff
+  );
   /* text color */
   --text-white: hsla(0, 0%, 100%, 1);
   --text-gainsboro: hsla(0, 0%, 87%, 1);
@@ -49,8 +54,14 @@
   --border-purple-alpha-30: hsla(267, 100%, 63%, 0.3);
 
   /* font family */
-  --fontFamily-oxanium: "Oxanium", cursive;
-  --fontFamily-work-sans: FontZin ,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  --fontFamily-oxanium: "Oxanium", cursive, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  --fontFamily-FontZin: FontZin, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-poppins: "Poppins", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-myriadPro: "Myriad Pro", arial, sans-serif;
 
   /* font size */
   --fontSize-1: 3.6rem;
@@ -70,13 +81,14 @@
   --section-spacing: 60px;
 
   --shadow: 0px 2px 5px 0px hsla(0, 0%, 0%, 0.2);
+  --box-shadow: 10px 10px 0px hsla(0, 0%, 0%, 0.2);
 
   --radius-circle: 50%;
   --radius-5: 5px;
   --radius-3: 3px;
 
   --clip-path-1: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  --clip-path-2:  polygon(85% 0, 100% 40%, 100% 100%, 15% 100%, 0 60%, 0% 0%);
+  --clip-path-2: polygon(85% 0, 100% 40%, 100% 100%, 15% 100%, 0 60%, 0% 0%);
   --clip-path-3: polygon(0% 0%, 90% 0, 100% 30%, 100% 100%, 0 100%);
   --clip-path-4: polygon(90% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
   --clip-path-5: polygon(100% 0, 100% 100%, 10% 100%, 0 60%, 0 0);
@@ -160,7 +172,7 @@ html {
 
 body {
   color: var(--text-gainsboro);
-  font-family: var(--fontFamily-oxanium);
+  font-family: var(--font-family-poppins);
   font-size: var(--fontSize-4);
   font-weight: var(--weight-regular);
   line-height: 1.6;
@@ -523,7 +535,6 @@ body {
 }
 
 .navbar.active {
-
   visibility: visible;
   max-width: max-content;
   min-width: 40%;
@@ -531,15 +542,15 @@ body {
   margin-left: auto;
   border-radius: 10px;
   clip-path: var(--clip-path-1);
-
 }
 
-.nav-login{
+.nav-login {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
-.navbar-link,.service-item {
+.navbar-link,
+.service-item {
   padding: 12px 25px;
   text-transform: uppercase;
   font-size: var(--fontSize-7);
@@ -550,29 +561,28 @@ body {
   color: var(--text-purple);
 }
 
-.navbar-item,.service-item {
+.navbar-item,
+.service-item {
   -webkit-border-before: 1px solid var(--border-space-cadet);
   border-block-start: 1px solid var(--border-space-cadet);
   text-transform: uppercase;
 }
 
-.navbar-item:last-child,.service-item:last-child {
+.navbar-item:last-child,
+.service-item:last-child {
   -webkit-border-after: 1px solid var(--border-space-cadet);
   border-block-end: 1px solid var(--border-space-cadet);
 }
-.service{
+.service {
   display: none;
 }
-.service.active{
+.service.active {
   display: block;
 }
 
-.arrow-down-icon{
- margin-left: 10px;
+.arrow-down-icon {
+  margin-left: 10px;
 }
-
-
-
 
 /*-----------------------------------*\
   #FOOTER
@@ -680,6 +690,18 @@ body {
     transition: opacity 1s ease-out, transform 0.6s ease-out,
       -webkit-transform 0.6s ease-out !important;
   }
+  .animate-item.animate-item__bottom {
+    opacity: 0;
+    -webkit-transform: translateY(-50px) !important;
+    -ms-transform: translateY(-50px) !important;
+    transform: translateY(-50px) !important;
+    -webkit-transition: opacity 1s ease-out, -webkit-transform 0.6s ease-out !important;
+    transition: opacity 1s ease-out, -webkit-transform 0.6s ease-out !important;
+    -o-transition: opacity 1s ease-out, transform 0.6s ease-out !important;
+    transition: opacity 1s ease-out, transform 0.6s ease-out !important;
+    transition: opacity 1s ease-out, transform 0.6s ease-out,
+      -webkit-transform 0.6s ease-out !important;
+  }
 
   .animate-item.animate-item-show {
     opacity: 1;
@@ -778,7 +800,7 @@ body {
   .navbar-item:last-child {
     border: none;
   }
-  .navbar-item{
+  .navbar-item {
     position: relative;
   }
   .navbar-list {
@@ -792,32 +814,30 @@ body {
     display: grid;
     text-align: center;
   }
-  .navbar-item:hover > .service{
+  .navbar-item:hover > .service {
     -webkit-animation: fadeIn 1s ease forwards;
     animation: fadeIn 1s ease forwards;
     scale: 1;
     display: block !important;
-    
   }
-  .service{
+  .service {
     top: 40px;
     padding: 20px 20px 10px;
     min-width: max-content;
     position: absolute;
     scale: 0;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     transform-origin: 50% -3%;
     display: none;
     background-color: var(--bg-oxford-blue);
-  
   }
-  
-  .service-item{
+
+  .service-item {
     padding: 10px;
     font-weight: 500;
   }
-  .service-item:hover{
-    color:var(--bg-purple)
+  .service-item:hover {
+    color: var(--bg-purple);
   }
   .service.active {
     background-color: var(--bg-oxford-blue);
