@@ -164,16 +164,16 @@
 
             <div class="form-input">
               <label for="">Họ và tên</label>
-              <input type="text" placeholder="VD: Nguyễn Văn A" />
+              <input type="text" placeholder="VD: Nguyễn Văn A" required/>
             </div>
             <div class="form-contact">
               <div class="form-input">
                 <label for="">Email</label>
-                <input type="email" placeholder="email@example.com" />
+                <input type="email" placeholder="email@example.com" required/>
               </div>
               <div class="form-input">
                 <label for="">Điện thoại</label>
-                <input type="tel" name="" id="" placeholder="0123 456789" />
+                <input type="tel" name="" id="" placeholder="0123 456789" required/>
               </div>
             </div>
             <div class="method">
@@ -321,7 +321,7 @@
               </div>
             </div>
 
-            <div>
+            <div class="showroom">
               <div>Chi nhánh còn hàng</div>
 
               <div class="location">
@@ -388,12 +388,20 @@
 
           <div class="info-details">
             <div class="money">
-              <span>Tạm tính</span>
+              <div>Tạm tính</div>
               <span>73,290,000₫</span>
             </div>
             <div class="money">
-              <span>Phí ship</span>
-              <span></span>
+              <div>Phí ship</div>
+              <span>_</span>
+            </div>
+            <div class="money">
+              <div>Phương thức vận chuyển</div>
+              <span>Giao hàng</span>
+            </div>
+            <div class="money">
+              <div>Phương thức thanh toán</div>
+              <span>_</span>
             </div>
           </div>
 
@@ -403,7 +411,7 @@
           </div>
 
           <div class="order">
-            <button>Đặt hàng</button>
+            <button type="submit">Đặt hàng</button>
           </div>
         </section>
       </div>
