@@ -582,6 +582,11 @@ body {
 
 .arrow-down-icon {
   margin-left: 10px;
+  transform: rotate(-90deg);
+  transition: all 0.5s ease;
+}
+.arrow-down-icon.active {
+  transform: rotate(0deg);
 }
 
 /*-----------------------------------*\
@@ -841,5 +846,9 @@ body {
   }
   .service.active {
     background-color: var(--bg-oxford-blue);
+  }
+  .arrow-down-icon {
+    margin-left: 10px;
+    transform: rotate(0deg);
   }
 }

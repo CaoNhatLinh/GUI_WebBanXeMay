@@ -230,7 +230,10 @@ window.addEventListener("click", ()=> {
 const serviceClose = document.querySelector("#service");
 
 const serviceList = document.querySelector(".service");
-
+const arrow = document.querySelector(".arrow-down-icon");
+serviceClose.addEventListener("click",()=>{
+  arrow.classList.toggle("active");
+})
 serviceClose.addEventListener("click",()=>{
   serviceList.classList.toggle("active");
 })
