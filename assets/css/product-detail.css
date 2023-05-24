@@ -18,7 +18,7 @@
 .status {
   position: fixed;
   top: 80px;
-  left: 30px;
+  right: 30px;
   width: 300px;
   height: 150px;
   display: none;
@@ -28,8 +28,9 @@
   padding: 20px;
   background-color: #fff;
   border-radius: 15px;
-  animation: opacityAnimation 1s alternate-reverse;
+  animation: opacityAnimation 2s alternate-reverse;
   margin-bottom: 20px;
+  background-color: #33293e;
 }
 
 .item__status-container h3 {

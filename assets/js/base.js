@@ -58,9 +58,9 @@ const scrollToTopButton = document.getElementById("scroll-to-top-button");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
-        scrollToTopButton.style.opacity = 1;
+        scrollToTopButton.style.opacity = "1";
     } else {
-        scrollToTopButton.style.opacity = 0;
+        scrollToTopButton.style.opacity = "0";
     }
 });
 
@@ -75,22 +75,13 @@ function smoothScroll(event) {
     });
 }
 
-// const links = document.querySelectorAll("header a");
-// for (let i = 0; i < links.length; i++) {
-//     links[i].addEventListener("click", smoothScroll);
-// }
-
-
 
             
         
 
 
 
-/**
- * MOBILE NAVBAR
- * navbar will show after clicking menu button
- */
+
 
 const navbar = document.querySelector("[data-navbar]");
 const navToggler = document.querySelector("[data-nav-toggler]");
@@ -190,20 +181,43 @@ addEventOnElements(hoverElements, "mouseout", function () {
 });
 
 //sign modal
-
-
 const signUpModal = document.querySelector("#signUp-modal");
 const signInModal = document.querySelector("#signIn-modal");
 
 const btnsignUp = document.querySelector("#signUp");
 const btnsignIn = document.querySelector("#signIn");
+const btnsignUp1 = document.querySelector("#signUp1");
+const btnsignIn1 = document.querySelector("#signIn1");
 btnsignUp.addEventListener("click", ()=> {
   signUpModal.classList.add("active");
 }) 
+
 btnsignIn.addEventListener("click", ()=> {
   signInModal.classList.add("active");
 })
+btnsignUp1.addEventListener("click", ()=> {
+  signUpModal.classList.remove("active");
+  signInModal.classList.add("active");
+}) 
+btnsignIn1.addEventListener("click", ()=> {
+  signUpModal.classList.add("active");
+  signInModal.classList.remove("active");
+}) 
 
+const btnCloselogin = document.querySelectorAll(".login-close");
+
+btnCloselogin.forEach((item,index,array) => {
+    btnCloselogin[index].addEventListener("click",()=>{
+      if(index == 0){
+        signInModal.classList.remove("active");
+      }
+      if(index == 1){
+        signUpModal.classList.remove("active");
+      }
+    
+
+  })
+})
 window.addEventListener("click", ()=> {
   if (window.event.target == signUpModal) {
     signUpModal.classList.remove("active")

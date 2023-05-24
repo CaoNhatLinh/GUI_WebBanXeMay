@@ -101,6 +101,7 @@ addCart.addEventListener("click",()=>{
                             </div>
                         </div>`
     listStatus.appendChild(status);
-    removeStatus(status);
-    resetCart();
+    setTimeout(function(){
+        listStatus.removeChild(status)
+    },2000)
 })

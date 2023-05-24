@@ -4,7 +4,7 @@
   --body-color: #0f0a06;
   --white-color: #fff;
   --container-color: #1a1a1a96;
-  --light-bacco: rgba(76, 217, 90, 0.912);
+  --light-bacco: rgba(73, 148, 223, 0.912);
   --yellow-light: #ffed00;
 
   /* font sizes */
@@ -50,9 +50,12 @@ h2 {
   transition: 0.5s ease;
 }
 
-.input-check:checked ~ h2 {
+#signIn-modal .input-check:checked ~ h2,
+#signUp-modal .input-check:checked ~ h2 {
   color: var(--light-bacco);
-  text-shadow: 0 0 15px var(--light-bacco), 0 0 30px var(--light-bacco);
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .input-box {
@@ -71,9 +74,9 @@ h2 {
   transition: 0.5s ease;
 }
 
-.input-check:checked ~ .input-box .input-line {
+#signIn-modal .input-check:checked ~ .input-box .input-line,
+#signUp-modal .input-check:checked ~ .input-box .input-line {
   background: var(--light-bacco);
-  box-shadow: 0 0 10px var(--light-bacco);
 }
 
 .input-box label {
@@ -83,16 +86,20 @@ h2 {
   transform: translateY(-50%);
   font-size: var(--small-font-size);
   pointer-events: none;
+
   color: var(--white-color);
   transition: 0.5s ease;
 }
 
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
+#signIn-modal .input-box input:focus ~ label,
+#signIn-modal .input-box input:valid ~ label,
+#signUp-modal .input-box input:focus ~ label,
+#signUp-modal .input-box input:valid ~ label {
   top: -5px;
 }
 
-.input-check:checked ~ .input-box label {
+#signIn-modal .input-check:checked ~ .input-box label,
+#signUp-modal .input-check:checked ~ .input-box label {
   color: var(--light-bacco);
   text-shadow: 0 0 10px var(--light-bacco);
 }
@@ -109,7 +116,8 @@ h2 {
   transition: 0.5s ease;
 }
 
-.input-check:checked ~ .input-box input {
+#signIn-modal .input-check:checked ~ .input-box input,
+#signUp-modal .input-check:checked ~ .input-box input {
   color: var(--light-bacco);
   text-shadow: 0 0 5px var(--light-bacco);
 }
@@ -123,7 +131,8 @@ h2 {
   transition: 0.5s;
 }
 
-.input-check:checked ~ .input-box .icon {
+#signIn-modal .input-check:checked ~ .input-box .icon,
+#signUp-modal .input-check:checked ~ .input-box .icon {
   color: var(--light-bacco);
   filter: drop-shadow(0 0 5px --light-bacco);
 }
@@ -137,7 +146,8 @@ h2 {
   transition: 0.5s ease;
 }
 
-.input-check:checked ~ .remember-forgot {
+#signIn-modal .input-check:checked ~ .remember-forgot,
+#signUp-modal .input-check:checked ~ .remember-forgot {
   color: var(--light-bacco);
   text-shadow: 0 0 10px var(--light-bacco);
 }
@@ -146,9 +156,12 @@ h2 {
   accent-color: var(--white-color);
   margin-right: 3px;
   transition: 0.5s ease;
+  width: max-content;
+  display: inline-block;
 }
 
-.input-check:checked ~ .remember-forgot label input {
+#signIn-modal .input-check:checked ~ .remember-forgot label input,
+#signUp-modal .input-check:checked ~ .remember-forgot label input {
   accent-color: var(--light-bacco);
 }
 
@@ -162,7 +175,8 @@ h2 {
   text-decoration: underline;
 }
 
-.input-check:checked ~ .remember-forgot a {
+#signIn-modal .input-check:checked ~ .remember-forgot a,
+#signUp-modal .input-check:checked ~ .remember-forgot a {
   color: var(--light-bacco);
 }
 
@@ -180,8 +194,9 @@ h2 {
   transition: 0.5s ease;
 }
 
-.input-check:checked ~ button {
-  background: var(--light-bacco);
+#signIn-modal .input-check:checked ~ button,
+#signUp-modal .input-check:checked ~ button {
+  background-image: var(--gradient-1);
   box-shadow: 0 0 15px var(--light-bacco);
 }
 
@@ -193,7 +208,8 @@ h2 {
   transition: 0.5s ease;
 }
 
-.input-check:checked ~ .register-link {
+#signIn-modal .input-check:checked ~ .register-link,
+#signUp-modal .input-check:checked ~ .register-link {
   color: var(--light-bacco);
   text-shadow: 0 0 10px var(--light-bacco);
 }
@@ -205,7 +221,8 @@ h2 {
   transition: 0.5s ease;
 }
 
-.input-check:checked ~ .register-link p a {
+#signIn-modal .input-check:checked ~ .register-link p a,
+#signUp-modal .input-check:checked ~ .register-link p a {
   color: var(--light-bacco);
 }
 
@@ -223,7 +240,24 @@ h2 {
   background: var(--light-bacco);
   border-radius: 20px;
 }
+.login-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
 
+.login-close i {
+  color: var(--light-bacco);
+
+  padding: 18px;
+  border-radius: 10px;
+}
 .login-light::before {
   content: "";
   position: absolute;
@@ -242,7 +276,8 @@ h2 {
   transition: 0.5s ease;
 }
 
-.input-check:checked ~ .login-light::before {
+#signIn-modal .input-check:checked ~ .login-light::before,
+#signUp-modal .input-check:checked ~ .login-light::before {
   opacity: 1;
 }
 
@@ -254,6 +289,7 @@ h2 {
   background: #1f1f1f;
   right: -70px;
   border-radius: 10px;
+  display: none;
 }
 
 .toggle::before {
@@ -283,7 +319,8 @@ h2 {
   transition: 0.5s ease;
 }
 
-.input-check:checked ~ .toggle::after {
+#signIn-modal .input-check:checked ~ .toggle::after,
+#signUp-modal .input-check:checked ~ .toggle::after {
   top: 65px;
 }
 
@@ -291,7 +328,7 @@ h2 {
   position: absolute;
   right: -70px;
   z-index: 1;
-  opacity: 0;
+  display: none;
 }
 
 .toggle .text {
@@ -327,4 +364,41 @@ h2 {
   color: var(--light-bacco);
   text-shadow: 0 0 15px var(--light-bacco), 0 0 30px var(--light-bacco),
     0 0 45px var(--light-bacco), 0 0 60px var(--light-bacco);
+}
+
+@media (min-width: 575px) {
+}
+
+@media (min-width: 768px) {
+  .toggle {
+    display: block;
+  }
+  .login-close {
+    position: absolute;
+    background-color: #1f1f1f;
+    top: 150px;
+    right: -70px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: inset 2px 0px 10px rgba(90, 90, 90, 0.566);
+  }
+  .login-close:hover i {
+    cursor: pointer;
+    color: var(--light-bacco);
+    background-color: #1f1f1f;
+    box-shadow: inset 2px 0px 10px rgba(183, 173, 173, 0.566);
+  }
+  .login-close i {
+    color: var(--light-bacco);
+    background-color: #3f3f3f;
+    padding: 18px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 992px) {
 }
