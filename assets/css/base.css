@@ -45,6 +45,7 @@
   );
   /* text color */
   --text-white: hsla(0, 0%, 100%, 1);
+  --text-black: hsl(0, 2%, 12%, 1);
   --text-gainsboro: hsla(0, 0%, 87%, 1);
   --text-champagne-pink: hsla(23, 61%, 86%, 1);
   --text-purple: hsla(267, 100%, 63%, 1);
@@ -589,23 +590,145 @@ body {
   transform: rotate(0deg);
 }
 
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
-.footer-main {
-  -webkit-clip-path: var(--clip-path-9);
-  clip-path: var(--clip-path-9);
-  background-color: var(--bg-oxford-blue-alpha-80);
+.contact {
+  background-color: #471593;
+}
+.contact .container {
+  display: -ms-grid;
+  display: grid;
+  gap: 35px;
 }
 
-.copyright {
-  padding: 30px 20px;
+.contact-text {
+  margin-block: 20px 25px;
 }
 
-/*-----------------------------------*\
-    #BACK TO TOP
-  \*-----------------------------------*/
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.contact .social-link {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bg-purple-alpha-30);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-clip-path: var(--clip-path-8);
+  clip-path: var(--clip-path-8);
+  -webkit-transition: var(--transition-1);
+  -o-transition: var(--transition-1);
+  transition: var(--transition-1);
+}
+
+.contact .social-link:is(:hover, :focus-visible) {
+  background-color: var(--bg-purple);
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.contact-list-title {
+  font-size: var(--fontSize-3);
+  font-weight: var(--weight-semiBold);
+  line-height: 1;
+  position: relative;
+  -webkit-padding-after: 10px;
+  padding-block-end: 10px;
+  -webkit-margin-after: 20px;
+  margin-block-end: 20px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.contact-list-title::after {
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 4px;
+  background-color: var(--bg-purple);
+}
+
+.contact-link {
+  padding-block: 5px;
+  color: var(--text-white);
+  -webkit-transition: var(--transition-1);
+  -o-transition: var(--transition-1);
+  transition: var(--transition-1);
+}
+
+.contact-link:is(:hover, :focus-visible) {
+  color: var(--text-purple);
+}
+
+.contact-item .span {
+  color: var(--text-purple);
+  font-size: var(--fontSize-7);
+  text-transform: uppercase;
+  font-weight: var(--weight-semiBold);
+}
+
+.contact-item:not(:last-child) {
+  -webkit-margin-after: 15px;
+  margin-block-end: 15px;
+}
+
+.input-field {
+  background-color: var(--bg-oxford-blue-alpha-90);
+  color: var(--text-white);
+  font-size: var(--fontSize-5);
+  padding: 18px 12px;
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+  border: 2px solid var(--border-purple-alpha-30);
+  -webkit-margin-after: 15px;
+  margin-block-end: 15px;
+  outline: none;
+}
+
+.input-field::-webkit-input-placeholder {
+  color: var(--text-white);
+}
+
+.input-field::-moz-placeholder {
+  color: var(--text-white);
+}
+
+.input-field:-ms-input-placeholder {
+  color: var(--text-white);
+}
+
+.input-field::-ms-input-placeholder {
+  color: var(--text-white);
+}
+
+.input-field::placeholder {
+  color: var(--text-white);
+}
+.custom-shape-divider-bottom-1685005946 {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1685005946 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1685005946 .shape-fill {
+  fill: #471593;
+}
 
 .back-top-btn {
   position: fixed;
@@ -626,7 +749,9 @@ body {
   transition: var(--transition-1);
   z-index: 4;
 }
-
+.footer {
+  position: relative;
+}
 .back-top-btn.active {
   opacity: 1;
   -webkit-transform: translateY(-20px);
@@ -723,6 +848,10 @@ body {
   .header .logo img {
     width: 160px;
   }
+  .contact .container {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 768px) {
@@ -815,7 +944,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    
   }
 
   .header .btn {
@@ -854,5 +982,8 @@ body {
   .arrow-down-icon {
     margin-left: 10px;
     transform: rotate(0deg);
+  }
+  .contact .container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

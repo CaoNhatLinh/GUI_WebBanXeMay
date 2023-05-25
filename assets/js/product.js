@@ -29,6 +29,9 @@ SecMotorbike.forEach((item, index, arr)=> {
    })
    
 })
+
+
+
 let dataMotorbike = {
     xeTayGa: [
         {

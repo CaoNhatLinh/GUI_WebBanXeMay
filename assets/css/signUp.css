@@ -35,7 +35,7 @@
   transform: translateX(-50%);
   position: relative;
   width: 400px;
-  height: 450px;
+  padding: 30px 0 20px;
   background-color: #1f1f1f;
   border-radius: 20px;
   display: flex;

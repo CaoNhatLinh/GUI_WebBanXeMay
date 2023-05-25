@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.title {
+.product-info .title {
   color: #333;
   padding: 12px 0;
   text-align: center;
@@ -286,6 +286,7 @@
 .details {
   background-color: #fff;
   color: #333;
+  padding-bottom: 200px;
 }
 
 .tabs {

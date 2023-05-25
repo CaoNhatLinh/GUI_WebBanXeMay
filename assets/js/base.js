@@ -184,27 +184,36 @@ addEventOnElements(hoverElements, "mouseout", function () {
 const signUpModal = document.querySelector("#signUp-modal");
 const signInModal = document.querySelector("#signIn-modal");
 
-const btnsignUp = document.querySelector("#signUp");
-const btnsignIn = document.querySelector("#signIn");
-const btnsignUp1 = document.querySelector("#signUp1");
-const btnsignIn1 = document.querySelector("#signIn1");
-btnsignUp.addEventListener("click", ()=> {
-  signUpModal.classList.add("active");
-}) 
+const changesignUp = document.querySelector("#signUp");
+const changesignIn = document.querySelector("#signIn");
 
-btnsignIn.addEventListener("click", ()=> {
-  signInModal.classList.add("active");
-})
-btnsignUp1.addEventListener("click", ()=> {
+changesignUp.addEventListener("click", ()=> {
   signUpModal.classList.remove("active");
   signInModal.classList.add("active");
 }) 
-btnsignIn1.addEventListener("click", ()=> {
+changesignIn.addEventListener("click", ()=> {
   signUpModal.classList.add("active");
   signInModal.classList.remove("active");
 }) 
 
+
+const btnsignIn = document.querySelectorAll(".signIn");
+const btnsignUp = document.querySelectorAll(".signUp");
+btnsignIn.forEach((item,index,array) => {
+  btnsignIn[index].addEventListener("click",()=>{
+    signInModal.classList.add("active");
+  })
+})
+
+btnsignUp.forEach((item,index,array) => {
+  btnsignUp[index].addEventListener("click",()=>{
+    signUpModal.classList.add("active");
+})
+})
+
 const btnCloselogin = document.querySelectorAll(".login-close");
+
+
 
 btnCloselogin.forEach((item,index,array) => {
     btnCloselogin[index].addEventListener("click",()=>{
@@ -214,8 +223,6 @@ btnCloselogin.forEach((item,index,array) => {
       if(index == 1){
         signUpModal.classList.remove("active");
       }
-    
-
   })
 })
 window.addEventListener("click", ()=> {
@@ -230,10 +237,13 @@ window.addEventListener("click", ()=> {
 const serviceClose = document.querySelector("#service");
 
 const serviceList = document.querySelector(".service");
+console.log(serviceClose);
 const arrow = document.querySelector(".arrow-down-icon");
 serviceClose.addEventListener("click",()=>{
+  console.log("a");
   arrow.classList.toggle("active");
 })
 serviceClose.addEventListener("click",()=>{
+  console.log("b");
   serviceList.classList.toggle("active");
 })
