@@ -195,6 +195,10 @@ changesignIn.addEventListener("click", ()=> {
   signUpModal.classList.add("active");
   signInModal.classList.remove("active");
 }) 
+btnsignIn2.addEventListener("click", ()=> {
+  signUpModal.classList.add("active");
+  signInModal.classList.remove("active");
+}) 
 
 
 const btnsignIn = document.querySelectorAll(".signIn");
