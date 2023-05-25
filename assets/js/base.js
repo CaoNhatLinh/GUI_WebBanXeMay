@@ -188,6 +188,7 @@ const btnsignUp = document.querySelector("#signUp");
 const btnsignIn = document.querySelector("#signIn");
 const btnsignUp1 = document.querySelector("#signUp1");
 const btnsignIn1 = document.querySelector("#signIn1");
+const btnsignIn2 = document.querySelector("#signIn2")
 btnsignUp.addEventListener("click", ()=> {
   signUpModal.classList.add("active");
 }) 
@@ -200,6 +201,10 @@ btnsignUp1.addEventListener("click", ()=> {
   signInModal.classList.add("active");
 }) 
 btnsignIn1.addEventListener("click", ()=> {
+  signUpModal.classList.add("active");
+  signInModal.classList.remove("active");
+}) 
+btnsignIn2.addEventListener("click", ()=> {
   signUpModal.classList.add("active");
   signInModal.classList.remove("active");
 }) 
