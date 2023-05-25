@@ -3,15 +3,17 @@
 }
 
 .product-info {
-  background-color: var(--bg-oxford-blue-alpha-70);
   padding-top: 95px;
   width: 100%;
 }
 
-.product-info .title {
+.product-info .title h2 {
   color: #333;
   padding: 12px 0;
   text-align: center;
+  font-family: var(--font-family-myriadPro);
+  font-weight: 600;
+  font-size: 5.2rem;
 }
 /* status */
 

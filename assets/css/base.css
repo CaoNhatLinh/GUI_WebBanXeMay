@@ -912,7 +912,7 @@ body {
   :root {
     --fontSize-2: 4.5rem;
 
-    --section-spacing: 100px;
+    --section-spacing: 40px;
   }
 
   .container {

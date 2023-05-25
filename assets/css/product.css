@@ -2,19 +2,39 @@
   #UPCOMING
 \*-----------------------------------*/
 .upcoming {
-  background-image: url("https://picstatio.com/large/1733b9/sunset-motorcyle-illustraiton-art.jpg");
+  background-image: linear-gradient(34deg, #0e0560, #420550);
+  /* background-image: url("https://picstatio.com/large/1733b9/sunset-motorcyle-illustraiton-art.jpg"); */
   background-size: inherit;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   width: 100vw;
   padding-bottom: 200px;
 }
+.header {
+  background-color: var(--bg-oxford-blue);
+}
+.banner {
+  margin-top: 71px;
+  width: 100%;
+}
+.splide__wrapper {
+  height: 100%;
+}
 
+.splide__slide .img_box {
+  width: 100%;
+  height: 100%;
+}
+.splide__slide .img_box img {
+  width: inherit;
+  height: inherit;
+}
 .all {
   margin-top: 20px;
 }
+
 .sec__header {
   padding: 10px 30px;
   position: relative;
@@ -118,7 +138,9 @@
   -ms-flex-direction: column;
   flex-direction: column;
 }
-
+.product__item:hover {
+  box-shadow: 0px 5px 15px 8px rgba(36, 34, 36, 0.995);
+}
 .product__item a {
   width: 100%;
 }
@@ -263,6 +285,9 @@
 }
 
 @media (min-width: 575px) {
+  .banner {
+    margin-top: 94px;
+  }
 }
 
 @media (min-width: 768px) {

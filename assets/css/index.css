@@ -38,6 +38,7 @@
 
 .news {
   background-image: linear-gradient(#1a113f, #071650, #26355f);
+  padding-bottom: 200px;
 }
 .news .splide__wrapper {
   padding: 50px 15px;
