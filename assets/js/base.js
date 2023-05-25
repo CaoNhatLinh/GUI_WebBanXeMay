@@ -235,6 +235,47 @@ window.addEventListener("click", ()=> {
   }
 }) 
 
+// login 
+
+function signIn(e){
+  e.preventDefault();
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var user = localStorage.getItem(username);
+  var data = JSON.parse(user);
+  if(user == null ){
+    alert("Vui lòng nhập đúng tên đăng nhập và mật khẩu!");
+
+  }
+  else if(username==data.username && password == data.password)
+  {
+    window.location.href="../../admin.html";
+  }
+  else 
+  alert("Vui lòng nhập đúng tên đăng nhập và mật khẩu!");
+
+ 
+}
+function signUp(e){
+  e.preventDefault();
+  const successModal = document.getElementsByClassName("success-modal");
+  const closeSuccessModal = document.getElementsByClassName("success-close");
+
+  var username = document.getElementById("usernameSignUp").value;
+  var password = document.getElementById("passwordSignUp").value;
+  var user = {
+    username : username,
+    password : password,
+  }
+  var json = JSON.stringify(user);
+  localStorage.setItem(username,json);
+  signUpModal.classList.remove("active");
+  successModal[0].classList.add("active");
+  closeSuccessModal[0].addEventListener("click",()=>{
+  successModal[0].classList.remove("active");
+  signInModal.classList.add("active");
+  })
+}
 const serviceClose = document.querySelector("#service");
 
 const serviceList = document.querySelector(".service");
@@ -248,3 +289,4 @@ serviceClose.addEventListener("click",()=>{
   console.log("b");
   serviceList.classList.toggle("active");
 })
+

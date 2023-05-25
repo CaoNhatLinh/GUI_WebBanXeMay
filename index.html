@@ -132,7 +132,7 @@
       <div class="login">
         <div id="signIn-modal">
           <div class="login-container">
-            <form action="#">
+            <form onsubmit="signIn()">
               <input type="checkbox" class="input-check" id="input-check" />
               <label for="input-check" class="toggle">
                 <span class="text off">Off</span>
@@ -145,10 +145,10 @@
               <h2>Login</h2>
               <div class="input-box">
                 <span class="icon">
-                  <ion-icon name="mail"></ion-icon>
+                  <ion-icon name="username"></ion-icon>
                 </span>
-                <input id="email" type="email" required="required" />
-                <label>Email</label>
+                <input id="username" type="text" required="required" />
+                <label>Tên đăng nhập</label>
                 <div class="input-line"></div>
               </div>
 
@@ -180,7 +180,7 @@
         </div>
         <div id="signUp-modal">
           <div class="login-container">
-            <form action="#">
+            <form onsubmit="signUp()">
               <input type="checkbox" class="input-check" id="input-check1" />
               <label for="input-check1" class="toggle">
                 <span class="text off">Off</span>
@@ -193,10 +193,10 @@
               <h2>REGISTER</h2>
               <div class="input-box">
                 <span class="icon">
-                  <ion-icon name="mail"></ion-icon>
+                  <ion-icon name="username"></ion-icon>
                 </span>
-                <input id="emailSignUp" type="email" required="required" />
-                <label>Email</label>
+                <input id="usernameSignUp" type="text" required="required" />
+                <label>Tên đăng nhập</label>
                 <div class="input-line"></div>
               </div>
 
@@ -205,7 +205,7 @@
                   <ion-icon name="lock-closed"></ion-icon>
                 </span>
                 <input
-                  id="password-SignUp"
+                  id="passwordSignUp"
                   type="password"
                   required="required"
                 />
@@ -233,6 +233,15 @@
               </div>
             </form>
           </div>
+        </div>
+        <div class="success-modal">
+          <div class="success-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="success-icon">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <span class="success-title">Đăng ký thành công</span>
         </div>
       </div>
 
@@ -587,8 +596,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
     <script>
       var splide = new Splide(".splide", {
