@@ -23,7 +23,7 @@
   position: fixed;
   z-index: 9999;
   background-color: #0000006c;
-  display: none;
+  /* display: none; */
 }
 #signUp-modal.active,
 #signIn-modal.active {
@@ -367,8 +367,18 @@ h2 {
 }
 /* modal success*/
 .success-modal {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  background-color: #0000006c;
+  display: block;
+}
+.card-success {
+  display: flex;
   position: absolute;
-  z-index: 99999;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -378,14 +388,11 @@ h2 {
   height: 180px;
   padding: 0 0 30px;
   border-radius: 10px;
-  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.success-modal.active {
-  display: flex;
-}
+
 .success-modal .success-close {
   font-size: 2rem;
   color: #0d150e;

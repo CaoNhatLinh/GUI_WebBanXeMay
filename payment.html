@@ -31,8 +31,10 @@
 
     <!--custom css link-->
     <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/payment.css" />
+    <link rel="stylesheet" href="./assets/css/admin.css" />
     <link rel="stylesheet" href="./assets/css/signUp.css" />
+
+    <link rel="stylesheet" href="./assets/css/payment.css" />
 
     <!--preload images-->
     <link
@@ -45,7 +47,7 @@
     <!--#HEADER-->
     <header class="header active" data-header>
       <div class="container">
-        <a href="./index.html" class="logo">
+        <a href="#" class="logo">
           <img
             src="./assets/images/logo.svg"
             width="110"
@@ -57,7 +59,7 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="./index.html" class="navbar-link" data-nav-link>home</a>
+              <a href="./admin.html" class="navbar-link" data-nav-link>home</a>
             </li>
 
             <li class="navbar-item">
@@ -84,13 +86,67 @@
             </li>
           </ul>
         </nav>
-        <div class="nav-login">
-          <a href="#!" class="btn clip-path-3 bg-btn signIn" data-btn
-            >Đăng Nhập</a
-          >
-          <a href="#!" class="btn clip-path-6 bg-btn signUp" data-btn
-            >Đăng Ký</a
-          >
+        <div class="nav-users">
+          <div class="header__user">
+            <a href="" class="header__user-info">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <div class="header__user--show header__box-show">
+              <ul class="header__user-list list">
+                <li
+                  class="header__user-item border-top border-bottom list-item--hover"
+                >
+                  <a href="" class="header__user-item-link">
+                    Tài khoản của tôi
+                  </a>
+                </li>
+                <li class="header__user-item list-item--hover">
+                  <a href="" class="header__user-item-link"> Đơn mua </a>
+                </li>
+                <li class="header__user-item list-item--hover">
+                  <a href="" class="header__user-item-link"> Đăng xuất </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__cart">
+            <div class="header__cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div class="header__cart-badge">3</div>
+            </div>
+
+            <!--  no cart class: header__cart-show--no-cart -->
+            <div class="header__cart--show header__box-show">
+              <div class="no-cart">
+                <div class="no-cart-img"></div>
+                <span class="no-cart-text">Không có sản phẩm nào</span>
+              </div>
+              <div class="header-heading-text">
+                <h3>Danh sách sản phầm</h3>
+              </div>
+              <ul class="header__cart-list list">
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2022/12/vario-the-thao-xam-den-bac1-e1672364326339-550x400.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Honda VARIO 160</div>
+
+                      <div class="price_value">56490000₫</div>
+                    </div>
+                  </a>
+                </li>
+
+                <button class="header__cart-btn btn clip-path-10 bg-btn">
+                  Xem giỏ hàng
+                </button>
+              </ul>
+            </div>
+          </div>
         </div>
         <button
           class="nav-toggle-btn"
@@ -105,105 +161,6 @@
     </header>
 
     <main>
-      <div class="login">
-        <div id="signIn-modal">
-          <div class="login-container">
-            <form action="#">
-              <input type="checkbox" class="input-check" id="input-check" />
-              <label for="input-check" class="toggle">
-                <span class="text off">Off</span>
-                <span class="text on">On</span>
-              </label>
-              <div class="login-close">
-                <i class="fa-solid fa-xmark"></i>
-              </div>
-              <div class="login-light"></div>
-              <h2>Login</h2>
-              <div class="input-box">
-                <span class="icon">
-                  <ion-icon name="mail"></ion-icon>
-                </span>
-                <input type="email" required="required" />
-                <label>Email</label>
-                <div class="input-line"></div>
-              </div>
-
-              <div class="input-box">
-                <span class="icon">
-                  <ion-icon name="lock-closed"></ion-icon>
-                </span>
-                <input type="password" required="required" />
-                <label>Password</label>
-                <div class="input-line"></div>
-              </div>
-
-              <div class="remember-forgot">
-                <label>
-                  <input type="checkbox" />
-                  Nhớ đăng nhập
-                </label>
-                <a href="#">Quên Mật Khẩu?</a>
-              </div>
-              <button type="submit">Đăng nhập</button>
-              <div class="register-link">
-                <p>
-                  Bạn chưa có tài khoảng?
-                  <a href="#!" id="signIn">Đăng ký</a>
-                </p>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div id="signUp-modal">
-          <div class="login-container">
-            <form action="#">
-              <input type="checkbox" class="input-check" id="input-check1" />
-              <label for="input-check1" class="toggle">
-                <span class="text off">Off</span>
-                <span class="text on">On</span>
-              </label>
-              <div class="login-close">
-                <i class="fa-solid fa-xmark"></i>
-              </div>
-              <div class="login-light"></div>
-              <h2>REGISTER</h2>
-              <div class="input-box">
-                <span class="icon">
-                  <ion-icon name="mail"></ion-icon>
-                </span>
-                <input type="email" required="required" />
-                <label>Email</label>
-                <div class="input-line"></div>
-              </div>
-
-              <div class="input-box">
-                <span class="icon">
-                  <ion-icon name="lock-closed"></ion-icon>
-                </span>
-                <input type="password" required="required" />
-                <label>Password</label>
-                <div class="input-line"></div>
-              </div>
-              <div class="input-box">
-                <span class="icon">
-                  <ion-icon name="lock-closed"></ion-icon>
-                </span>
-                <input type="password" required="required" />
-                <label>Enter the Password</label>
-                <div class="input-line"></div>
-              </div>
-              <button type="submit">Đăng ký</button>
-              <div class="register-link">
-                <p>
-                  đã có tài khoản
-                  <a id="signUp" href="#">đăng nhập</a>
-                </p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
       <div class="general-container">
         <section class="container-form">
           <form action="">
