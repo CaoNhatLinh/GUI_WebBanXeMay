@@ -73,6 +73,12 @@
 .delivery-method:has(input:checked) + .delivery {
   display: block;
 }
+.showroom {
+  display: none;
+}
+.method:has(.delivery-method #delivery-2:checked) + .showroom {
+  display: block;
+}
 .delivery-method:first-child {
   border-top: none;
   box-shadow: 0 0 0 1px #d9d9d9;

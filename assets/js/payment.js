@@ -7,8 +7,7 @@ var nameMethod = $$('.money span')
 //TODO: Lựa chọn tỉnh/ thành phố để tính phí vận chuyển (mặc định)
 var addressList = $$('.address-select select')
 
-$('.receive').style.display = 'none'
-$('.showroom').style.display = 'none'
+
 
 var transportFee = 0;
 var temp;
