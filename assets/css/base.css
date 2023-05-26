@@ -252,7 +252,6 @@ body {
 
 .btn {
   position: relative;
-
   color: var(--text-white);
   font-size: var(--fontSize-6);
   font-weight: var(--weight-semiBold);

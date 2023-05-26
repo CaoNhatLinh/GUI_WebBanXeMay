@@ -23,7 +23,7 @@
   position: fixed;
   z-index: 9999;
   background-color: #0000006c;
-  display: none;
+  /* display: none; */
 }
 #signUp-modal.active,
 #signIn-modal.active {
@@ -365,7 +365,60 @@ h2 {
   text-shadow: 0 0 15px var(--light-bacco), 0 0 30px var(--light-bacco),
     0 0 45px var(--light-bacco), 0 0 60px var(--light-bacco);
 }
+/* modal success*/
+.success-modal {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  background-color: #0000006c;
+  display: block;
+}
+.card-success {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0px 2px 10px 5px rgba(1, 1, 1, 0.479);
+  width: 250px;
+  height: 180px;
+  padding: 0 0 30px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.success-modal .success-close {
+  font-size: 2rem;
+  color: #0d150e;
+  margin-left: auto;
+}
+.success-modal .success-close i {
+  display: inline-block;
+  padding: 10px;
+  font-size: 2rem;
+  color: #0d150e;
+  margin-left: auto;
+}
+.success-modal .success-close:hover i {
+  color: #8637f5;
+}
+.success-modal .success-icon i {
+  font-size: 4rem;
+  color: #07be16;
+}
+.success-modal .success-title {
+  margin-top: 18px;
+  font-size: 2.6rem;
+  color: var(--text-black);
+  font-weight: 600;
+  font-family: var(--font-family-myriadPro);
+}
 @media (min-width: 575px) {
 }
 
