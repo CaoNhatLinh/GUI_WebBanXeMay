@@ -45,7 +45,7 @@
     <!--#HEADER-->
     <header class="header active" data-header>
       <div class="container">
-        <a href="./index.html" class="logo">
+        <a href="#" class="logo">
           <img
             src="./assets/images/logo.svg"
             width="110"
@@ -85,10 +85,10 @@
           </ul>
         </nav>
         <div class="nav-login">
-          <a href="#!" class="btn clip-path-3 bg-btn signIn" data-btn
+          <a href="#!" class="btn clip-path-3 bg-btn" id="signIn" data-btn
             >Đăng Nhập</a
           >
-          <a href="#!" class="btn clip-path-6 bg-btn signUp" data-btn
+          <a href="#!" class="btn clip-path-6 bg-btn" id="signUp" data-btn
             >Đăng Ký</a
           >
         </div>
@@ -147,8 +147,7 @@
               <button type="submit">Đăng nhập</button>
               <div class="register-link">
                 <p>
-                  Bạn chưa có tài khoảng?
-                  <a href="#!" id="signIn">Đăng ký</a>
+                  Bạn chưa có tài khoảng? <a href="#!" id="signIn1">Đăng ký</a>
                 </p>
               </div>
             </form>
@@ -194,10 +193,7 @@
               </div>
               <button type="submit">Đăng ký</button>
               <div class="register-link">
-                <p>
-                  đã có tài khoản
-                  <a id="signUp" href="#">đăng nhập</a>
-                </p>
+                <p>đã có tài khoản <a id="signUp1" href="#">đăng nhập</a></p>
               </div>
             </form>
           </div>
@@ -210,27 +206,21 @@
             <div class="form-title">Thông tin thanh toán</div>
             <div class="form-warning">
               Bạn đã có tài khoản?
-              <a class="signIn" href="#!">Đăng nhập</a>
+              <a href="#!" id="signIn2">Đăng nhập</a>
             </div>
 
             <div class="form-input">
               <label for="">Họ và tên</label>
-              <input type="text" placeholder="VD: Nguyễn Văn A" required />
+              <input type="text" placeholder="VD: Nguyễn Văn A" required/>
             </div>
             <div class="form-contact">
               <div class="form-input">
                 <label for="">Email</label>
-                <input type="email" placeholder="email@example.com" required />
+                <input type="email" placeholder="email@example.com" required/>
               </div>
               <div class="form-input">
                 <label for="">Điện thoại</label>
-                <input
-                  type="tel"
-                  name=""
-                  id=""
-                  placeholder="0123 456789"
-                  required
-                />
+                <input type="tel" name="" id="" placeholder="0123 456789" required/>
               </div>
             </div>
             <div class="method">
@@ -240,7 +230,7 @@
                   class="input-radio"
                   name="delivery"
                   id=""
-                  checked
+                  
                 />
                 <label for="">Giao hàng</label>
               </div>
@@ -321,28 +311,28 @@
                     <label for="">Quận/Huyện</label>
                     <select name="" id="">
                       <option value="null">Chọn Quận/Huyện</option>
-                      <option value="">Huyện Bình Chánh</option>
-                      <option value="">Huyện Cần Giờ</option>
-                      <option value="">Huyện Củ Chi</option>
-                      <option value="">Huyện Hóc Môn</option>
-                      <option value="">Huyện Nhà Bè</option>
-                      <option value="">Quận 1</option>
-                      <option value="">Quận 10</option>
-                      <option value="">Quận 11</option>
-                      <option value="">Quận 3</option>
-                      <option value="">Quận 12</option>
-                      <option value="">Quận 4</option>
-                      <option value="">Quận 5</option>
-                      <option value="">Quận 6</option>
-                      <option value="">Quận 7</option>
-                      <option value="">Quận 8</option>
-                      <option value="">Quận Bình Tân</option>
-                      <option value="">Quận Bình Thạnh</option>
-                      <option value="">Quận Phú Nhuận</option>
-                      <option value="">Quận Gò Vấp</option>
-                      <option value="">Quận Tân Bình</option>
-                      <option value="">Quận Tân Phú</option>
-                      <option value="">Thành phố Thủ Đức</option>
+                      <option value="BinhChanh">Huyện Bình Chánh</option>
+                      <option value="CanGio">Huyện Cần Giờ</option>
+                      <option value="CuChi">Huyện Củ Chi</option>
+                      <option value="HocMon">Huyện Hóc Môn</option>
+                      <option value="NhaBe">Huyện Nhà Bè</option>
+                      <option value="1">Quận 1</option>
+                      <option value="10">Quận 10</option>
+                      <option value="11">Quận 11</option>
+                      <option value="3">Quận 3</option>
+                      <option value="12">Quận 12</option>
+                      <option value="4">Quận 4</option>
+                      <option value="5">Quận 5</option>
+                      <option value="6">Quận 6</option>
+                      <option value="7">Quận 7</option>
+                      <option value="8">Quận 8</option>
+                      <option value="BinhTan">Quận Bình Tân</option>
+                      <option value="BinhThanh">Quận Bình Thạnh</option>
+                      <option value="PhuNhuan">Quận Phú Nhuận</option>
+                      <option value="GoVap">Quận Gò Vấp</option>
+                      <option value="TanBinh">Quận Tân Bình</option>
+                      <option value="TanPhu">Quận Tân Phú</option>
+                      <option value="ThuDuc">Thành phố Thủ Đức</option>
                     </select>
                   </div>
                 </div>
@@ -451,11 +441,13 @@
               src="https://phattien.com/wp-content/uploads/2021/10/cbr150r-den-xam.png"
               alt="CBR150R"
             />
+            <div class="payment-info__quantily">1</div>
+
             <div>
               <span>Honda CBR150R</span>
               <span>Phiên Bản Đặt Biệt / Đen Xám</span>
             </div>
-            <span>73,290,000₫</span>
+            <span class="price">73,290,000₫</span>
           </div>
 
           <div class="voucher">
@@ -484,7 +476,7 @@
 
           <div class="total">
             <span>Tổng tiền</span>
-            <div class="number">VND<span>73,290,000</span>₫</div>
+            <div class="number">VND<span></span>₫</div>
           </div>
 
           <div class="order">
@@ -621,6 +613,8 @@
         </div>
       </article>
     </footer>
+    
+
     <!-- 
     - #BACK TO TOP
   -->
@@ -635,6 +629,17 @@
     </a>
 
     <div class="cursor" data-cursor></div>
+    <!-- 
+    - ionicon link
+    -->
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
     <script src="./assets/js/base.js"></script>
 
