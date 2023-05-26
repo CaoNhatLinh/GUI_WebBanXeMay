@@ -166,8 +166,7 @@
 
 .payment-info .payment-info__quantily {
   position: absolute;
-  content: "";
-  top: 10px;
+  top: 12px;
   left: 85px;
   border-radius: 50%;
   background-color: #a3a3a3;
