@@ -70,7 +70,9 @@
   box-shadow: 0 0 0 1px #d9d9d9;
   padding: 4px 0;
 }
-
+.delivery-method:has(input:checked) + .delivery {
+  display: block;
+}
 .delivery-method:first-child {
   border-top: none;
   box-shadow: 0 0 0 1px #d9d9d9;

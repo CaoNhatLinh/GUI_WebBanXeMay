@@ -36,39 +36,39 @@ for(var i = 0; i < addressList.length; i++){
 var deliveryMethodList = $$('.delivery-method')
 
 // Phương thức giao hàng
-deliveryMethodList[0].onchange = function(e){
-    console.log("a");
-    deliveryMethodList[0].querySelector('input[type="radio"]').checked = true;
-    deliveryMethodList[1].querySelector('input[type="radio"]').checked = false;
+// deliveryMethodList[0].onchange = function(e){
+//     console.log("a");
+//     deliveryMethodList[0].querySelector('input[type="radio"]').checked = true;
+//     deliveryMethodList[1].querySelector('input[type="radio"]').checked = false;
 
-    if(e.target.checked == true){
-        $('.receive').style.display = 'none'
-        $('.showroom').style.display = 'none'
-        $('.delivery').style.display = 'block'
-        transportFee = temp
-        nameMethod[1].innerHTML = transportFee.toLocaleString() + '₫'
-        nameMethod[2].innerHTML = this.querySelector('label').innerHTML;
-        sum.innerHTML = tinhTong().toLocaleString()
-    }
-}
+//     if(e.target.checked == true){
+//         $('.receive').style.display = 'none'
+//         $('.showroom').style.display = 'none'
+//         $('.delivery').style.display = 'block'
+//         transportFee = temp
+//         nameMethod[1].innerHTML = transportFee.toLocaleString() + '₫'
+//         nameMethod[2].innerHTML = this.querySelector('label').innerHTML;
+//         sum.innerHTML = tinhTong().toLocaleString()
+//     }
+// }
 
 //Phương thức nhận tại cửa hàng
-deliveryMethodList[1].onchange = function(e){
-    console.log("a");
+// deliveryMethodList[1].onchange = function(e){
+//     console.log("a");
 
-    deliveryMethodList[1].querySelector('input[type="radio"]').checked = true;
-    deliveryMethodList[0].querySelector('input[type="radio"]').checked = false;
-    if(e.target.checked == true){
-        temp = transportFee
-        transportFee = 0
-        $('.receive').style.display = 'flex'
-        $('.showroom').style.display = 'block'
-        $('.delivery').style.display = 'none'
-        nameMethod[1].innerHTML = transportFee.toLocaleString() + '₫';
-        nameMethod[2].innerHTML = this.querySelector('label').innerHTML
-        sum.innerHTML = tinhTong().toLocaleString()
-    }
-}
+//     deliveryMethodList[1].querySelector('input[type="radio"]').checked = true;
+//     deliveryMethodList[0].querySelector('input[type="radio"]').checked = false;
+//     if(e.target.checked == true){
+//         temp = transportFee
+//         transportFee = 0
+//         $('.receive').style.display = 'flex'
+//         $('.showroom').style.display = 'block'
+//         $('.delivery').style.display = 'none'
+//         nameMethod[1].innerHTML = transportFee.toLocaleString() + '₫';
+//         nameMethod[2].innerHTML = this.querySelector('label').innerHTML
+//         sum.innerHTML = tinhTong().toLocaleString()
+//     }
+// }
 
 //TODO: Phương thức thanh toán
 var payMethod = $$('.pay-method')
