@@ -197,6 +197,7 @@
                   class="input-radio"
                   name="delivery"
                   id="delivery-1"
+                  checked
                 />
                 <label for="delivery-1">Giao hàng</label>
               </div>
@@ -314,22 +315,24 @@
                 />
                 <label for="delivery-2">Nhận tại cửa hàng</label>
               </div>
-              <div class="receive address">
-                <div class="address-select">
-                  <label for="">Tỉnh</label>
-                  <select name="" id="">
-                    <option value="null">Chọn tỉnh thành</option>
-                    <option value="HCM">Thành phố Hồ Chí Minh</option>
-                  </select>
-                </div>
-                <div class="address-select">
-                  <label for="">Quận/Huyện</label>
-                  <select name="" id="">
-                    <option value="null">Chọn Quận/Huyện</option>
-                    <option value="2">Quận 2</option>
-                    <option value="12">Quận 12</option>
-                    <option value="ThuDuc">Thành phố Thủ Đức</option>
-                  </select>
+              <div class="delivery">
+                <div class="receive address">
+                  <div class="address-select">
+                    <label for="">Tỉnh</label>
+                    <select name="" id="">
+                      <option value="null">Chọn tỉnh thành</option>
+                      <option value="HCM">Thành phố Hồ Chí Minh</option>
+                    </select>
+                  </div>
+                  <div class="address-select">
+                    <label for="">Quận/Huyện</label>
+                    <select name="" id="">
+                      <option value="null">Chọn Quận/Huyện</option>
+                      <option value="2">Quận 2</option>
+                      <option value="12">Quận 12</option>
+                      <option value="ThuDuc">Thành phố Thủ Đức</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
@@ -380,24 +383,21 @@
                   type="radio"
                   class="input-radio"
                   name="pay-method"
-                  id=""
+                  id="money-transfer"
                 />
-                <span>Chuyển khoản qua ngân hàng</span>
+                <label for="money-transfer">Chuyển khoản qua ngân hàng</label>
               </div>
               <div class="delivery-method pay-method">
                 <input
                   type="radio"
                   class="input-radio"
                   name="pay-method"
-                  id=""
+                  id="money-payDown"
                 />
-                <span>Tiền mặt</span>
+                <label for="money-payDown">Tiền mặt</label>
               </div>
             </div>
-
-            <div class="cart">
-              <a href="">Giỏ hàng</a>
-            </div>
+            <div class="cart btn bg-btn clip-path-10">Giỏ hàng</div>
           </form>
         </section>
 
@@ -443,10 +443,7 @@
             <span>Tổng tiền</span>
             <div class="number">VND<span>73,290,000</span>₫</div>
           </div>
-
-          <div class="order">
-            <button type="submit">Đặt hàng</button>
-          </div>
+          <button type="submit" class="order">Đặt hàng</button>
         </section>
       </div>
     </main>
