@@ -135,11 +135,8 @@
 }
 
 .cart {
-  margin: 10px 12px;
-  width: 25%;
-  box-shadow: 0 0 0 1px #00f;
-  border-radius: 5px;
-  background-color: #435dee;
+  font-size: 1.8rem;
+  margin: 20px 10px 12px 10px;
 }
 
 .cart a:hover {
@@ -197,13 +194,19 @@
   max-width: 70%;
   padding: 10px;
   border-radius: 10px;
+  
 }
-
+.voucher input:valid:not(:placeholder-shown) + button {
+  background-color: #e21717;
+  border: 1px solid #0c0c36;
+  color: #fff;
+}
 .voucher button {
   width: 20%;
   padding: 10px;
   box-shadow: 0 0 0 1px #d9d9d9;
   border-radius: 10px;
+  font-weight: 600;
 }
 
 .info-details {
@@ -230,20 +233,25 @@
 .order {
   margin: 0 auto;
   width: fit-content;
-  /* padding: 5px 20px; */
-  border-radius: 8px;
-  box-shadow: 0 0 0 1px #00f;
-  background-color: #435dee;
+  padding: 17px 40px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(14, 73, 184);
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: rgb(8, 48, 122) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
 }
 
-.order button {
-  padding: 5px 25px;
-  border-radius: 8px;
-  color: #fff;
+.order:hover {
+  box-shadow: rgb(26, 70, 153) 0px 7px 0px 0px;
 }
 
-.order button:hover {
-  background-color: #fff;
-  color: #333;
-  border-radius: 8px;
+.order:active {
+  background-color: rgb(18, 70, 166);
+  /*50, 168, 80*/
+  box-shadow: rgb(15, 56, 133) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
 }
