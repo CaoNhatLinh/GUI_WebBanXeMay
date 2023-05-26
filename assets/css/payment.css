@@ -235,12 +235,12 @@
   padding: 17px 40px;
   border-radius: 10px;
   border: 0;
-  background-color: rgb(14, 73, 184);
+  background-color: #0e49b8;
   letter-spacing: 1.5px;
   font-size: 15px;
   transition: all 0.3s ease;
-  box-shadow: rgb(8, 48, 122) 0px 10px 0px 0px;
-  color: hsl(0, 0%, 100%);
+  box-shadow: #08307a 0px 10px 0px 0px;
+  color: #fff;
 }
 
 .order:hover {
@@ -248,9 +248,16 @@
 }
 
 .order:active {
-  background-color: rgb(18, 70, 166);
+  background-color: #1246a6;
   /*50, 168, 80*/
-  box-shadow: rgb(15, 56, 133) 0px 0px 0px 0px;
+  box-shadow: #0f3885 0px 0px 0px 0px;
   transform: translateY(5px);
   transition: 200ms;
 }
+
+@media only screen and (min-width:1440px){
+  .general-container{
+    padding: 0 15%;
+  }
+}
+
