@@ -35,23 +35,11 @@ for(var i = 0; i < addressList.length; i++){
 // TODO: Lựa chọn phương thức vận chuyển
 var deliveryMethodList = $$('.delivery-method')
 
-var deliveryMethod = $('.delivery-method')
-
-deliveryMethodList[0].addEventListener('click', function(){
-    deliveryMethodList[0].querySelector('input[type="radio"]').setAttribute('checked', '');
-    deliveryMethodList[1].querySelector('input[type="radio"]').removeAttribute('checked');
-
-})
-deliveryMethodList[1].addEventListener('click', function(){
-    deliveryMethodList[1].querySelector('input[type="radio"]').setAttribute('checked', '');
-    deliveryMethodList[0].querySelector('input[type="radio"]').removeAttribute('checked');
-})
-
-//Phương thức giao hàng
+// Phương thức giao hàng
 deliveryMethodList[0].onchange = function(e){
-
-    deliveryMethodList[0].querySelector('input[type="radio"]').setAttribute('checked', '');
-    deliveryMethodList[1].querySelector('input[type="radio"]').removeAttribute('checked');
+    console.log("a");
+    deliveryMethodList[0].querySelector('input[type="radio"]').checked = true;
+    deliveryMethodList[1].querySelector('input[type="radio"]').checked = false;
 
     if(e.target.checked == true){
         $('.receive').style.display = 'none'
@@ -66,17 +54,17 @@ deliveryMethodList[0].onchange = function(e){
 
 //Phương thức nhận tại cửa hàng
 deliveryMethodList[1].onchange = function(e){
+    console.log("a");
 
-    deliveryMethodList[1].querySelector('input[type="radio"]').setAttribute('checked', '');
-    deliveryMethodList[0].querySelector('input[type="radio"]').removeAttribute('checked');
-
+    deliveryMethodList[1].querySelector('input[type="radio"]').checked = true;
+    deliveryMethodList[0].querySelector('input[type="radio"]').checked = false;
     if(e.target.checked == true){
         temp = transportFee
         transportFee = 0
         $('.receive').style.display = 'flex'
         $('.showroom').style.display = 'block'
         $('.delivery').style.display = 'none'
-        nameMethod[1].innerHTML = transportFee.toLocaleString() + '₫'
+        nameMethod[1].innerHTML = transportFee.toLocaleString() + '₫';
         nameMethod[2].innerHTML = this.querySelector('label').innerHTML
         sum.innerHTML = tinhTong().toLocaleString()
     }

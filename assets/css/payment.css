@@ -78,11 +78,15 @@
 
 .delivery-method label {
   margin-top: 2px;
+  width: 100%;
 }
 
 .input-radio {
   max-width: 13px;
   margin: 8px;
+}
+.delivery {
+  display: none;
 }
 
 .delivery input {
