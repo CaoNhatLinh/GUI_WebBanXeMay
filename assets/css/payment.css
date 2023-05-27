@@ -9,7 +9,7 @@
   padding: 0 50px;
   margin-top: 95px;
   font-family: var(--font-family-myriadPro);
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .container-payment,
@@ -159,6 +159,9 @@
   display: flex;
   justify-content: space-around;
   padding: 20px 0;
+}
+
+.image-quantily{
   position: relative;
 }
 
@@ -169,10 +172,10 @@
   box-shadow: 0 0 0 1px #d9d9d9;
 }
 
-.payment-info .payment-info__quantily {
+.payment-info .payment-info__quantily{
   position: absolute;
-  top: 12px;
-  left: 85px;
+  top: -10px;
+  left: 60px;
   border-radius: 50%;
   background-color: #a3a3a3;
   color: #fff;
@@ -255,9 +258,216 @@
   transition: 200ms;
 }
 
-@media only screen and (min-width:1440px){
+@media only screen and (min-width:2000px){
   .general-container{
-    padding: 0 15%;
+    padding: 0 13%;
+  }
+  .container-payment,
+  .container-form {
+    width: 50%;
   }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1300px){
+  .general-container{
+    padding: 20px 20px 100px;
+  }
+  .container-payment,
+  .container-form {
+    width: 50%;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 890px) and (max-width: 1024px){
+  .general-container{
+    padding: 0 0 100px;
+  }
+
+  .container-payment,
+  .container-form {
+    padding: 0 20px;
+  }
+
+  .address{
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .address-select{
+    justify-content: space-around;
+  }
+
+  .info-details,
+  .location{
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 890px){
+  .general-container{
+    padding: 0 0 100px;
+  }
+
+  .container-payment,
+  .container-form {
+    padding: 0 8px;
+  }
+
+  .payment-info span,
+  .info-details,
+  .location{
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px){
+  .general-container{
+    flex-direction: column;
+    padding: 0 5% 110px;
+  }
+
+  .container-payment,
+  .container-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container-form{
+    border-bottom: 0.5px solid #a9a9a9;
+    border-right: 0px;
+  }
+
+  .address{
+    justify-content: space-around;
+  }
+
+  .address-select{
+    margin: 0;
+  }
+  
+  .cart{
+    margin: 12px auto;
+  }
+
+  .info-details,
+  .location{
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px){
+  .general-container{
+    flex-direction: column;
+    padding: 0 3% 110px;
+  }
+
+  .container-payment,
+  .container-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container-form{
+    border-bottom: 0.5px solid #a9a9a9;
+    border-right: 0px;
+  }
+
+  .form-input{
+    padding: 0;
+  }
+
+  .form-contact .form-input{
+    padding: 0 6px;
+  }
+
+  .cart{
+    margin: 12px auto;
+  }
+
+  .method{
+    margin: 2px 0 0 0;
+  }
+
+  .pay-method{
+    margin: 0;
+  }
+
+  .address{
+    justify-content: space-around;
+  }
+
+  .address-select{
+    margin: 0;
+  }
+
+  .payment-info span,
+  .info-details,
+  .location{
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen  and (max-width: 375px){
+  .general-container{
+    flex-direction: column;
+    padding: 0 2% 110px;
+  }
+
+  .container-payment,
+  .container-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container-form{
+    border-bottom: 0.5px solid #a9a9a9;
+    border-right: 0px;
+  }
+
+  .form-input{
+    padding: 0;
+  }
+
+  .cart{
+    margin: 12px auto;
+  }
+
+  .form-contact .form-input{
+    padding: 0 6px;
+  }
+
+  .method{
+    margin: 2px 0 0 0;
+  }
+
+  .pay-method{
+    margin: 0;
+  }
+
+  .address{
+    justify-content: space-around;
+  }
+
+  .address-select{
+    margin: 0;
+  }
+
+  .voucher{
+    padding: 6px 0;
+  }
+
+  .voucher button{
+    width: fit-content;
+  }
+
+  .payment-info span,
+  .info-details,
+  .location{
+    font-size: 1.3rem;
+  }
+
+  .container-payment button{
+    padding: 10px 20px;
+  }
+}
