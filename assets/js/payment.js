@@ -1,3 +1,53 @@
+//TODO: Get Provinces API
+var getProvincesApi = 'https://provinces.open-api.vn/api/';
+
+var provinceSelect = document.getElementById('provinceSelect');
+
+fetch(getProvincesApi)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(provinces){
+
+        provinces.forEach(function(province) {
+            var option = document.createElement('option');
+            option.value = province.code;
+            option.text = province.name;
+            provinceSelect.add(option);
+    })
+})
+
+
+var getDistrictsApi = 'https://provinces.open-api.vn/api/d/';
+
+fetch(getDistrictsApi)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(districts){
+
+        var districtsSelect = document.getElementById('districtsSelect');
+
+        provinceSelect.addEventListener('change',()=>{
+
+            // Xoá toàn bộ option
+            while (districtsSelect.firstChild) {
+                districtsSelect.removeChild(districtsSelect.firstChild);
+            }
+            // Thêm các option mới
+            districts.forEach(function(district) {
+
+                if(provinceSelect.value == district.province_code){
+    
+                    var option = document.createElement('option');
+                    option.value = district.code;
+                    option.text = district.name;
+                    districtsSelect.add(option);
+                }
+            })
+        })
+})
+
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
@@ -37,14 +87,8 @@ var deliveryMethodList = $$('.delivery-method')
 
 // Phương thức giao hàng
 deliveryMethodList[0].onchange = function(e){
-//     console.log("a");
-//     deliveryMethodList[0].querySelector('input[type="radio"]').checked = true;
-//     deliveryMethodList[1].querySelector('input[type="radio"]').checked = false;
 
     if(e.target.checked == true){
-        // $('.receive').style.display = 'none'
-        // $('.showroom').style.display = 'none'
-        // $('.delivery').style.display = 'block'
         transportFee = temp
         nameMethod[1].innerHTML = transportFee.toLocaleString() + '₫'
         nameMethod[2].innerHTML = this.querySelector('label').innerHTML;
@@ -54,16 +98,9 @@ deliveryMethodList[0].onchange = function(e){
 
 //Phương thức nhận tại cửa hàng
 deliveryMethodList[1].onchange = function(e){
-    console.log("a");
-
-    // deliveryMethodList[1].querySelector('input[type="radio"]').checked = true;
-    // deliveryMethodList[0].querySelector('input[type="radio"]').checked = false;
     if(e.target.checked == true){
-        temp = transportFee
-        transportFee = 0
-        // $('.receive').style.display = 'flex'
-        // $('.showroom').style.display = 'block'
-        // $('.delivery').style.display = 'none'
+        temp = transportFee;
+        transportFee = 0;
         nameMethod[1].innerHTML = transportFee.toLocaleString() + '₫';
         nameMethod[2].innerHTML = this.querySelector('label').innerHTML
         sum.innerHTML = tinhTong().toLocaleString()
@@ -85,8 +122,8 @@ payMethod[1].onchange = function(e){
 }
 
 //Todo: Tính tổng tiền
-var sum = $('.total .number span')
-var quantily = $('.payment-info__quantily').innerText
+var sum = $('.total .number span');
+var quantily = $('.payment-info__quantily').innerText;
 var price = 73290000;
 
 var priceShow = $('.payment-info .price')
@@ -96,3 +133,4 @@ function tinhTong(){
     return quantily * 73290000 + transportFee;
 }
 sum.innerHTML = tinhTong().toLocaleString()
+
