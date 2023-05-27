@@ -107,6 +107,7 @@
   color: #333;
   position: relative;
   background-color: blueviolet;
+  margin: 6px 0;
 }
 .product__property span {
   margin-right: 8px;
@@ -397,6 +398,7 @@
 .description img {
   margin: 0 auto;
   padding: 12px;
+  max-width: 600px;
   width: 100%;
 }
 
