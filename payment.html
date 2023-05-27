@@ -35,13 +35,6 @@
     <link rel="stylesheet" href="./assets/css/signUp.css" />
 
     <link rel="stylesheet" href="./assets/css/payment.css" />
-
-    <!--preload images-->
-    <link
-      rel="preload"
-      as="image"
-      href="https://c4.wallpaperflare.com/wallpaper/692/215/622/han-juri-street-fighter-motorcycle-helmet-with-horn-purple-background-hd-wallpaper-preview.jpg"
-    />
   </head>
   <body>
     <!--#HEADER-->
@@ -171,16 +164,16 @@
             </div>
 
             <div class="form-input">
-              <label for="">Họ và tên</label>
+              <label>Họ và tên</label>
               <input type="text" placeholder="VD: Nguyễn Văn A" required />
             </div>
             <div class="form-contact">
               <div class="form-input">
-                <label for="">Email</label>
+                <label>Email</label>
                 <input type="email" placeholder="email@example.com" required />
               </div>
               <div class="form-input">
-                <label for="">Điện thoại</label>
+                <label>Điện thoại</label>
                 <input
                   type="tel"
                   name=""
@@ -206,7 +199,7 @@
                 <input type="text" placeholder="Địa chỉ" />
                 <div class="address">
                   <div class="address-select">
-                    <label for="">Tỉnh</label>
+                    <label>Tỉnh</label>
                     <select name="" id="provinceSelect">
                       <option value="null">Chọn tỉnh thành</option>
                       <!-- <option value="50">Hồ Chí Minh</option>
@@ -275,7 +268,7 @@
                     </select>
                   </div>
                   <div class="address-select">
-                    <label for="">Quận/Huyện</label>
+                    <label>Quận/Huyện</label>
                     <select name="" id="districtsSelect">
                       <option value="null">Chọn Quận/Huyện</option>
                       <!-- <option value="">Huyện Bình Chánh</option>
@@ -318,14 +311,14 @@
               <div class="delivery">
                 <div class="receive address">
                   <div class="address-select">
-                    <label for="">Tỉnh</label>
+                    <label>Tỉnh</label>
                     <select name="" id="">
                       <option value="null">Chọn tỉnh thành</option>
                       <option value="HCM">Thành phố Hồ Chí Minh</option>
                     </select>
                   </div>
                   <div class="address-select">
-                    <label for="">Quận/Huyện</label>
+                    <label>Quận/Huyện</label>
                     <select name="" id="">
                       <option value="null">Chọn Quận/Huyện</option>
                       <option value="2">Quận 2</option>
@@ -414,7 +407,7 @@
               <span>Honda CBR150R</span>
               <span>Phiên Bản Đặt Biệt / Đen Xám</span>
             </div>
-            <span>73,290,000₫</span>
+            <span class="price"></span>
           </div>
 
           <div class="voucher">
@@ -591,51 +584,18 @@
     </a>
 
     <div class="cursor" data-cursor></div>
-    
-    <script src="./assets/js/payment.js"></script>
-
-    <script src="./assets/js/base.js"></script>
-
-
-
     <!-- 
     - ionicon link
     -->
     <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-    "></script>
-    <script>
-      var splide = new Splide(".splide", {
-        perPage: 3,
-        perMove: 1,
-        gap: "2rem",
-        type: "loop",
-        drag: "free",
-        snap: true,
-        arrrows: false,
-        pagination: true,
-        breakpoints: {
-          640: {
-            perPage: 2,
-            gap: ".7rem",
-            height: "6rem",
-          },
-          480: {
-            perPage: 1,
-            gap: ".7rem",
-            height: "6rem",
-          },
-        },
-      });
-
-      splide.mount();
-    </script>
+    <script src="./assets/js/base.js"></script>
+    <script src="./assets/js/payment.js"></script>
   </body>
 </html>
