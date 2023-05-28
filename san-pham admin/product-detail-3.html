@@ -47,9 +47,9 @@
 
     <header class="header active" data-header>
       <div class="container">
-        <a href="../index.html" class="logo">
+        <a href="./admin.html" class="logo">
           <img
-            src="../assets/images/logo.svg"
+            src="./assets/images/logo.svg"
             width="110"
             height="53"
             alt="unigine home"
@@ -59,11 +59,11 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="../index.html" class="navbar-link" data-nav-link>home</a>
+              <a href="../admin.html" class="navbar-link" data-nav-link>home</a>
             </li>
 
             <li class="navbar-item">
-              <a href="../product.html" class="navbar-link" data-nav-link
+              <a href="../product-admin.html" class="navbar-link" data-nav-link
                 >SẢN PHẨM</a
               >
             </li>
@@ -80,19 +80,103 @@
               </ul>
             </li>
             <li class="navbar-item">
-              <a href="../reviews.html" class="navbar-link" data-nav-link
+              <a href="../reviews-admin.html" class="navbar-link" data-nav-link
                 >VỀ CHÚNG TÔI
               </a>
             </li>
           </ul>
         </nav>
-        <div class="nav-login">
-          <a href="#!" class="btn clip-path-3 bg-btn signIn" data-btn
-            >Đăng Nhập</a
-          >
-          <a href="#!" class="btn clip-path-6 bg-btn signUp" data-btn
-            >Đăng Ký</a
-          >
+        <div class="nav-users">
+          <div class="header__user">
+            <a href="" class="header__user-info">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <div class="header__user--show header__box-show">
+              <ul class="header__user-list list">
+                <li
+                  class="header__user-item border-top border-bottom list-item--hover"
+                >
+                  <a href="" class="header__user-item-link">
+                    Tài khoản của tôi
+                  </a>
+                </li>
+
+                <li class="header__user-item list-item--hover">
+                  <a href="../index.html" class="header__user-item-link">
+                    Đăng xuất
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__cart">
+            <div class="header__cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div class="header__cart-badge">3</div>
+            </div>
+
+            <!--  no cart class: header__cart-show--no-cart -->
+            <div class="header__cart--show header__box-show">
+              <div class="no-cart">
+                <div class="no-cart-img"></div>
+                <span class="no-cart-text">Không có sản phẩm nào</span>
+              </div>
+              <div class="header-heading-text">
+                <h3>Danh sách sản phầm</h3>
+              </div>
+              <ul class="header__cart-list list">
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2022/12/vario-the-thao-xam-den-bac1-e1672364326339-550x400.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Honda VARIO 160</div>
+
+                      <div class="price_value">23,130.000₫</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2019/10/SH350i-ban-dac-biet-bac-den.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Honda SH350i</div>
+
+                      <div class="price_value">56,490.000₫</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-dac-biet-den-mo.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Wave ALPHA 110</div>
+
+                      <div class="price_value">12,500.000₫</div>
+                    </div>
+                  </a>
+                </li>
+
+                <button class="header__cart-btn btn clip-path-10 bg-btn">
+                  <a href="../carts.html">Xem giỏ hàng</a>
+                </button>
+              </ul>
+            </div>
+          </div>
         </div>
         <button
           class="nav-toggle-btn"
@@ -105,9 +189,7 @@
         </button>
       </div>
     </header>
-
     <main>
-      <div class="login"></div>
       <section class="product-info">
         <div class="title">
           <h2>Thông tin sản phẩm</h2>

@@ -47,9 +47,9 @@
 
     <header class="header active" data-header>
       <div class="container">
-        <a href="../index.html" class="logo">
+        <a href="./admin.html" class="logo">
           <img
-            src="../assets/images/logo.svg"
+            src="./assets/images/logo.svg"
             width="110"
             height="53"
             alt="unigine home"
@@ -59,11 +59,11 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="../index.html" class="navbar-link" data-nav-link>home</a>
+              <a href="../admin.html" class="navbar-link" data-nav-link>home</a>
             </li>
 
             <li class="navbar-item">
-              <a href="../product.html" class="navbar-link" data-nav-link
+              <a href="../product-admin.html" class="navbar-link" data-nav-link
                 >SẢN PHẨM</a
               >
             </li>
@@ -80,19 +80,103 @@
               </ul>
             </li>
             <li class="navbar-item">
-              <a href="../reviews.html" class="navbar-link" data-nav-link
+              <a href="../reviews-admin.html" class="navbar-link" data-nav-link
                 >VỀ CHÚNG TÔI
               </a>
             </li>
           </ul>
         </nav>
-        <div class="nav-login">
-          <a href="#!" class="btn clip-path-3 bg-btn signIn" data-btn
-            >Đăng Nhập</a
-          >
-          <a href="#!" class="btn clip-path-6 bg-btn signUp" data-btn
-            >Đăng Ký</a
-          >
+        <div class="nav-users">
+          <div class="header__user">
+            <a href="" class="header__user-info">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <div class="header__user--show header__box-show">
+              <ul class="header__user-list list">
+                <li
+                  class="header__user-item border-top border-bottom list-item--hover"
+                >
+                  <a href="" class="header__user-item-link">
+                    Tài khoản của tôi
+                  </a>
+                </li>
+
+                <li class="header__user-item list-item--hover">
+                  <a href="../index.html" class="header__user-item-link">
+                    Đăng xuất
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__cart">
+            <div class="header__cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div class="header__cart-badge">3</div>
+            </div>
+
+            <!--  no cart class: header__cart-show--no-cart -->
+            <div class="header__cart--show header__box-show">
+              <div class="no-cart">
+                <div class="no-cart-img"></div>
+                <span class="no-cart-text">Không có sản phẩm nào</span>
+              </div>
+              <div class="header-heading-text">
+                <h3>Danh sách sản phầm</h3>
+              </div>
+              <ul class="header__cart-list list">
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2022/12/vario-the-thao-xam-den-bac1-e1672364326339-550x400.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Honda VARIO 160</div>
+
+                      <div class="price_value">23,130.000₫</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2019/10/SH350i-ban-dac-biet-bac-den.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Honda SH350i</div>
+
+                      <div class="price_value">56,490.000₫</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-dac-biet-den-mo.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Wave ALPHA 110</div>
+
+                      <div class="price_value">12,500.000₫</div>
+                    </div>
+                  </a>
+                </li>
+
+                <button class="header__cart-btn btn clip-path-10 bg-btn">
+                  <a href="../carts.html">Xem giỏ hàng</a>
+                </button>
+              </ul>
+            </div>
+          </div>
         </div>
         <button
           class="nav-toggle-btn"
@@ -107,7 +191,6 @@
     </header>
 
     <main>
-      <div class="login"></div>
       <section class="product-info">
         <div class="title">
           <h2>Thông tin sản phẩm</h2>
@@ -278,10 +361,14 @@
             <div class="description">
               <h1>Kiểu dáng thời trang và đa dạng màu sắc lựa chọn</h1>
               <p>
-                Thân xe nhỏ gọn kế thừa nét thiết kế của dòng xe SH, với những đường nét rõ ràng, liền mạch kết hợp hài hòa với phong cách trẻ trung, thời trang, nay nổi bật và cuốn hút hơn với màu mới lạ trên phiên bản đặc biệt và phiên bản thể thao.
+                Thân xe nhỏ gọn kế thừa nét thiết kế của dòng xe SH, với những
+                đường nét rõ ràng, liền mạch kết hợp hài hòa với phong cách trẻ
+                trung, thời trang, nay nổi bật và cuốn hút hơn với màu mới lạ
+                trên phiên bản đặc biệt và phiên bản thể thao.
               </p>
               <p>
-                Ngoài ra, các họa tiết tinh tế được thể hiện trên nhiều chi tiết thiết kế giúp đem lại hình ảnh thời trang cho mẫu xe mới.
+                Ngoài ra, các họa tiết tinh tế được thể hiện trên nhiều chi tiết
+                thiết kế giúp đem lại hình ảnh thời trang cho mẫu xe mới.
               </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/1_c0eaf45268014843a536a19f3123a371_grande.jpeg"
@@ -292,9 +379,17 @@
             <div class="description">
               <h1>Thiết kế phía trước hiện đại và năng động</h1>
               <p>
-                Thiết kế phía trước kế thừa sự năng động vốn có của Vision cùng hiệu ứng ánh sáng đẹp mắt được tạo nên bởi sự kết hợp giữa đường nét thiết kế ba chiều và hệ thống đèn trước. Tất cả tổng hòa nên một thiết kế trẻ trung, hiện đại, năng động, không kém phần sang trọng.
+                Thiết kế phía trước kế thừa sự năng động vốn có của Vision cùng
+                hiệu ứng ánh sáng đẹp mắt được tạo nên bởi sự kết hợp giữa đường
+                nét thiết kế ba chiều và hệ thống đèn trước. Tất cả tổng hòa nên
+                một thiết kế trẻ trung, hiện đại, năng động, không kém phần sang
+                trọng.
               </p>
-              <p>Riêng phiên bản thể thao được thiết kế cụm đèn trước sau với thấu kính màu xám khói, giúp tôn vinh vẻ ngoài độc đáo và thể thao mạnh mẽ.</p>
+              <p>
+                Riêng phiên bản thể thao được thiết kế cụm đèn trước sau với
+                thấu kính màu xám khói, giúp tôn vinh vẻ ngoài độc đáo và thể
+                thao mạnh mẽ.
+              </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/2_af467db045a44ef5bf61370da006ce71_grande.jpeg"
                 alt=""
@@ -318,7 +413,8 @@
             <div class="description">
               <h1>Logo 3D năng động và ấn tượng</h1>
               <p>
-                Logo 3D nổi trên thân xe với đường nét liền mạch, rõ ràng mang đến hình ảnh trẻ trung và năng động.
+                Logo 3D nổi trên thân xe với đường nét liền mạch, rõ ràng mang
+                đến hình ảnh trẻ trung và năng động.
               </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/3_04252bddf81b471c8b350aa3f021cab6_grande.jpeg"
@@ -329,7 +425,9 @@
             <div class="description">
               <h1>Thiết kế sau ấn tượng</h1>
               <p>
-                Cụm đèn sau và đèn xi nhan được thiết kế tinh xảo, bố trí liền khối mang lại phong cách trẻ trung, thanh lịch, nhỏ gọn tiện lợi.
+                Cụm đèn sau và đèn xi nhan được thiết kế tinh xảo, bố trí liền
+                khối mang lại phong cách trẻ trung, thanh lịch, nhỏ gọn tiện
+                lợi.
               </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/4_e0f68aefd73f40749beac9775c7e7b97_grande.jpeg"
@@ -340,9 +438,15 @@
             <div class="description">
               <h1>Mặt đồng hồ hiện đại</h1>
               <p>
-                Thiết kế mặt đồng hồ trẻ trung, thanh lịch nhưng không kém phần hiện đại với màn hình LCD hiển thị số quãng đường và mức nhiên liệu.
+                Thiết kế mặt đồng hồ trẻ trung, thanh lịch nhưng không kém phần
+                hiện đại với màn hình LCD hiển thị số quãng đường và mức nhiên
+                liệu.
               </p>
-              <p>Đèn hiển thị xi nhan trên mặt đồng hồ được cải tiến với bố trí tách rời hai bên trái và phải giúp người dùng nhanh chóng và dễ dàng quan sát khi chuyển hướng.</p>
+              <p>
+                Đèn hiển thị xi nhan trên mặt đồng hồ được cải tiến với bố trí
+                tách rời hai bên trái và phải giúp người dùng nhanh chóng và dễ
+                dàng quan sát khi chuyển hướng.
+              </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/5_3b5c4730c10948ccbb930e6e7721b72b_grande.jpeg"
                 alt=""
@@ -352,7 +456,10 @@
             <div class="description">
               <h1>Bánh xe trước 14 inch &amp; 16 inch thiết kế riêng biệt</h1>
               <p>
-                Bánh xe trước có kích thước lớn 16 inch (ở phiên bản thể thao) và 14 inch (ở các phiên bản còn lại), kết hợp với thiết kế liền mạch ở thân xe, đem đến tư thế lái xe cao, thẳng đứng cùng tầm nhìn thoáng rộng.
+                Bánh xe trước có kích thước lớn 16 inch (ở phiên bản thể thao)
+                và 14 inch (ở các phiên bản còn lại), kết hợp với thiết kế liền
+                mạch ở thân xe, đem đến tư thế lái xe cao, thẳng đứng cùng tầm
+                nhìn thoáng rộng.
               </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/6_f39ea92fa86440dcb63942c590140e67_grande.jpeg"
@@ -372,7 +479,11 @@
             <div class="description">
               <h1>Động cơ eSP thông minh thế hệ mới</h1>
               <p>
-                eSP - Động cơ thông minh với thiết kế nhỏ gọn, 110cc, 4 kỳ, xy-lanh đơn, làm mát bằng không khí và tích hợp những công nghệ tiên tiến: hệ thống phun xăng điện tử (PGM-FI),động cơ tích hợp bộ đề ACG, hệ thống ngắt động cơ tạm thời (Idling stop), giảm thiểu ma sát và khả năng đốt cháy hoàn hảo.
+                eSP - Động cơ thông minh với thiết kế nhỏ gọn, 110cc, 4 kỳ,
+                xy-lanh đơn, làm mát bằng không khí và tích hợp những công nghệ
+                tiên tiến: hệ thống phun xăng điện tử (PGM-FI),động cơ tích hợp
+                bộ đề ACG, hệ thống ngắt động cơ tạm thời (Idling stop), giảm
+                thiểu ma sát và khả năng đốt cháy hoàn hảo.
               </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/7_2506e8b082fb4ac38102815d2762489c_grande.jpeg"
@@ -383,7 +494,8 @@
             <div class="description">
               <h1>Khung dập hàn laser thế hệ mới eSAF</h1>
               <p>
-                Khung dập thế hệ mới do Honda phát triển có trọng lượng nhẹ hơn, độ bền cao, mang lại trải nghiệm lái thoải mái.
+                Khung dập thế hệ mới do Honda phát triển có trọng lượng nhẹ hơn,
+                độ bền cao, mang lại trải nghiệm lái thoải mái.
               </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/8_96c29b4ab777438cb7426b31b702c3c8_grande.jpeg"
@@ -394,7 +506,9 @@
             <div class="description">
               <h1>Hệ thống ngắt động cơ tạm thời</h1>
               <p>
-                Có khả năng tự động ngắt động cơ khi dừng xe trên 3 giây và khởi động lại động cơ chỉ bằng thao tác vặn tay ga, giúp giảm tiếng ồn, tiết kiệm nhiên liệu và bảo vệ môi trường.
+                Có khả năng tự động ngắt động cơ khi dừng xe trên 3 giây và khởi
+                động lại động cơ chỉ bằng thao tác vặn tay ga, giúp giảm tiếng
+                ồn, tiết kiệm nhiên liệu và bảo vệ môi trường.
               </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/9_4a0be33ff6254d65a4b379d50e337051_grande.jpeg"
@@ -414,7 +528,11 @@
             <div class="description">
               <h1>Hộc đựng đồ phía trước với cổng sạc tiện lợi</h1>
               <p>
-                Hộc đựng đồ phía trước có nắp đậy, kích thước rộng rãi và có khả năng chứa nhiều vật dụng cá nhân. Việc nâng cấp từ cổng sạc ACC sang cổng sạc USB và chuyển vị trí cổng sạc tiện lợi từ hộc đựng đồ dưới yên lên hộc đựng đồ phía trước mang đến sự thoải mái hơn cho người sử dụng, đặc biệt là các bạn trẻ thích di chuyển.
+                Hộc đựng đồ phía trước có nắp đậy, kích thước rộng rãi và có khả
+                năng chứa nhiều vật dụng cá nhân. Việc nâng cấp từ cổng sạc ACC
+                sang cổng sạc USB và chuyển vị trí cổng sạc tiện lợi từ hộc đựng
+                đồ dưới yên lên hộc đựng đồ phía trước mang đến sự thoải mái hơn
+                cho người sử dụng, đặc biệt là các bạn trẻ thích di chuyển.
               </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/10_f9176abc237e4afd9ae618f9ddb28960_grande.jpeg"
@@ -425,7 +543,8 @@
             <div class="description">
               <h1>Hộc đựng đồ dưới yên rộng rãi</h1>
               <p>
-                Hộc đựng đồ với dung tích lớn giúp nâng tầm trải nghiệm cho khách hàng.
+                Hộc đựng đồ với dung tích lớn giúp nâng tầm trải nghiệm cho
+                khách hàng.
               </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/11_a3a4fa965584425a9ac025100c78cf74_grande.jpeg"
@@ -436,7 +555,9 @@
             <div class="description">
               <h1>Hệ thống khóa thông minh Smart Key</h1>
               <p>
-                Hệ thống khóa thông minh Smart Key giúp xác định vị trí xe và mở khóa thông minh từ xa tiện lợi, đem lại tiện ích cao cấp cho khách hàng. Kết cấu khóa chắc chắn giúp an tâm khi sử dụng.
+                Hệ thống khóa thông minh Smart Key giúp xác định vị trí xe và mở
+                khóa thông minh từ xa tiện lợi, đem lại tiện ích cao cấp cho
+                khách hàng. Kết cấu khóa chắc chắn giúp an tâm khi sử dụng.
               </p>
               <p>(Áp dụng cho Phiên bản Đặc biệt, Cao cấp và Thể thao)</p>
               <img
@@ -448,7 +569,10 @@
             <div class="description">
               <h1>Đèn chiếu sáng phía trước luôn sáng</h1>
               <p>
-                Chế độ đèn luôn sáng đảm bảo cho người sử dụng có tầm nhìn tốt nhất, hạn chế các trường hợp quên bật đèn khi đi trong điều kiện ánh sáng không đảm bảo, đồng thời giúp nâng cao khả năng hiện diện của xe khi lưu thông trên đường phố.
+                Chế độ đèn luôn sáng đảm bảo cho người sử dụng có tầm nhìn tốt
+                nhất, hạn chế các trường hợp quên bật đèn khi đi trong điều kiện
+                ánh sáng không đảm bảo, đồng thời giúp nâng cao khả năng hiện
+                diện của xe khi lưu thông trên đường phố.
               </p>
               <img
                 src="https://file.hstatic.net/1000391844/file/13_b375897be51f450cb5a1476cc2bc6437_grande.jpeg"
@@ -464,23 +588,36 @@
             <table class="specifications-table" border="1">
               <tr>
                 <td>Khối lượng bản thân</td>
-                <td>Phiên bản Tiêu chuẩn: 94 kg <br>Phiên bản Cao cấp, Phiên bản Đặc biệt: 95 kg <br>Phiên bản Thể thao: 98 kg</td>
+                <td>
+                  Phiên bản Tiêu chuẩn: 94 kg <br />Phiên bản Cao cấp, Phiên bản
+                  Đặc biệt: 95 kg <br />Phiên bản Thể thao: 98 kg
+                </td>
               </tr>
               <tr>
                 <td>Dài x Rộng x Cao</td>
-                <td>Phiên bản Thể thao: 1.925 mm x 686 mm x 1.126 mm <br>Các phiên bản khác: 1.871 mm x 686 mm x 1.101 mm</td>
+                <td>
+                  Phiên bản Thể thao: 1.925 mm x 686 mm x 1.126 mm <br />Các
+                  phiên bản khác: 1.871 mm x 686 mm x 1.101 mm
+                </td>
               </tr>
               <tr>
                 <td>Khoảng cách trục bánh xe</td>
-                <td>Phiên bản Thể thao: 1.277 mm <br>Các phiên bản khác: 1.255 mm</td>
+                <td>
+                  Phiên bản Thể thao: 1.277 mm <br />Các phiên bản khác: 1.255
+                  mm
+                </td>
               </tr>
               <tr>
                 <td>Độ cao yên</td>
-                <td>Phiên bản Thể thao: 785 mm <br>Các phiên bản khác: 761 mm</td>
+                <td>
+                  Phiên bản Thể thao: 785 mm <br />Các phiên bản khác: 761 mm
+                </td>
               </tr>
               <tr>
                 <td>Khoảng sáng gầm xe</td>
-                <td>Phiên bản Thể thao: 130 mm <br>Các phiên bản khác: 120 mm</td>
+                <td>
+                  Phiên bản Thể thao: 130 mm <br />Các phiên bản khác: 120 mm
+                </td>
               </tr>
               <tr>
                 <td>Dung tích bình xăng</td>
@@ -488,7 +625,11 @@
               </tr>
               <tr>
                 <td>Kích cỡ lớp trước/ sau</td>
-                <td>Phiên bản Thể thao: <br />80/90-16M/C43P <br>90/90-14M/C46P <br>Phiên bản khác: <br>80/90-14M/C40P <br>90/90-14M/C46P</td>
+                <td>
+                  Phiên bản Thể thao: <br />80/90-16M/C43P <br />90/90-14M/C46P
+                  <br />Phiên bản khác: <br />80/90-14M/C40P
+                  <br />90/90-14M/C46P
+                </td>
               </tr>
 
               <tr>
@@ -501,9 +642,7 @@
               </tr>
               <tr>
                 <td>Loại động cơ</td>
-                <td>
-                  4 kỳ, 1 xi lanh, làm mát bằng không khí
-                </td>
+                <td>4 kỳ, 1 xi lanh, làm mát bằng không khí</td>
               </tr>
               <tr>
                 <td>Công suất tối đa</td>
@@ -757,8 +896,8 @@
     - ionicon link
     -->
     <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
       nomodule
