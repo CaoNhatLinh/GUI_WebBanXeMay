@@ -1,8 +1,3 @@
-//TODO: Get Provinces API
-
-
-
-
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
@@ -10,17 +5,14 @@ const $$ = document.querySelectorAll.bind(document)
 var nameMethod = $$('.money span')
 
 //TODO: Lựa chọn tỉnh/ thành phố để tính phí vận chuyển (mặc định)
-var addressList = $$('.address-select select')
-
-// $('.receive').style.display = 'none'
-// $('.showroom').style.display = 'none'
+var addressList = $$('.address-select #provinceSelect')
 
 var transportFee = 0;
 var temp;
 for(var i = 0; i < addressList.length; i++){
     addressList[i].onchange = function(e){
-       
-        if(e.target.value == '50'){
+        
+        if(e.target.value == '79'){
             transportFee = 300000;
         }
         else{
@@ -56,6 +48,46 @@ deliveryMethodList[1].onchange = function(e){
     }
 }
 
+//TODO: Lựa chọn showroom nhận xe tại cửa hàng
+var showroomProvinces = $('#showroomProvinces')
+
+showroomProvinces.addEventListener('change', function(e){
+    if(e.target.value == '79'){
+        let district = $$('.receive.address .address-select')
+        district[1].style.display = 'flex'
+        showroomProvinces.options[0].style.display = 'none'
+    }
+})
+
+var showroomAddress = $$('.location .delivery-method');
+var showroomDistricts = $('#showroomDistrict');
+
+showroomDistricts.addEventListener('change', function(e){
+    if(e.target.value != 'null'){
+        showroomDistricts.options[0].innerText = 'Tất Cả Quận/Huyện'
+    }
+    if(e.target.value == 'null'){
+        showroomAddress[0].style.display = 'flex';
+        showroomAddress[1].style.display = 'flex';
+        showroomAddress[2].style.display = 'flex';
+    }
+    if(e.target.value == '764'){
+        showroomAddress[0].style.display = 'flex';
+        showroomAddress[1].style.display = 'none';
+        showroomAddress[2].style.display = 'none';
+    }
+    if(e.target.value == '761'){
+        showroomAddress[1].style.display = 'flex';
+        showroomAddress[0].style.display = 'none';
+        showroomAddress[2].style.display = 'none';
+    }
+    if(e.target.value == '769'){
+        showroomAddress[2].style.display = 'flex';
+        showroomAddress[0].style.display = 'none';
+        showroomAddress[1].style.display = 'none';
+    }
+})
+
 //TODO: Phương thức thanh toán
 var payMethod = $$('.pay-method')
 
@@ -71,6 +103,12 @@ payMethod[1].onchange = function(e){
 }
 
 //Todo: Tính tổng tiền
+function convert(number) {
+    let vnd = number.toLocaleString('vi', { style: 'currency', currency: 'VND' });
+    vnd = vnd.replace('.', ',');
+    return vnd;
+}
+
 var sum = $('.total .number span');
 var quantily = $('.payment-info__quantily').innerText;
 var price = 73290000;
@@ -80,6 +118,9 @@ function tinhTong(){
 sum.innerHTML = convert(tinhTong())
 const priceShow = $$('.payment-info .price');
 priceShow[0].innerHTML = convert(price);
+
+
+//TODO: Get Provinces API
 var getProvincesApi = 'https://provinces.open-api.vn/api/';
 
 var provinceSelect = document.getElementById('provinceSelect');
@@ -97,8 +138,6 @@ fetch(getProvincesApi)
             provinceSelect.add(option);
     })
 })
-
-
 
 var getDistrictsApi = 'https://provinces.open-api.vn/api/d/';
 
@@ -132,11 +171,6 @@ fetch(getDistrictsApi)
 
 
 
-function convert(number) {
-    let vnd = number.toLocaleString('vi', { style: 'currency', currency: 'VND' });
-    vnd = vnd.replace('.', ',');
-    return vnd;
-}
 
 
 
