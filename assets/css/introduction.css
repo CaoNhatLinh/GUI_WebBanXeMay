@@ -2,12 +2,13 @@
   background-color: #0c0c36;
 }
 main {
+  background-image: linear-gradient(45deg, #0b116a, #4a0547);
   font-family: var(--font-family-myriadPro);
 }
 .general-container {
   width: 100%;
   margin-top: 95px;
-  color: #333;
+  color: #ffffff;
 }
 .project {
   width: 100%;
@@ -21,40 +22,40 @@ main {
 }
 
 .project-info h2 {
-  color: var(--text-black);
+  color: #fff;
 }
 
 .project-image {
-  width: 60%;
+  max-width: 600px;
   margin: auto;
   object-fit: cover;
 }
 .big-title h1 {
-  font-size: 2.4rem;
+  font-size: 3.4rem;
   text-align: center;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(237, 235, 235);
 }
 .general-container .title {
-  margin: 5px;
+  margin-top: 20px;
   color: #333;
   text-align: center;
   background-color: rgb(210, 206, 206);
 }
 .member {
-  margin: 10px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .card {
-  background: white;
+  background-color: rgb(35, 6, 52);
   box-shadow: 0 0 2px;
   height: 350px;
-  width: 250px;
+  min-width: 250px;
   border-radius: 10px;
   text-align: center;
   margin: 0 20px;
+  transition: all 0.5s ease;
 }
 
 .card h2 {
@@ -81,22 +82,28 @@ img {
 .card button {
   width: 110px;
   height: 40px;
-  border: 1px solid white;
-  border-radius: 5px;
-  background: whitesmoke;
+
   font-size: medium;
   margin: 0 auto;
 }
 .card:hover {
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(1, 1, 1);
   color: white;
 }
 .card:hover h2 {
-  font-size: 2.5rem;
+  scale: 1.2;
 }
 
-.card button:hover {
-  background-color: rgb(91, 89, 90);
-  border: 1px solid rgb(212, 245, 249);
-  color: white;
+@media (min-width: 575px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 862px) {
+  .member {
+    margin: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
