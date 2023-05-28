@@ -234,6 +234,7 @@
 .product__buy .add-to-cart:hover,
 .product__buy .buy-now:hover {
   background-color: #6620db;
+  color: #fff;
 }
 .product__buy .add-to-cart .cart-plus-icon {
   margin-right: 5px;

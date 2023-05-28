@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--primary meta tags-->
+    <title>Unigine - Chi Tiết sẳn phẩm</title>
+    <meta name="title" content="Unigine - tốc độ vượt rội!" />
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml" />
+
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css" />
+
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--custom css link-->
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/product-detail.css" />
+    <link rel="stylesheet" href="../assets/css/signUp.css" />
+
+    <!--preload images-->
+    <link
+      rel="preload"
+      as="image"
+      href="https://c4.wallpaperflare.com/wallpaper/692/215/622/han-juri-street-fighter-motorcycle-helmet-with-horn-purple-background-hd-wallpaper-preview.jpg"
+    />
+  </head>
+
+  <body id="top">
+    <!--#HEADER-->
+
+    <header class="header active" data-header>
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <img
+            src="../assets/images/logo.svg"
+            width="110"
+            height="53"
+            alt="unigine home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="../index.html" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="../product.html" class="navbar-link" data-nav-link
+                >SẢN PHẨM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="#!" class="navbar-link" id="service" data-nav-link
+                >DỊCH VỤ<i class="arrow-down-icon fa-solid fa-arrow-down"></i>
+              </a>
+
+              <ul class="service">
+                <li class="service-item">đặt lịch lái thử</li>
+                <li class="service-item">đặt lịch bảo dưỡng</li>
+                <li class="service-item">linh kiện chính hẵng</li>
+                <li class="service-item">vệ sinh và chăm sóc</li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="../reviews.html" class="navbar-link" data-nav-link
+                >VỀ CHÚNG TÔI
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-login">
+          <a href="#!" class="btn clip-path-3 bg-btn signIn" data-btn
+            >Đăng Nhập</a
+          >
+          <a href="#!" class="btn clip-path-6 bg-btn signUp" data-btn
+            >Đăng Ký</a
+          >
+        </div>
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle menu"
+          data-nav-toggler
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="login"></div>
+      <section class="product-info">
+        <div class="title">
+          <h2>Thông tin sản phẩm</h2>
+        </div>
+        <div class="product">
+          <div class="product__image">
+            <img
+              src="https://file.hstatic.net/1000391844/file/tc_xanh_23_76747dcf8dd64bf595a692d2fccf17a9_grande.jpg"
+              alt="XE MÁY HONDA WAVE ALPHA 2023"
+            />
+          </div>
+
+          <div class="product__details">
+            <div class="product__title">
+              <h1>XE MÁY HONDA WAVE ALPHA 2023</h1>
+              <div class="product__id">
+                Mã SP:
+                <span>AFB110K89SV30NHA76</span>
+              </div>
+              <div class="product__property">
+                <span>Phiên bản:</span>
+                <div class="product-option">
+                  <input type="radio" name="version" id="version1" checked />
+                  <label class="btn clip-path-2" data-btn for="version1"
+                    >Đặt biệt</label
+                  >
+                  <!-- <input type="radio" name="version" id="version2" />
+                  <label class="btn clip-path-2" data-btn for="version2"
+                    >Thể Thao</label
+                  > -->
+                  <input type="radio" name="version" id="version3" />
+                  <label class="btn clip-path-2" data-btn for="version3"
+                    >Tiêu chuẩn</label
+                  >
+                </div>
+              </div>
+              <div class="product__property">
+                <span>Màu sắc:</span>
+                <div class="product-option">
+                  <input type="radio" name="color" id="color1" checked />
+                  <label class="btn clip-path-2" data-btn for="color1"
+                    >Xanh Bạc</label
+                  >
+                  <input type="radio" name="color" id="color2" />
+                  <label class="btn clip-path-2" data-btn for="color2"
+                    >Đỏ Bạc</label
+                  >
+                  <input type="radio" name="color" id="color3" />
+                  <label class="btn clip-path-2" data-btn for="color3"
+                    >Trắng Bạc</label
+                  >
+                  <input type="radio" name="color" id="color4" />
+                  <label class="btn clip-path-2" data-btn for="color4"
+                    >Đen mờ</label
+                  >
+                </div>
+              </div>
+              <div class="product__property">
+                <span>Giá:</span>
+                <span style="color: red; font-weight: 600">19,390,000₫</span>
+              </div>
+            </div>
+
+            <div class="quantity-select">
+              <span>Số lượng:</span>
+              <div>
+                <div class="product__buy">
+                  <button class="product__buy-minus">-</button>
+                  <input
+                    type="text"
+                    min="0"
+                    value="0"
+                    name="SoLuong"
+                    id="quantity"
+                    disabled
+                  />
+                  <button class="product__buy-plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="status">
+              <ul class="list__status"></ul>
+            </div>
+            <div class="product__buy">
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-plus cart-plus-icon"></i>Thêm giỏ
+                hàng
+              </button>
+              <button class="buy-now">
+                <a href="../payment.html"> Mua ngay</a>
+              </button>
+            </div>
+
+            <div class="promotion">
+              <div class="promotion__delivery">
+                <i class="promotion--icon fa-solid fa-truck"></i>
+                <div>
+                  <p>
+                    Miễn phí giao hàng toàn quốc cho sản phẩm phụ tùng - phụ
+                    kiện
+                  </p>
+                  <p>MIỄN PHÍ GIAO HÀNG toàn quốc cho đơn hàng từ 350.000vnd</p>
+                </div>
+              </div>
+              <div class="promotion__reward">
+                <i class="promotion--icon fa-sharp fa-solid fa-tags"></i>
+                <p>
+                  Nhấn nút <span>TƯ VẤN NHANH</span> để được thông tin về các
+                  chương trình ưu đãi hấp dẫn lên đến 6 triệu
+                </p>
+              </div>
+              <div class="promotion__payments">
+                <i class="promotion--icon fa-solid fa-money-check"></i>
+                <div>
+                  <p>
+                    Hỗ trợ thanh toán trả góp qua các đơn vị Tài chính:
+                    HDsaison, Jaccs, Home Credit.
+                  </p>
+                  <p>
+                    Hỗ trợ lãi suất thấp từ 0 - 2% tuỳ dòng xe & theo từng thời
+                    điểm diễn ra các chương trình hỗ trợ/ khuyến mãi
+                  </p>
+                </div>
+              </div>
+              <div class="promotion__contact">
+                <i class="promotion--icon fa-solid fa-phone"></i>
+                <div>
+                  <p>HỖ TRỢ MUA NHANH (Từ 08:30–21:30 hàng ngày)</p>
+                  <span>0123456789 - 0123456789(Zalo)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="tabs">
+          <div class="tab-item active" data-btn>
+            <i class="tab-icon fa-solid fa-file-lines"></i>
+            MÔ TẢ SẢN PHẨM
+          </div>
+          <div class="tab-item" data-btn>
+            <i class="tab-icon fas fa-cog"></i>
+            THÔNG SỐ KỸ THUẬT
+          </div>
+          <div class="tab-item" data-btn>
+            <i class="tab-icon fa-solid fa-image"></i>
+            HÌNH ẢNH
+          </div>
+          <div class="tab-line"></div>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-panel active">
+            <img
+              class="tab-banner"
+              src="https://cdn.honda.com.vn/motorbikes/August2022/ruKI9SSepxqGtMtDfBiZ.jpg"
+              alt="XE MÁY HONDA WAVE ALPHA 2023"
+            />
+            <div class="tab-overview">
+              <div>THIẾT KẾ</div>
+              <p>
+                Wave Alpha phiên bản 2023 trẻ trung và năng động với màu đen mờ hoàn toàn mới cùng thiết kế bộ tem mới ấn tượng, thu hút ánh nhìn, cho bạn tự tin thể hiện cá tính của mình trên mọi hành trình.
+              </p>
+            </div>
+
+            <div class="description">
+              <h1>Phiên bản đặc biệt mới</h1>
+              <p>
+                Ấn tượng với màu đen mờ trẻ trung, cao cấp và độc đáo, mang lại cho bạn hình ảnh năng động, khác biệt và thời thượng.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/August2022/EyvPy7Kpzha1WWyMvUCg.png"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Tem xe cá tính mới</h1>
+              <p>
+                Thân xe được thiết kế tem đặc biệt khi pha trộn hài hòa logo cách điệu "Wave alpha" và nền họa tiết khỏe khoắn với màu sắc khác nhau trên mỗi xe. Toàn bộ thiết kế hiện lên mới lạ và mạnh mẽ, giúp người dùng tự tin khoe trọn cá tính.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/August2022/wsvQJAgqlhRGOk2EqpWw.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Mặt đồng hồ dễ quan sát</h1>
+              <p>
+                Các thông số vận hành được hiển thị đầy đủ giúp người lái quan sát một cách dễ dàng và thuận tiện. Hệ thống đèn hiển thị trên mặt đồng hồ nổi bật, dễ quan sát khi di chuyển.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/August2022/Ec6NRmAQkTPfhnIXrNNS.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- <div class="description">
+              <h1>Giảm xóc hành trình ngược Up side down thể thao</h1>
+              <p>
+                CBR150R khẳng định là mẫu xe côn tay thể thao dành cho thành thị
+                với trang bị giảm xóc hành trình ngược sơn mạ vàng giúp toàn bộ
+                phần trước của xe trở nên cứng cáp, tăng độ êm ái mang lại sự tự
+                tin di chuyển cho người lái.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/September2021/queuzfzM4Z94gsCzyx2u.jpg"
+                alt=""
+              />
+            </div> -->
+
+            <div class="tab-overview">
+              <div>ĐỘNG CƠ - CÔNG NGHỆ</div>
+              <p>
+                Được trang bị động cơ 110cc bền bỉ, hiệu suất vượt trội mà vẫn đảm bảo khả năng tiết kiệm nhiên liệu một cách tối ưu.
+              </p>
+            </div>
+
+            <div class="description">
+              <h1>Động cơ 110cc</h1>
+              <p>
+                Wave Alpha được trang bị động cơ 110cc bền bỉ, hiệu suất vượt trội mà vẫn đảm bảo khả năng tiết kiệm nhiên liệu một cách tối ưu, từ đó đem lại cảm giác lái thú vị và tiết kiệm chi phí vận hành.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/August2022/3884ral9m8oVBPAMvl3R.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- <div class="description">
+              <h1>Bộ ly hợp hỗ trợ và chống trượt hai chiều</h1>
+              <p>
+                Xứng danh chiến hữu thành thị, CBR150R hoàn toàn mới được trang bị bộ ly hợp hỗ trợ và chống trượt hai chiều tương tự các mẫu xe phân khối lớn giúp chuyển số dễ dàng, tránh tình trạng trượt và khóa bánh trong các tình huống giảm số đột ngột. Với trang bị này, người lái tự tin di chuyển mọi cung đường và điều kiện giao thông trong thành thị.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/September2021/C0pKzRH2H2Yh6bgdipgo.jpg"
+                alt=""
+              />
+            </div> -->
+
+            <div class="tab-overview">
+              <div>TIỆN ÍCH & AN TOÀN</div>
+              <p>
+                Tiện ích và An toàn luôn được đề cao và chú trọng để đem đến cho người dùng trải nghiệm tốt nhất khi sử dụng.
+              </p>
+            </div>
+
+            <div class="description">
+              <h1>Đèn chiếu sáng phía trước có tính năng tự động bật sáng</h1>
+              <p>
+                Đảm bảo cho người sử dụng có tầm nhìn tốt nhất, hạn chế các trường hợp quên bật đèn pha khi đi trong điều kiện ánh sáng không đảm bảo. Bên cạnh đó, khả năng nhận diện của xe khi di chuyển trên đường phố cũng được tăng lên.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/August2022/khyb2cqCPHW0FE8HxHTl.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Ổ khóa đa năng 3 trong 1</h1>
+              <p>
+                Ổ khóa bao gồm khóa điện, khóa cổ và khóa từ, dễ sử dụng và chống rỉ sét hiệu quả.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/August2022/v4XrlZAQShCIS2dI0weG.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="tab-panel">
+            <div class="specifications-title">
+              Thông số kĩ thuật Honda CB150R The Streetster
+            </div>
+            <table class="specifications-table" border="1">
+              <tr>
+                <td>Khối lượng bản thân</td>
+                <td>97kg</td>
+              </tr>
+              <tr>
+                <td>Dài x Rộng x Cao</td>
+                <td>1.914mm x 688mm x 1.075mm</td>
+              </tr>
+              <tr>
+                <td>Khoảng cách trục bánh xe</td>
+                <td>1.224 mm</td>
+              </tr>
+              <tr>
+                <td>Độ cao yên</td>
+                <td>769 mm</td>
+              </tr>
+              <tr>
+                <td>Khoảng sáng gầm xe</td>
+                <td>138 mm</td>
+              </tr>
+              <tr>
+                <td>Dung tích bình xăng</td>
+                <td>3.7 lít</td>
+              </tr>
+              <tr>
+                <td>Kích cỡ lớp trước/ sau</td>
+                <td>Trước: 70/90 - 17 M/C 38P <br />Sau: 80/90 - 17 M/C 50P</td>
+              </tr>
+
+              <tr>
+                <td>Phuộc trước</td>
+                <td>Ống lồng, giảm chấn thủy lực</td>
+              </tr>
+              <tr>
+                <td>Phuộc sau</td>
+                <td>Lò xo trụ, giảm chấn thủy lực</td>
+              </tr>
+              <tr>
+                <td>Loại động cơ</td>
+                <td>
+                  Xăng, 4 kỳ, 1 xi-lanh, làm mát bằng không khí
+                </td>
+              </tr>
+              <tr>
+                <td>Công suất tối đa</td>
+                <td>6,12 kW / 7.500 vòng/phút</td>
+              </tr>
+              <tr>
+                <td>Dung tích nhớt máy</td>
+                <td>1 lít khi rã máy/ 0,8 lít khi thay nhớt</td>
+              </tr>
+              <tr>
+                <td>Hộp số</td>
+                <td>Cơ khí, 4 số tròn</td>
+              </tr>
+              <tr>
+                <td>Loại truyền động</td>
+                <td>Cơ khí</td>
+              </tr>
+              <tr>
+                <td>Hệ thống khởi động</td>
+                <td>Điện/ Đạp chân</td>
+              </tr>
+              <tr>
+                <td>Moment cực đại</td>
+                <td>8,44 Nm/5.500 vòng/phút</td>
+              </tr>
+              <tr>
+                <td>Dung tích xy-lanh</td>
+                <td>109,1cm3</td>
+              </tr>
+              <tr>
+                <td>Đường kính x Hành trình pít tông</td>
+                <td>50 mm x 55,6 mm</td>
+              </tr>
+              <tr>
+                <td>Tỷ số nén</td>
+                <td>9,0:1</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="tab-panel">
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/tc_xanh_23_76747dcf8dd64bf595a692d2fccf17a9_grande.jpg"
+                alt=""
+              />
+              <p>Phiên bản tiêu chuẩn Xanh Bạc</p>
+            </div>
+
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/tc_do_23_1491dbd3fd4f4b64a56a58663fb671bd_grande.jpg"
+                alt=""
+              />
+              <p>Phiên bản tiêu chuẩn Đỏ Bạc</p>
+            </div>
+
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/tc_trang_23_2cb71d6a94cc4fc1a56d93b626dd845c_grande.jpg"
+                alt=""
+              />
+              <p>Phiên bản tiêu chuẩn Trắng Bạc</p>
+            </div>
+
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/db_den_23_7ca2f972a74e440f940d75c109660eb9_grande.jpg"
+                alt=""
+              />
+              <p>Phiên bản đặt biệt Đen Mờ</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--#FOOTER-->
+
+    <footer class="footer">
+      <div class="custom-shape-divider-bottom-1685005946">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <article>
+        <div class="section contact">
+          <div class="container">
+            <div class="contact-brand">
+              <a href="#" class="logo">
+                <img
+                  src="../assets/images/logo.svg"
+                  width="150"
+                  height="73"
+                  loading="lazy"
+                  alt="Unigine logo"
+                />
+              </a>
+
+              <p class="footer-text">
+                Dự án của nhóm 3 đề tài thiết kế website tĩnh đại lý bán xe
+              </p>
+
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.insatgram.com/coding.stella"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Thành Viên</p>
+
+              <ul>
+                <li>
+                  <a href="#" class="contact-link">Cao Nhật Linh</a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-link">Trần Thị Trúc</a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-link">Bạch Minh Tuyên</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Contact Us</p>
+
+              <div class="contact-item">
+                <span class="span">Location:</span>
+
+                <address class="contact-link">
+                  140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh
+                </address>
+              </div>
+
+              <div class="contact-item">
+                <span class="span">Join Us:</span>
+
+                <a href="mailto:Info@gamehive.com" class="contact-link"
+                  >nhom3dailyxemay@gmail.com</a
+                >
+              </div>
+
+              <div class="contact-item">
+                <span class="span">Phone:</span>
+
+                <a href="tel:+12345678910" class="contact-link"
+                  >+84 123456789</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Join Us</p>
+
+              <form action="./index.html" method="get" class="contact-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  required
+                  placeholder="Your Email"
+                  autocomplete="off"
+                  class="input-field"
+                />
+
+                <button type="submit" class="btn clip-path-3 bg-btn" data-btn>
+                  Subscribe Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+    </footer>
+
+    <!-- 
+        - #BACK TO TOP
+    -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+- #CUSTOM CURSOR
+-->
+
+    <div class="cursor" data-cursor></div>
+
+    <!-- 
+- custom js link
+-->
+    <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/product-detail.js"></script>
+
+    <!-- 
+    - ionicon link
+    -->
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script>
+      var splide = new Splide(".splide", {
+        perPage: 3,
+        perMove: 1,
+        gap: "2rem",
+        type: "loop",
+        drag: "free",
+        snap: true,
+        arrrows: false,
+        pagination: true,
+        breakpoints: {
+          640: {
+            perPage: 2,
+            gap: ".7rem",
+            height: "6rem",
+          },
+          480: {
+            perPage: 1,
+            gap: ".7rem",
+            height: "6rem",
+          },
+        },
+      });
+
+      splide.mount();
+    </script>
+  </body>
+</html>

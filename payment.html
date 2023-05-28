@@ -32,15 +32,13 @@
     <!--custom css link-->
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/admin.css" />
-    <link rel="stylesheet" href="./assets/css/signUp.css" />
-
     <link rel="stylesheet" href="./assets/css/payment.css" />
   </head>
   <body>
     <!--#HEADER-->
     <header class="header active" data-header>
       <div class="container">
-        <a href="#" class="logo">
+        <a href="./admin.html" class="logo">
           <img
             src="./assets/images/logo.svg"
             width="110"
@@ -56,7 +54,7 @@
             </li>
 
             <li class="navbar-item">
-              <a href="./product.html" class="navbar-link" data-nav-link
+              <a href="./product-admin.html" class="navbar-link" data-nav-link
                 >SẢN PHẨM</a
               >
             </li>
@@ -73,7 +71,7 @@
               </ul>
             </li>
             <li class="navbar-item">
-              <a href="./reviews.html" class="navbar-link" data-nav-link
+              <a href="./reviews-admin.html" class="navbar-link" data-nav-link
                 >VỀ CHÚNG TÔI
               </a>
             </li>
@@ -93,11 +91,11 @@
                     Tài khoản của tôi
                   </a>
                 </li>
+                
                 <li class="header__user-item list-item--hover">
-                  <a href="" class="header__user-item-link"> Đơn mua </a>
-                </li>
-                <li class="header__user-item list-item--hover">
-                  <a href="" class="header__user-item-link"> Đăng xuất </a>
+                  <a href="./index.html" class="header__user-item-link">
+                    Đăng xuất
+                  </a>
                 </li>
               </ul>
             </div>
@@ -135,7 +133,7 @@
                 </li>
 
                 <button class="header__cart-btn btn clip-path-10 bg-btn">
-                  Xem giỏ hàng
+                  <a href="./carts.html">Xem giỏ hàng</a>
                 </button>
               </ul>
             </div>
@@ -202,97 +200,12 @@
                     <label>Tỉnh</label>
                     <select name="" id="provinceSelect">
                       <option value="null">Chọn tỉnh thành</option>
-                      <!-- <option value="50">Hồ Chí Minh</option>
-                      <option value="1">Hà Nội</option>
-                      <option value="32">Đà Nẵng</option>
-                      <option value="57">An Giang</option>
-                      <option value="49">Bà Rịa - Vũng Tàu</option>
-                      <option value="47">Bình Dương</option>
-                      <option value="45">Bình Phước</option>
-                      <option value="39">Bình Thuận</option>
-                      <option value="35">Bình Định</option>
-                      <option value="62">Bạc Liêu</option>
-                      <option value="15">Bắc Giang</option>
-                      <option value="4">Bắc Kạn</option>
-                      <option value="18">Bắc Ninh</option>
-                      <option value="53">Bến Tre</option>
-                      <option value="3">Cao Bằng</option>
-                      <option value="63">Cà Mau</option>
-                      <option value="59">Cần Thơ</option>
-                      <option value="41">Gia Lai</option>
-                      <option value="2">Hà Giang</option>
-                      <option value="23">Hà Nam</option>
-                      <option value="28">Hà Tĩnh</option>
-                      <option value="11">Hoà Bình</option>
-                      <option value="21">Hưng Yên</option>
-                      <option value="19">Hải Dương</option>
-                      <option value="20">Hải Phòng</option>
-                      <option value="60">Hậu Giang</option>
-                      <option value="37">Khánh Hoà</option>
-                      <option value="58">Kiên Giang</option>
-                      <option value="40">Kom Tum</option>
-                      <option value="8">Lai Châu</option>
-                      <option value="51">Long An</option>
-                      <option value="6">Lào Cai</option>
-                      <option value="44">Lâm Đồng</option>
-                      <option value="13">Lạng Sơn</option>
-                      <option value="24">Nam Định</option>
-                      <option value="27">Nghệ An</option>
-                      <option value="25">Ninh Bình</option>
-                      <option value="38">Ninh Thuận</option>
-                      <option value="16">Phú Thọ</option>
-                      <option value="36">Phú Yên</option>
-                      <option value="29">Quảng Bình</option>
-                      <option value="33">Quảng Nam</option>
-                      <option value="34">Quảng Ngãi</option>
-                      <option value="14">Quảng Ninh</option>
-                      <option value="30">Quảng Trị</option>
-                      <option value="61">Sóc Trăng</option>
-                      <option value="9">Sơn La</option>
-                      <option value="26">Thanh Hoá</option>
-                      <option value="22">Thái Bình</option>
-                      <option value="12">Thái Bình</option>
-                      <option value="31">Thừa Thiên Huế</option>
-                      <option value="52">Tiền Giang</option>
-                      <option value="54">Trà Vinh</option>
-                      <option value="5">Tuyên Quang</option>
-                      <option value="46">Tây Ninh</option>
-                      <option value="55">Vĩnh Long</option>
-                      <option value="17">Vĩnh Phúc</option>
-                      <option value="10">Yên Bái</option>
-                      <option value="7">Điện Biên</option>
-                      <option value="42">Đắk Lắk</option>
-                      <option value="43">Đắk Nông</option>
-                      <option value="48">Đồng Nai</option>
-                      <option value="56">Đồng Tháp</option> -->
                     </select>
                   </div>
                   <div class="address-select">
                     <label>Quận/Huyện</label>
                     <select name="" id="districtsSelect">
                       <option value="null">Chọn Quận/Huyện</option>
-                      <!-- <option value="">Huyện Bình Chánh</option>
-                      <option value="">Huyện Cần Giờ</option>
-                      <option value="">Huyện Củ Chi</option>
-                      <option value="">Huyện Hóc Môn</option>
-                      <option value="">Huyện Nhà Bè</option>
-                      <option value="">Quận 1</option>
-                      <option value="">Quận 10</option>
-                      <option value="">Quận 11</option>
-                      <option value="">Quận 3</option>
-                      <option value="">Quận 12</option>
-                      <option value="">Quận 4</option>
-                      <option value="">Quận 5</option>
-                      <option value="">Quận 6</option>
-                      <option value="">Quận 7</option>
-                      <option value="">Quận 8</option>
-                      <option value="">Quận Bình Tân</option>
-                      <option value="">Quận Bình Thạnh</option>
-                      <option value="">Quận Phú Nhuận</option>
-                      <option value="">Quận Gò Vấp</option>
-                      <option value="">Quận Tân Bình</option>
-                      <option value="">Quận Tân Phú</option>
-                      <option value="">Thành phố Thủ Đức</option> -->
                     </select>
                   </div>
                 </div>
@@ -390,7 +303,9 @@
                 <label for="money-payDown">Tiền mặt</label>
               </div>
             </div>
-            <div class="cart btn bg-btn clip-path-10">Giỏ hàng</div>
+            <div class="cart btn bg-btn clip-path-10">
+              <a href="./carts.html">Tới giỏ hàng</a>
+            </div>
           </form>
         </section>
 

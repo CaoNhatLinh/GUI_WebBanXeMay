@@ -139,18 +139,6 @@
   margin: 20px 10px 12px 10px;
 }
 
-.cart a:hover {
-  background-color: #fff;
-  color: #333;
-  border-radius: 5px;
-}
-
-.cart a {
-  text-align: center;
-  padding: 5px 10px;
-  color: #fff;
-}
-
 .container-payment {
   padding: 20px 100px;
 }
@@ -161,7 +149,7 @@
   padding: 20px 0;
 }
 
-.image-quantily{
+.image-quantily {
   position: relative;
 }
 
@@ -172,7 +160,7 @@
   box-shadow: 0 0 0 1px #d9d9d9;
 }
 
-.payment-info .payment-info__quantily{
+.payment-info .payment-info__quantily {
   position: absolute;
   top: -10px;
   left: 60px;
@@ -196,7 +184,6 @@
   max-width: 70%;
   padding: 10px;
   border-radius: 10px;
-  
 }
 .voucher input:valid:not(:placeholder-shown) + button {
   background-color: #e21717;
@@ -258,8 +245,8 @@
   transition: 200ms;
 }
 
-@media only screen and (min-width:2000px){
-  .general-container{
+@media only screen and (min-width: 2000px) {
+  .general-container {
     padding: 0 13%;
   }
   .container-payment,
@@ -268,8 +255,8 @@
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1300px){
-  .general-container{
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+  .general-container {
     padding: 20px 20px 100px;
   }
   .container-payment,
@@ -279,8 +266,8 @@
   }
 }
 
-@media only screen and (min-width: 890px) and (max-width: 1024px){
-  .general-container{
+@media only screen and (min-width: 890px) and (max-width: 1024px) {
+  .general-container {
     padding: 0 0 100px;
   }
 
@@ -289,23 +276,23 @@
     padding: 0 20px;
   }
 
-  .address{
+  .address {
     justify-content: space-around;
     align-items: center;
   }
 
-  .address-select{
+  .address-select {
     justify-content: space-around;
   }
 
   .info-details,
-  .location{
+  .location {
     font-size: 1.6rem;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 890px){
-  .general-container{
+@media only screen and (min-width: 768px) and (max-width: 890px) {
+  .general-container {
     padding: 0 0 100px;
   }
 
@@ -316,13 +303,13 @@
 
   .payment-info span,
   .info-details,
-  .location{
+  .location {
     font-size: 1.5rem;
   }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 768px){
-  .general-container{
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .general-container {
     flex-direction: column;
     padding: 0 5% 110px;
   }
@@ -333,31 +320,31 @@
     padding: 0;
   }
 
-  .container-form{
+  .container-form {
     border-bottom: 0.5px solid #a9a9a9;
     border-right: 0px;
   }
 
-  .address{
+  .address {
     justify-content: space-around;
   }
 
-  .address-select{
+  .address-select {
     margin: 0;
   }
-  
-  .cart{
+
+  .cart {
     margin: 12px auto;
   }
 
   .info-details,
-  .location{
+  .location {
     font-size: 1.5rem;
   }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 425px){
-  .general-container{
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .general-container {
     flex-direction: column;
     padding: 0 3% 110px;
   }
@@ -368,48 +355,48 @@
     padding: 0;
   }
 
-  .container-form{
+  .container-form {
     border-bottom: 0.5px solid #a9a9a9;
     border-right: 0px;
   }
 
-  .form-input{
+  .form-input {
     padding: 0;
   }
 
-  .form-contact .form-input{
+  .form-contact .form-input {
     padding: 0 6px;
   }
 
-  .cart{
+  .cart {
     margin: 12px auto;
   }
 
-  .method{
+  .method {
     margin: 2px 0 0 0;
   }
 
-  .pay-method{
+  .pay-method {
     margin: 0;
   }
 
-  .address{
+  .address {
     justify-content: space-around;
   }
 
-  .address-select{
+  .address-select {
     margin: 0;
   }
 
   .payment-info span,
   .info-details,
-  .location{
+  .location {
     font-size: 1.5rem;
   }
 }
 
-@media only screen  and (max-width: 375px){
-  .general-container{
+@media only screen and (max-width: 375px) {
+  .general-container {
     flex-direction: column;
     padding: 0 2% 110px;
   }
@@ -420,54 +407,54 @@
     padding: 0;
   }
 
-  .container-form{
+  .container-form {
     border-bottom: 0.5px solid #a9a9a9;
     border-right: 0px;
   }
 
-  .form-input{
+  .form-input {
     padding: 0;
   }
 
-  .cart{
+  .cart {
     margin: 12px auto;
   }
 
-  .form-contact .form-input{
+  .form-contact .form-input {
     padding: 0 6px;
   }
 
-  .method{
+  .method {
     margin: 2px 0 0 0;
   }
 
-  .pay-method{
+  .pay-method {
     margin: 0;
   }
 
-  .address{
+  .address {
     justify-content: space-around;
   }
 
-  .address-select{
+  .address-select {
     margin: 0;
   }
 
-  .voucher{
+  .voucher {
     padding: 6px 0;
   }
 
-  .voucher button{
+  .voucher button {
     width: fit-content;
   }
 
   .payment-info span,
   .info-details,
-  .location{
+  .location {
     font-size: 1.3rem;
   }
 
-  .container-payment button{
+  .container-payment button {
     padding: 10px 20px;
   }
 }

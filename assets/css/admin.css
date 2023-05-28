@@ -90,6 +90,7 @@
   font-weight: 500;
   line-height: 1.6rem;
   text-align: center;
+  font-family: var(--font-family-myriadPro);
 }
 .header-heading-text {
   background-color: transparent;
@@ -106,7 +107,7 @@
   line-height: 1.625rem;
 }
 .header-heading-text h3 {
-  font-family: var(--font-family-poppins);
+  font-family: var(--font-family-myriadPro);
   color: var(--text-purple);
   font-weight: 600;
   font-size: 1.8rem;
@@ -136,6 +137,7 @@
   font-size: 1.6rem;
   line-height: 2;
   overflow: hidden;
+  font-family: var(--fontFamily-oxanium);
 }
 
 .header__cart-info-name {
@@ -232,4 +234,9 @@
 }
 
 @media (min-width: 992px) {
+  .nav-users {
+    margin-left: unset;
+  }
 }
+
+

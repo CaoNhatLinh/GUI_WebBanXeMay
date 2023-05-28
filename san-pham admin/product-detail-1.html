@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--primary meta tags-->
+    <title>Unigine - Chi Tiết sẳn phẩm</title>
+    <meta name="title" content="Unigine - tốc độ vượt rội!" />
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml" />
+
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css" />
+
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--custom css link-->
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/product-detail.css" />
+    <link rel="stylesheet" href="../assets/css/signUp.css" />
+
+    <!--preload images-->
+    <link
+      rel="preload"
+      as="image"
+      href="https://c4.wallpaperflare.com/wallpaper/692/215/622/han-juri-street-fighter-motorcycle-helmet-with-horn-purple-background-hd-wallpaper-preview.jpg"
+    />
+  </head>
+
+  <body id="top">
+    <!--#HEADER-->
+
+    <header class="header active" data-header>
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <img
+            src="../assets/images/logo.svg"
+            width="110"
+            height="53"
+            alt="unigine home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="../index.html" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="../product.html" class="navbar-link" data-nav-link
+                >SẢN PHẨM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="#!" class="navbar-link" id="service" data-nav-link
+                >DỊCH VỤ<i class="arrow-down-icon fa-solid fa-arrow-down"></i>
+              </a>
+
+              <ul class="service">
+                <li class="service-item">đặt lịch lái thử</li>
+                <li class="service-item">đặt lịch bảo dưỡng</li>
+                <li class="service-item">linh kiện chính hẵng</li>
+                <li class="service-item">vệ sinh và chăm sóc</li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="../reviews.html" class="navbar-link" data-nav-link
+                >VỀ CHÚNG TÔI
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-login">
+          <a href="#!" class="btn clip-path-3 bg-btn signIn" data-btn
+            >Đăng Nhập</a
+          >
+          <a href="#!" class="btn clip-path-6 bg-btn signUp" data-btn
+            >Đăng Ký</a
+          >
+        </div>
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle menu"
+          data-nav-toggler
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="login"></div>
+      <section class="product-info">
+        <div class="title">
+          <h2>Thông tin sản phẩm</h2>
+        </div>
+        <div class="product">
+          <div class="product__image">
+            <img
+              src="https://phattien.com/wp-content/uploads/2021/10/cbr150r-den-xam.png"
+              alt="CBR150R"
+            />
+          </div>
+
+          <div class="product__details">
+            <div class="product__title">
+              <h1>Honda CBR150R</h1>
+              <div class="product__id">
+                Mã SP:
+                <span>CBR150K45RV17</span>
+              </div>
+              <div class="product__property">
+                <span>Phiên bản:</span>
+                <div class="product-option">
+                  <input type="radio" name="version" id="version1" checked />
+                  <label class="btn clip-path-2" data-btn for="version1"
+                    >Đặt biệt</label
+                  >
+                  <input type="radio" name="version" id="version2" />
+                  <label class="btn clip-path-2" data-btn for="version2"
+                    >Thể Thao</label
+                  >
+                  <input type="radio" name="version" id="version3" />
+                  <label class="btn clip-path-2" data-btn for="version3"
+                    >Tiêu chuẩn</label
+                  >
+                </div>
+              </div>
+              <div class="product__property">
+                <span>Màu sắc:</span>
+                <div class="product-option">
+                  <input type="radio" name="color" id="color1" checked />
+                  <label class="btn clip-path-2" data-btn for="color1"
+                    >Đen xám</label
+                  >
+                  <input type="radio" name="color" id="color2" />
+                  <label class="btn clip-path-2" data-btn for="color2"
+                    >Đỏ</label
+                  >
+                  <input type="radio" name="color" id="color3" />
+                  <label class="btn clip-path-2" data-btn for="color3"
+                    >Đen đỏ</label
+                  >
+                </div>
+              </div>
+              <div class="product__property">
+                <span>Giá:</span>
+                <span style="color: red; font-weight: 600">73,290,000₫</span>
+              </div>
+            </div>
+
+            <div class="quantity-select">
+              <span>Số lượng:</span>
+              <div>
+                <div class="product__buy">
+                  <button class="product__buy-minus">-</button>
+                  <input
+                    type="text"
+                    min="0"
+                    value="0"
+                    name="SoLuong"
+                    id="quantity"
+                    disabled
+                  />
+                  <button class="product__buy-plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="status">
+              <ul class="list__status"></ul>
+            </div>
+            <div class="product__buy">
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-plus cart-plus-icon"></i>Thêm giỏ
+                hàng
+              </button>
+              <button class="buy-now">
+                <a href="../payment.html"> Mua ngay</a>
+              </button>
+            </div>
+
+            <div class="promotion">
+              <div class="promotion__delivery">
+                <i class="promotion--icon fa-solid fa-truck"></i>
+                <div>
+                  <p>
+                    Miễn phí giao hàng toàn quốc cho sản phẩm phụ tùng - phụ
+                    kiện
+                  </p>
+                  <p>MIỄN PHÍ GIAO HÀNG toàn quốc cho đơn hàng từ 350.000vnd</p>
+                </div>
+              </div>
+              <div class="promotion__reward">
+                <i class="promotion--icon fa-sharp fa-solid fa-tags"></i>
+                <p>
+                  Nhấn nút <span>TƯ VẤN NHANH</span> để được thông tin về các
+                  chương trình ưu đãi hấp dẫn lên đến 6 triệu
+                </p>
+              </div>
+              <div class="promotion__payments">
+                <i class="promotion--icon fa-solid fa-money-check"></i>
+                <div>
+                  <p>
+                    Hỗ trợ thanh toán trả góp qua các đơn vị Tài chính:
+                    HDsaison, Jaccs, Home Credit.
+                  </p>
+                  <p>
+                    Hỗ trợ lãi suất thấp từ 0 - 2% tuỳ dòng xe & theo từng thời
+                    điểm diễn ra các chương trình hỗ trợ/ khuyến mãi
+                  </p>
+                </div>
+              </div>
+              <div class="promotion__contact">
+                <i class="promotion--icon fa-solid fa-phone"></i>
+                <div>
+                  <p>HỖ TRỢ MUA NHANH (Từ 08:30–21:30 hàng ngày)</p>
+                  <span>0123456789 - 0123456789(Zalo)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="tabs">
+          <div class="tab-item active" data-btn>
+            <i class="tab-icon fa-solid fa-file-lines"></i>
+            MÔ TẢ SẢN PHẨM
+          </div>
+          <div class="tab-item" data-btn>
+            <i class="tab-icon fas fa-cog"></i>
+            THÔNG SỐ KỸ THUẬT
+          </div>
+          <div class="tab-item" data-btn>
+            <i class="tab-icon fa-solid fa-image"></i>
+            HÌNH ẢNH
+          </div>
+          <div class="tab-line"></div>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-panel active">
+            <img
+              class="tab-banner"
+              src="https://cdn.honda.com.vn/motorbikes/September2021/Rlj7LYHRNRuGyG9L8uDQ.jpg"
+              alt="CBR150R"
+            />
+            <div class="tab-overview">
+              <div>THIẾT KẾ</div>
+              <p>
+                CBR150R hoàn toàn mới tạo ấn tượng với diện mạo đậm chất thể
+                thao lấy cảm hứng từ hình ảnh mẫu xe CBR1000RR-R, với đường nét
+                có độ nhô về phía trước gợi lên hình ảnh một tay đua cầm lái
+                luôn sẵn sàng xuất phát. Mẫu xe cũng được tùy chỉnh các chi tiết
+                gọn gàng hơn mang lại vẻ linh hoạt của một mẫu xe thành thị.
+              </p>
+            </div>
+
+            <div class="description">
+              <h1>Hệ thống đèn LED nổi bật</h1>
+              <p>
+                CBR150R hoàn toàn mới nổi bật với hệ thống chiếu sáng được trang
+                bị toàn bộ đèn LED, đèn phía trước tách thành hai tầng đầy mới
+                lạ với chức năng riêng biệt: đèn ban ngày tầng trên và đèn
+                pha/cos tầng dưới giúp mang lại khả năng chiếu sáng tối ưu.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/September2021/g50Ogpcc4M4SXmxmRCDx.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Đồng hồ kỹ thuật số LCD hiện đại</h1>
+              <p>
+                Cụm đồng hồ kỹ thuật số màn hình màu LCD được bố trí hiển thị
+                các thông số kỹ thuật như tốc độ, vòng tua máy, thời gian, báo
+                xăng và xi nhan cho khách hàng dễ dàng quan sát lựa chọn sử dụng
+                khi vận hành xe trên đường.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/September2021/90ccirWiy00o3di24cx2.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Bình xăng trước dung tích lớn</h1>
+              <p>
+                Bình xăng phía trước thể thao với dung tích lớn 12 lít, cùng với
+                ốp bình xăng được cắt sắc nét tạo sự gọn gàng và độ thoáng nhất
+                định cho góc lái, giúp người điều khiển thoải mái di chuyển và
+                khám phá mọi cung đường thành thị.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/September2021/SrvAz7zDFmfyo50NSRLn.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Giảm xóc hành trình ngược Up side down thể thao</h1>
+              <p>
+                CBR150R khẳng định là mẫu xe côn tay thể thao dành cho thành thị
+                với trang bị giảm xóc hành trình ngược sơn mạ vàng giúp toàn bộ
+                phần trước của xe trở nên cứng cáp, tăng độ êm ái mang lại sự tự
+                tin di chuyển cho người lái.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/September2021/queuzfzM4Z94gsCzyx2u.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="tab-overview">
+              <div>ĐỘNG CƠ - CÔNG NGHỆ</div>
+              <p>
+                Khả năng vận hành linh hoạt đến từ khối động cơ đầy uy lực cùng
+                với bộ ly hợp hỗ trợ và chống trượt hai chiều, nâng cao trải
+                nghiệm lái cho chủ sở hữu.
+              </p>
+            </div>
+
+            <div class="description">
+              <h1>Động cơ DOHC 150cc đầy uy lực</h1>
+              <p>
+                Khả năng vận hành linh hoạt đến từ khối động cơ đầy uy lực cùng
+                với bộ ly hợp hỗ trợ và chống trượt hai chiều, nâng cao trải
+                nghiệm lái cho chủ sở hữu.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/September2021/oKmkNYaaoWEubgXKDWe9.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Bộ ly hợp hỗ trợ và chống trượt hai chiều</h1>
+              <p>
+                Xứng danh chiến hữu thành thị, CBR150R hoàn toàn mới được trang
+                bị bộ ly hợp hỗ trợ và chống trượt hai chiều tương tự các mẫu xe
+                phân khối lớn giúp chuyển số dễ dàng, tránh tình trạng trượt và
+                khóa bánh trong các tình huống giảm số đột ngột. Với trang bị
+                này, người lái tự tin di chuyển mọi cung đường và điều kiện giao
+                thông trong thành thị.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/September2021/C0pKzRH2H2Yh6bgdipgo.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="tab-overview">
+              <div>TIỆN ÍCH & AN TOÀN</div>
+              <p>
+                CBR150R hoàn toàn mới được ưu ái trang bị một số công nghệ cao
+                cấp nhằm nâng cao giá trị sử dụng và đem lại trải nghiệm sử dụng
+                vượt trội cho khách hàng.
+              </p>
+            </div>
+
+            <div class="description">
+              <h1>Hệ thống chống bó cứng phanh ABS hai kênh</h1>
+              <p>
+                Với trang bị hệ thống chống bó cứng phanh ABS trên cả bánh trước
+                và bánh sau giúp người lái an tâm di chuyển và tự tin xử lý mọi
+                tình huống, khẳng định CBR150R hoàn toàn mới là một chiến hữu
+                thành thị đích thực.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/September2021/g50Ogpcc4M4SXmxmRCDx.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Đèn tín hiệu dừng khẩn cấp ESS</h1>
+              <p>
+                Cùng với hệ thống chống bó cứng phanh ABS hai kênh, đèn hậu mẫu
+                xe được chia thành 2 tầng, kết hợp chiếu sáng cùng tín hiệu dừng
+                khẩn cấp ESS khi có dấu hiệu phanh khẩn cấp từ người điều khiển,
+                giúp phương tiện phía sau có thể kịp thời phản ứng trong tình
+                huống xấu.
+              </p>
+              <img
+                src="https://cdn.honda.com.vn/motorbike-strong-points/September2021/ZAS5KvVOPmqexmtI9Lhg.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="tab-panel">
+            <div class="specifications-title">
+              Thông số kĩ thuật Honda CB150R The Streetster
+            </div>
+            <table class="specifications-table" border="1">
+              <tr>
+                <td>Khối lượng bản thân</td>
+                <td>139kg</td>
+              </tr>
+              <tr>
+                <td>Dài x Rộng x Cao</td>
+                <td>1.983 x 700 x 1.090 mm</td>
+              </tr>
+              <tr>
+                <td>Khoảng cách trục bánh xe</td>
+                <td>1.312 mm</td>
+              </tr>
+              <tr>
+                <td>Độ cao yên</td>
+                <td>788 mm</td>
+              </tr>
+              <tr>
+                <td>Khoảng sáng gầm xe</td>
+                <td>151 mm</td>
+              </tr>
+              <tr>
+                <td>Dung tích bình xăng</td>
+                <td>12 lít</td>
+              </tr>
+              <tr>
+                <td>Kích cỡ lớp trước/ sau</td>
+                <td>Trước: 100/80-17M/C <br />Sau: 130/70-17M/C</td>
+              </tr>
+
+              <tr>
+                <td>Phuộc trước</td>
+                <td>Ống lồng, giảm chấn thủy lực</td>
+              </tr>
+              <tr>
+                <td>Phuộc sau</td>
+                <td>Lò xo trụ đơn</td>
+              </tr>
+              <tr>
+                <td>Loại động cơ</td>
+                <td>
+                  PGM-FI, 4 kỳ, DOHC, xy-lanh đơn, côn 6 số, làm mát bằng dung
+                  dịch
+                </td>
+              </tr>
+              <tr>
+                <td>Công suất tối đa</td>
+                <td>12,6kW/9.000 vòng/phút</td>
+              </tr>
+              <tr>
+                <td>Dung tích nhớt máy</td>
+                <td>1,1 lít khi thay nhớt <br />1,3 lít khi rã máy</td>
+              </tr>
+              <tr>
+                <td>Mức tiêu thụ nhiên liệu</td>
+                <td>2,91l/100km</td>
+              </tr>
+              <tr>
+                <td>Hộp số</td>
+                <td>6 cấp</td>
+              </tr>
+              <tr>
+                <td>Loại truyền động</td>
+                <td>Cơ khí</td>
+              </tr>
+              <tr>
+                <td>Hệ thống khởi động</td>
+                <td>Điện</td>
+              </tr>
+              <tr>
+                <td>Moment cực đại</td>
+                <td>13,7Nm/7.000 vòng/phút</td>
+              </tr>
+              <tr>
+                <td>Dung tích xy-lanh</td>
+                <td>149,2 cm3</td>
+              </tr>
+              <tr>
+                <td>Đường kính x Hành trình pít tông</td>
+                <td>57,3 mm x 57,8 mm</td>
+              </tr>
+              <tr>
+                <td>Tỷ số nén</td>
+                <td>11,3 :1</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="tab-panel">
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/cbr150_den_nham_b9d79b22f4214906a19a8e500614d298_grande.png"
+                alt=""
+              />
+              <p>Phiên bản đặc biệt Đen Xám</p>
+            </div>
+
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/cbr150_do_45123725453742888264835ed7e145de_grande.png"
+                alt=""
+              />
+              <p>Phiên bản thể thao Đỏ</p>
+            </div>
+
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/cbr150_do_den_d23e10083ccd449d9f54d79935e90e47_grande.png"
+                alt=""
+              />
+              <p>Phiên bản tiêu chuẩn Đen Đỏ</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--#FOOTER-->
+
+    <footer class="footer">
+      <div class="custom-shape-divider-bottom-1685005946">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <article>
+        <div class="section contact">
+          <div class="container">
+            <div class="contact-brand">
+              <a href="#" class="logo">
+                <img
+                  src="../assets/images/logo.svg"
+                  width="150"
+                  height="73"
+                  loading="lazy"
+                  alt="Unigine logo"
+                />
+              </a>
+
+              <p class="footer-text">
+                Dự án của nhóm 3 đề tài thiết kế website tĩnh đại lý bán xe
+              </p>
+
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.insatgram.com/coding.stella"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Thành Viên</p>
+
+              <ul>
+                <li>
+                  <a href="#" class="contact-link">Cao Nhật Linh</a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-link">Trần Thị Trúc</a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-link">Bạch Minh Tuyên</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Contact Us</p>
+
+              <div class="contact-item">
+                <span class="span">Location:</span>
+
+                <address class="contact-link">
+                  140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh
+                </address>
+              </div>
+
+              <div class="contact-item">
+                <span class="span">Join Us:</span>
+
+                <a href="mailto:Info@gamehive.com" class="contact-link"
+                  >nhom3dailyxemay@gmail.com</a
+                >
+              </div>
+
+              <div class="contact-item">
+                <span class="span">Phone:</span>
+
+                <a href="tel:+12345678910" class="contact-link"
+                  >+84 123456789</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Join Us</p>
+
+              <form action="./index.html" method="get" class="contact-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  required
+                  placeholder="Your Email"
+                  autocomplete="off"
+                  class="input-field"
+                />
+
+                <button type="submit" class="btn clip-path-3 bg-btn" data-btn>
+                  Subscribe Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+    </footer>
+
+    <!-- 
+        - #BACK TO TOP
+    -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+- #CUSTOM CURSOR
+-->
+
+    <div class="cursor" data-cursor></div>
+
+    <!-- 
+- custom js link
+-->
+    <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/product-detail.js"></script>
+
+    <!-- 
+- ionicon link
+-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -162,6 +162,7 @@
   font-size: 1.5em;
   color: rgb(88 199 250 / 0%);
   z-index: 1;
+  font-family: var(--fontFamily-oxanium);
 }
 .product__item .product__item-content .product__item-bg {
   margin-top: 30px;
@@ -282,6 +283,17 @@
   display: grid;
   -webkit-animation: fadeIn 1s cubic-bezier(0.42, 0, 0.01, 0.85);
   animation: fadeIn 1s cubic-bezier(0.42, 0, 0.01, 0.85);
+}
+
+/* manager-modal */
+.manager-modal {
+  background-color: #121717cd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
 }
 
 @media (min-width: 575px) {

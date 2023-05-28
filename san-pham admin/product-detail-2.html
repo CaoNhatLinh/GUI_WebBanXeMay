@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--primary meta tags-->
+    <title>Unigine - Chi Tiết sẳn phẩm</title>
+    <meta name="title" content="Unigine - tốc độ vượt rội!" />
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml" />
+
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css" />
+
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--custom css link-->
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/product-detail.css" />
+    <link rel="stylesheet" href="../assets/css/signUp.css" />
+
+    <!--preload images-->
+    <link
+      rel="preload"
+      as="image"
+      href="https://c4.wallpaperflare.com/wallpaper/692/215/622/han-juri-street-fighter-motorcycle-helmet-with-horn-purple-background-hd-wallpaper-preview.jpg"
+    />
+  </head>
+
+  <body id="top">
+    <!--#HEADER-->
+
+    <header class="header active" data-header>
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <img
+            src="../assets/images/logo.svg"
+            width="110"
+            height="53"
+            alt="unigine home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="../index.html" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="../product.html" class="navbar-link" data-nav-link
+                >SẢN PHẨM</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="#!" class="navbar-link" id="service" data-nav-link
+                >DỊCH VỤ<i class="arrow-down-icon fa-solid fa-arrow-down"></i>
+              </a>
+
+              <ul class="service">
+                <li class="service-item">đặt lịch lái thử</li>
+                <li class="service-item">đặt lịch bảo dưỡng</li>
+                <li class="service-item">linh kiện chính hẵng</li>
+                <li class="service-item">vệ sinh và chăm sóc</li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="../reviews.html" class="navbar-link" data-nav-link
+                >VỀ CHÚNG TÔI
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-login">
+          <a href="#!" class="btn clip-path-3 bg-btn signIn" data-btn
+            >Đăng Nhập</a
+          >
+          <a href="#!" class="btn clip-path-6 bg-btn signUp" data-btn
+            >Đăng Ký</a
+          >
+        </div>
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle menu"
+          data-nav-toggler
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="login"></div>
+      <section class="product-info">
+        <div class="title">
+          <h2>Thông tin sản phẩm</h2>
+        </div>
+        <div class="product">
+          <div class="product__image">
+            <img
+              src="https://file.hstatic.net/1000391844/file/sh350_xam1_e04f6d8d712649dbb482c8e317d5b48a_grande.jpg"
+              alt="HONDA SH350I"
+            />
+          </div>
+
+          <div class="product__details">
+            <div class="product__title">
+              <h1>HONDA SH350I</h1>
+              <div class="product__id">
+                Mã SP:
+                <span>SH350K1WFV00R368</span>
+              </div>
+              <div class="product__property">
+                <span>Kiểu dáng:</span>
+                <div class="product-option">
+                  <input type="radio" name="version" id="version1" checked />
+                  <label class="btn clip-path-2" data-btn for="version1"
+                    >Cao Cấp</label
+                  >
+                  <input type="radio" name="version" id="version2" />
+                  <label class="btn clip-path-2" data-btn for="version2"
+                    >Thể Thao</label
+                  >
+                  <input type="radio" name="version" id="version3" />
+                  <label class="btn clip-path-2" data-btn for="version3"
+                    >Đặc Biệt</label
+                  >
+                </div>
+              </div>
+              <div class="product__property">
+                <span>Màu sắc:</span>
+                <div class="product-option">
+                  <input type="radio" name="color" id="color1" checked />
+                  <!-- <label class="btn clip-path-2" data-btn for="color1"
+                    >Đen xám</label
+                  > -->
+                  <input type="radio" name="color" id="color2" />
+                  <label class="btn clip-path-2" data-btn for="color2"
+                    >Đỏ</label
+                  >
+                  <input type="radio" name="color" id="color3" />
+                  <label class="btn clip-path-2" data-btn for="color3"
+                    >Trắng</label
+                  >
+                </div>
+              </div>
+              <div class="product__property">
+                <span>Giá:</span>
+                <span style="color: red; font-weight: 600">134,990,000₫</span>
+              </div>
+            </div>
+
+            <div class="quantity-select">
+              <span>Số lượng:</span>
+              <div>
+                <div class="product__buy">
+                  <button class="product__buy-minus">-</button>
+                  <input
+                    type="text"
+                    min="0"
+                    value="0"
+                    name="SoLuong"
+                    id="quantity"
+                    disabled
+                  />
+                  <button class="product__buy-plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="status">
+              <ul class="list__status"></ul>
+            </div>
+            <div class="product__buy">
+              <button class="add-to-cart">
+                <i class="fa-solid fa-cart-plus cart-plus-icon"></i>Thêm giỏ
+                hàng
+              </button>
+              <button class="buy-now">
+                <a href="../payment.html"> Mua ngay</a>
+              </button>
+            </div>
+
+            <div class="promotion">
+              <div class="promotion__delivery">
+                <i class="promotion--icon fa-solid fa-truck"></i>
+                <div>
+                  <p>
+                    Miễn phí giao hàng toàn quốc cho sản phẩm phụ tùng - phụ
+                    kiện
+                  </p>
+                  <p>MIỄN PHÍ GIAO HÀNG toàn quốc cho đơn hàng từ 350.000vnd</p>
+                </div>
+              </div>
+              <div class="promotion__reward">
+                <i class="promotion--icon fa-sharp fa-solid fa-tags"></i>
+                <p>
+                  Nhấn nút <span>TƯ VẤN NHANH</span> để được thông tin về các
+                  chương trình ưu đãi hấp dẫn lên đến 6 triệu
+                </p>
+              </div>
+              <div class="promotion__payments">
+                <i class="promotion--icon fa-solid fa-money-check"></i>
+                <div>
+                  <p>
+                    Hỗ trợ thanh toán trả góp qua các đơn vị Tài chính:
+                    HDsaison, Jaccs, Home Credit.
+                  </p>
+                  <p>
+                    Hỗ trợ lãi suất thấp từ 0 - 2% tuỳ dòng xe & theo từng thời
+                    điểm diễn ra các chương trình hỗ trợ/ khuyến mãi
+                  </p>
+                </div>
+              </div>
+              <div class="promotion__contact">
+                <i class="promotion--icon fa-solid fa-phone"></i>
+                <div>
+                  <p>HỖ TRỢ MUA NHANH (Từ 08:30–21:30 hàng ngày)</p>
+                  <span>0123456789 - 0123456789(Zalo)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="tabs">
+          <div class="tab-item active" data-btn>
+            <i class="tab-icon fa-solid fa-file-lines"></i>
+            MÔ TẢ SẢN PHẨM
+          </div>
+          <div class="tab-item" data-btn>
+            <i class="tab-icon fas fa-cog"></i>
+            THÔNG SỐ KỸ THUẬT
+          </div>
+          <div class="tab-item" data-btn>
+            <i class="tab-icon fa-solid fa-image"></i>
+            HÌNH ẢNH
+          </div>
+          <div class="tab-line"></div>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-panel active">
+            <img
+              class="tab-banner"
+              src="https://cdn.honda.com.vn/motorbikes/December2022/TmKg2s72XmE2GNeptPlC.jpg"
+              alt="HONDA SH350I"
+            />
+            <div class="tab-overview">
+              <div>THIẾT KẾ</div>
+              <!-- <p>
+                CBR150R hoàn toàn mới tạo ấn tượng với diện mạo đậm chất thể
+                thao lấy cảm hứng từ hình ảnh mẫu xe CBR1000RR-R, với đường nét
+                có độ nhô về phía trước gợi lên hình ảnh một tay đua cầm lái
+                luôn sẵn sàng xuất phát. Mẫu xe cũng được tùy chỉnh các chi tiết
+                gọn gàng hơn mang lại vẻ linh hoạt của một mẫu xe thành thị.
+              </p> -->
+            </div>
+
+            <div class="description">
+              <h1>Thiết kế phía trước cao cấp và sắc nét</h1>
+              <p>
+                Mặt trước gây ấn tượng với chi tiết mạ chrome cao cấp cùng tạo khối góc cạnh, sắc nét làm tăng thêm vẻ cuốn hút cho chủ sở hữu. Công nghệ LED hiện đại được áp dụng cho toàn bộ hệ thống chiếu sáng giúp nhấn mạnh sự hiện đại và hình ảnh sang trọng của SH350i.
+              </p>
+              <p>Đèn chiếu sáng phía trước được thiết kế hiện đại làm nổi bật sự cao cấp của phần đầu xe. Đèn định vị được bố trí nằm phía trên thanh nẹp tay lái làm tăng vẻ cá tính và sự sang trọng.</p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/1_9320cee4c52741b59e6447353d0fc617_grande.png"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Thiết kế phía sau sang trọng và cuốn hút</h1>
+              <p>
+                Cụm đèn hậu LED được trang trí với đường mạ chrome tạo điểm nhấn sang trọng cho phần đuôi xe.
+              </p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/2_7cb5358cd559444287cf6d541608c51c_grande.png"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Mặt đồng hồ LCD hiện đại cùng nhiều tính năng</h1>
+              <p>
+                Mặt đồng hồ với vẻ ngoài hiện đại, hiển thị rõ ràng và cân đối, đầy đủ tất cả các thông số và đèn báo hoạt động, giúp người dùng dễ dàng quan sát khi đang vận hành trên đường. Bên cạnh đó, điểm nhấn trên cụm đồng hồ còn đến từ chi tiết ốp kim loại mạ chrome hình chữ H, tạo sự sang trọng và độc đáo.
+              </p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/3_26e7e325eee847189cae3b958ef896eb_grande.png"
+                alt=""
+              />
+            </div>
+
+            <div class="tab-overview">
+              <div>ĐỘNG CƠ - CÔNG NGHỆ</div>
+              <p>
+                Khả năng vận hành linh hoạt đến từ khối động cơ đầy uy lực cùng với bộ ly hợp hỗ trợ và chống trượt hai chiều, nâng cao trải nghiệm lái cho chủ sở hữu.
+              </p>
+            </div>
+
+            <div class="description">
+              <h1>Động cơ eSP+</h1>
+              <p>
+                SH350i được trang bị động cơ thế hệ mới eSP+ được phát triển theo tiêu chuẩn khí thải Euro 4, dung tích 329cc, sử dụng động cơ SOHC xy lanh đơn 4 van, phun xăng điện tử PGM-FI. Động cơ được áp dụng hàng loạt công nghệ tiên tiến và cao cấp giúp nâng cao công suất, giảm thiểu ma sát và giảm thiểu rung lắc. Nhờ đó giúp cải thiện hiệu quả nhiên liệu, đạt công suất động cơ vượt trội và thân thiện hơn với môi trường, mang lại trải nghiệm lái đẳng cấp hơn.
+              </p>
+              <p>*theo kết quả kiểm chứng của Honda R&D</p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/4_7cdde94fafd54a2b8ea6b6ef1d83d4e7_grande.png"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Hệ thống chống bó cứng phanh (ABS) 2 kênh</h1>
+              <p>
+                SH350i được trang bị hệ thống chống bó cứng phanh (ABS) trên cả bánh trước và bánh sau, giúp xe đạt trạng thái cân bằng ổn định bằng cách phân bổ lực phanh hợp lý tránh khóa cứng bánh xe, đặc biệt hữu ích trong điều kiện đường trơn ướt, gồ ghề hay phanh gấp ở tốc độ cao.
+              </p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/5_2352124c88964a8da9bdb11b60c57a4b_grande.png"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Hệ thống kiểm soát lực kéo (HSTC)</h1>
+              <p>
+                Hệ thống kiểm soát lực kéo HSTC tiếp tục được trang bị trên dòng xe SH350i, giúp xe vận hành êm ái, kiểm soát độ bám đường của bánh sau trên mặt đường trơn trượt; đem lại khả năng vận hành và tăng tốc ổn định; nâng cao cảm giác lái an tâm. Chức năng HSTC có thể được BẬT – TẮT thông qua công tắc trên tay lái bên trái. Đèn hiển thị chữ T bật sáng trên màn hình điện tử của xe có chức năng báo hiệu hệ thống HSTC đang làm việc để kiểm soát độ bám đường cho xe.
+              </p>
+              <p>**Lưu ý: HSTC không phải hệ thống để loại bỏ hoàn toàn hiện tượng trượt bánh. Hệ thống chỉ có tính năng hỗ trợ chống trượt khi tăng ga. Vì vậy, người lái vẫn phải bảo đảm an toàn khi lưu thông, tương tự như khi sử dụng các dòng xe không có hệ thống HSTC.</p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/6_9944d804c1574df2bbd04abc9d2d555b_grande.png"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Kết nối điện thoại qua Bluetooth</h1>
+              <p>
+                Công nghệ bluetooth kết nối với điện thoại thông minh tiếp tục được trang bị trên SH350i, giúp người lái nhận thông báo cuộc gọi, tin nhắn đến trên mặt đồng hồ. Người dùng có thể truy cập và đọc toàn bộ thông tin xe qua My Honda+ như tình trạng vận hành, mức độ tiêu thụ nhiên liệu, thông tin sửa chữa, bảo hành, bảo dưỡng, lịch sử tiêu hao nhiên liệu cá nhân và bảng xếp hạng tiêu hao nhiên liệu,...
+              </p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/7_8c07a905523e4f4b9cd310c05cc277b0_grande.png"
+                alt=""
+              />
+            </div>
+
+            <div class="tab-overview">
+              <div>TIỆN ÍCH & AN TOÀN</div>
+              <p>
+                SH350I hoàn toàn mới được ưu ái trang bị một số công nghệ cao
+                cấp nhằm nâng cao giá trị sử dụng và đem lại trải nghiệm sử dụng
+                vượt trội cho khách hàng.
+              </p>
+            </div>
+
+            <div class="description">
+              <h1>Hộc đựng đồ và bình xăng lớn</h1>
+              <p>
+                SH350i được trang bị cốp đựng đồ nằm dưới yên xe với diện tích lớn, có thể chứa được một mũ bảo hiểm cả đầu, cùng với bình xăng dung tích lớn, lên tới 9.3 lít.
+              </p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/8_ddef74f5c2234e33a784dc9e03939a4f_grande.png"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Hộc đựng đồ và bình xăng lớn</h1>
+              <p>
+                Hệ thống khóa thông minh giúp xác định vị trí xe và mở khóa thông minh từ xa tiện lợi, được thiết kế sang trọng với công nghệ đột phá, giúp tối ưu hóa khả năng chống trộm với trang bị còi báo động, mang lại tiện ích cao cấp, giúp an tâm khi sử dụng.
+              </p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/9_fc9ca252f9a649a483d5a1731d7170b4_grande.png"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Cổng sạc tiện lợi</h1>
+              <p>
+                Ổ cắm USB loại C tối tân nhất được tích hợp trong hộc đựng đồ dưới yên mang đến tiện ích tối ưu cho người sử dụng.
+              </p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/10_102d2b008bd94d39ab2e06c4f1bb8b4d_grande.png"
+                alt=""
+              />
+            </div>
+
+            <div class="description">
+              <h1>Đèn chiếu sáng phía trước luôn sáng và đèn tín hiệu dừng khẩn cấp</h1>
+              <p>
+                Chế độ đèn luôn sáng đảm bảo cho người lái có tầm nhìn tốt nhất, hạn chế các trường hợp quên bật đèn khi đi trong điều kiện ánh sáng không đảm bảo, đồng thời giúp nâng cao khả năng hiện diện của xe khi lưu thông trên đường phố.
+              </p>
+              <p>Đèn xi nhan có tính năng cảnh báo tự động khi phanh gấp, giúp cảnh báo cho các phương tiện ở phía sau kịp thời quan sát và tránh va chạm.</p>
+              <img
+                src="https://file.hstatic.net/1000391844/file/11_9f20717e98ba4e5288e993a790bd7a96_grande.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          
+
+          <div class="tab-panel">
+            <div class="specifications-title">
+              Thông số kĩ thuật Honda CB150R The Streetster
+            </div>
+            <table class="specifications-table" border="1">
+              <tr>
+                <td>Khối lượng bản thân</td>
+                <td>172 kg</td>
+              </tr>
+              <tr>
+                <td>Dài x Rộng x Cao</td>
+                <td>2.160 mm x 743 mm x 1.162 mm</td>
+              </tr>
+              <tr>
+                <td>Khoảng cách trục bánh xe</td>
+                <td>1.450 mm</td>
+              </tr>
+              <tr>
+                <td>Độ cao yên</td>
+                <td>805 mm</td>
+              </tr>
+              <tr>
+                <td>Khoảng sáng gầm xe</td>
+                <td>132 mm</td>
+              </tr>
+              <tr>
+                <td>Dung tích bình xăng</td>
+                <td>9.3 lít</td>
+              </tr>
+              <tr>
+                <td>Kích cỡ lớp trước/ sau</td>
+                <td>Trước: 110/70-16 M/C 52S <br/>Sau: 130/70R16 M/C 61S</td>
+              </tr>
+              <tr>
+                <td>Loại động cơ</td>
+                <td>
+                  SOHC, 4 kỳ, xy-lanh đơn 4 van, làm mát bằng chất lỏng; đáp ứng Euro 3
+                </td>
+              </tr>
+              <tr>
+                <td>Công suất tối đa</td>
+                <td>21,5 kW/7.500 vòng/phút</td>
+              </tr>
+              <tr>
+                <td>Dung tích nhớt máy</td>
+                <td>Sau khi xả: 1,4 lít <br />Sau khi xả và vệ sinh lưới lọc: 1,5 lít <br>Sau khi rã máy: 1,85 lít</td>
+              </tr>
+              <tr>
+                <td>Mức tiêu thụ nhiên liệu</td>
+                <td>3,54l/100km</td>
+              </tr>
+              <tr>
+                <td>Loại truyền động</td>
+                <td>Biến thiên vô cấp</td>
+              </tr>
+              <tr>
+                <td>Hệ thống khởi động</td>
+                <td>Điện</td>
+              </tr>
+              <tr>
+                <td>Moment cực đại</td>
+                <td>31,8 Nm/5.250 vòng/phút</td>
+              </tr>
+              <tr>
+                <td>Dung tích xy-lanh</td>
+                <td>329,6 cc</td>
+              </tr>
+              <tr>
+                <td>Đường kính x Hành trình pít tông</td>
+                <td>77 mm x 70,77 mm</td>
+              </tr>
+              <tr>
+                <td>Tỷ số nén</td>
+                <td>10,5:1</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="tab-panel">
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/sh350_xam1_e04f6d8d712649dbb482c8e317d5b48a_grande.jpg"
+                alt=""
+              />
+              <p>Phiên bản thể thao Xám - Đen</p>
+            </div>
+
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/sh350_do1_39b4cae02bc84bba90b921aea82146b3_grande.jpg"
+                alt=""
+              />
+              <p>Phiên bản cao cấp Đỏ - Đen</p>
+            </div>
+
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/sh350_trang1_08777480a1ac4243a45ca8d7569584f7_grande.jpg"
+                alt=""
+              />
+              <p>Phiên bản cao cấp Trắng - Đen</p>
+            </div>
+
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/dac_biet_den_b128fd25d36f48e98423ce68c93065f2_grande.jpg"
+                alt=""
+              />
+              <p>Phiên bản đặc biệt Đen</p>
+            </div>
+
+            <div class="image-all">
+              <img
+                src="https://file.hstatic.net/1000391844/file/dac_biet_bac_den_c03194ed7ac4432ba0cb9b9d24c6c3bc_grande.jpg"
+                alt=""
+              />
+              <p>Phiên bản đặc biệt Bạc - Đen</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--#FOOTER-->
+
+    <footer class="footer">
+      <div class="custom-shape-divider-bottom-1685005946">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <article>
+        <div class="section contact">
+          <div class="container">
+            <div class="contact-brand">
+              <a href="#" class="logo">
+                <img
+                  src="../assets/images/logo.svg"
+                  width="150"
+                  height="73"
+                  loading="lazy"
+                  alt="Unigine logo"
+                />
+              </a>
+
+              <p class="footer-text">
+                Dự án của nhóm 3 đề tài thiết kế website tĩnh đại lý bán xe
+              </p>
+
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.insatgram.com/coding.stella"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Thành Viên</p>
+
+              <ul>
+                <li>
+                  <a href="#" class="contact-link">Cao Nhật Linh</a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-link">Trần Thị Trúc</a>
+                </li>
+
+                <li>
+                  <a href="#" class="contact-link">Bạch Minh Tuyên</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Contact Us</p>
+
+              <div class="contact-item">
+                <span class="span">Location:</span>
+
+                <address class="contact-link">
+                  140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh
+                </address>
+              </div>
+
+              <div class="contact-item">
+                <span class="span">Join Us:</span>
+
+                <a href="mailto:Info@gamehive.com" class="contact-link"
+                  >nhom3dailyxemay@gmail.com</a
+                >
+              </div>
+
+              <div class="contact-item">
+                <span class="span">Phone:</span>
+
+                <a href="tel:+12345678910" class="contact-link"
+                  >+84 123456789</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-list">
+              <p class="title contact-list-title has-after">Join Us</p>
+
+              <form action="./index.html" method="get" class="contact-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  required
+                  placeholder="Your Email"
+                  autocomplete="off"
+                  class="input-field"
+                />
+
+                <button type="submit" class="btn clip-path-3 bg-btn" data-btn>
+                  Subscribe Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+    </footer>
+
+    <!-- 
+        - #BACK TO TOP
+    -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+- #CUSTOM CURSOR
+-->
+
+    <div class="cursor" data-cursor></div>
+
+    <!-- 
+- custom js link
+-->
+    <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/product-detail.js"></script>
+
+    <!-- 
+    - ionicon link
+    -->
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script>
+      var splide = new Splide(".splide", {
+        perPage: 3,
+        perMove: 1,
+        gap: "2rem",
+        type: "loop",
+        drag: "free",
+        snap: true,
+        arrrows: false,
+        pagination: true,
+        breakpoints: {
+          640: {
+            perPage: 2,
+            gap: ".7rem",
+            height: "6rem",
+          },
+          480: {
+            perPage: 1,
+            gap: ".7rem",
+            height: "6rem",
+          },
+        },
+      });
+
+      splide.mount();
+    </script>
+  </body>
+</html>

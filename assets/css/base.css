@@ -258,7 +258,7 @@ body {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  min-width: 120px;
+  min-width: 100px;
   height: 50px;
   display: -ms-grid;
   display: grid;
@@ -556,6 +556,7 @@ body {
   font-size: var(--fontSize-7);
   font-weight: var(--weight-semiBold);
   color: var(--text-white);
+  cursor: pointer;
 }
 .navbar-link:hover {
   color: var(--text-purple);
@@ -781,6 +782,9 @@ body {
 }
 
 @media (min-width: 575px) {
+  .btn {
+    min-width: 120px;
+  }
   .animate-item.animate-item__left {
     opacity: 0;
     -webkit-transform: translateX(-50px) !important;

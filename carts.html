@@ -8,13 +8,12 @@
     <!-- 
     - primary meta tags
   -->
-    <title>GameHive - Epic Games Made For True Gamers!</title>
-    <meta name="title" content="Unigine - Epic Games Made For True Gamers!" />
-    <meta
-      name="description"
-      content="This is an esports and gaming html template made by codewithsadee"
-    />
+    <title>Unigine - Giỏ hàng</title>
+    <meta name="title" content="Unigine - tốc độ vượt rội!" />
 
+    <!-- 
+    - favicon
+  -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
     <!--  
@@ -40,19 +39,18 @@
     - custom css link
   -->
     <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link rel="stylesheet" href="./assets/css/signUp.css" />
-    <link rel="stylesheet" href="./assets/css/introduction.css" />
-    <link
-      rel="preload"
-      as="image"
-      href="https://wallpapers.com/images/hd4/white-motorcycle-in-bluish-purple-background-ypppczndbab7r1d5.jpg"
-    />
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+    <link rel="stylesheet" href="./assets/css/carts.css" />
   </head>
-  <body>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
     <header class="header active" data-header>
       <div class="container">
-        <a href="./index.html" class="logo">
+        <a href="./admin.html" class="logo">
           <img
             src="./assets/images/logo.svg"
             width="110"
@@ -64,11 +62,11 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>home</a>
+              <a href="./admin.html" class="navbar-link" data-nav-link>home</a>
             </li>
 
             <li class="navbar-item">
-              <a href="./product.html" class="navbar-link" data-nav-link
+              <a href="./product-admin.html" class="navbar-link" data-nav-link
                 >SẢN PHẨM</a
               >
             </li>
@@ -85,17 +83,107 @@
               </ul>
             </li>
             <li class="navbar-item">
-              <a href="#!" class="navbar-link" data-nav-link>VỀ CHÚNG TÔI </a>
+              <a href="./reviews.html" class="navbar-link" data-nav-link
+                >VỀ CHÚNG TÔI
+              </a>
             </li>
           </ul>
         </nav>
-        <div class="nav-login">
-          <a href="#!" class="btn clip-path-3 bg-btn signIn" data-btn
-            >Đăng Nhập</a
-          >
-          <a href="#!" class="btn clip-path-6 bg-btn signUp" data-btn
-            >Đăng Ký</a
-          >
+        <div class="nav-users">
+          <div class="header__user">
+            <a href="" class="header__user-info">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <div class="header__user--show header__box-show">
+              <ul class="header__user-list list">
+                <li
+                  class="header__user-item border-top border-bottom list-item--hover"
+                >
+                  <a href="" class="header__user-item-link">
+                    Tài khoản của tôi
+                  </a>
+                </li>
+                <li class="header__user-item list-item--hover">
+                  <a href="./product-admin.html" class="header__user-item-link">
+                    quản lý sản phẩm
+                  </a>
+                </li>
+                <li class="header__user-item list-item--hover">
+                  <a href="./index.html" class="header__user-item-link">
+                    Đăng xuất
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__cart">
+            <div class="header__cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div class="header__cart-badge">3</div>
+            </div>
+
+            <!--  no cart class: header__cart-show--no-cart -->
+            <div class="header__cart--show header__box-show">
+              <div class="no-cart">
+                <div class="no-cart-img"></div>
+                <span class="no-cart-text">Không có sản phẩm nào</span>
+              </div>
+              <div class="header-heading-text">
+                <h3>Danh sách sản phầm</h3>
+              </div>
+              <ul class="header__cart-list list">
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2022/12/vario-the-thao-xam-den-bac1-e1672364326339-550x400.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Honda VARIO 160</div>
+
+                      <div class="price_value">23,130.000₫</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2019/10/SH350i-ban-dac-biet-bac-den.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Honda SH350i</div>
+
+                      <div class="price_value">56,490.000₫</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="header__cart-item list-item list-item--hover">
+                  <a href="" class="header__cart-link">
+                    <img
+                      loading="lazy"
+                      src="https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-dac-biet-den-mo.png"
+                      alt=""
+                      class="header__cart-img"
+                    />
+                    <div class="header__cart-info">
+                      <div class="header__cart-info-name">Wave ALPHA 110</div>
+
+                      <div class="price_value">12,500.000₫</div>
+                    </div>
+                  </a>
+                </li>
+
+                <button class="header__cart-btn btn clip-path-10 bg-btn">
+                  <a href="#!">Xem giỏ hàng</a>
+                </button>
+              </ul>
+            </div>
+          </div>
         </div>
         <button
           class="nav-toggle-btn"
@@ -108,78 +196,25 @@
         </button>
       </div>
     </header>
-    <main style="margin-bottom: 200px">
-      <div class="login"></div>
-      <section>
-        <div class="container">
-          <div class="general-container">
-            <div class="big-title">
-              <h1>Giới thiệu</h1>
-            </div>
-            <div class="project">
-              <div class="project-info">
-                <h2>Thông tin dự án</h2>
-                <p>
-                  Website ra đời nhằm mục đích quản lý, giới thiệu, quảng bá
-                  hình ảnh về cửa hàng, giúp cho việc kinh doanh, buôn bán, trao
-                  đổi tin tức thuận lợi hơn rất nhiều, mang lại hiệu quả kinh tế
-                  cao hơn và tạo uy tín trong lòng khách hàng. Website giúp
-                  người dùng có thể dễ dàng tiếp cận và dễ dàng lựa chọn sản
-                  phẩm mình mong muốn hơn. Vì vậy, em lựa chọn đề tài “Xây dựng
-                  website giới thiệu xe máy”.
-                </p>
-                <br />
-                <p>
-                  Website ra đời nhằm mục đích quản lý, giới thiệu, quảng bá
-                  hình ảnh về cửa hàng, giúp cho việc kinh doanh, buôn bán, trao
-                  đổi tin tức thuận lợi hơn rất nhiều, mang lại hiệu quả kinh tế
-                  cao hơn và tạo uy tín trong lòng khách hàng. Website giúp
-                  người dùng có thể dễ dàng tiếp cận và dễ dàng lựa chọn sản
-                  phẩm mình mong muốn hơn. Vì vậy, em lựa chọn đề tài “Xây dựng
-                  website giới thiệu xe máy”.
-                </p>
-              </div>
-              <div class="project-image">
-                <img
-                  src="https://wallpapers.com/images/hd4/white-motorcycle-in-bluish-purple-background-ypppczndbab7r1d5.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
 
-            <div class="title">
-              <h1>Thành viên</h1>
-            </div>
-            <div class="member">
-              <div class="card animate-item animate-item__left">
-                <img src="../img/Anh1.jpg" alt="" />
-                <h2>Trần Thị Trúc</h2>
-                <p>Lớp 12DHTH17</p>
-                <div class="btn-container">
-                  <button>Liên Hệ</button>
-                </div>
-              </div>
-              <div class="card animate-item animate-item__top">
-                <img src="../img/Anh1.jpg" alt="" />
-                <h2>Cao Nhật Linh</h2>
-                <p>Lớp 12DHTH17</p>
-                <div class="btn-container">
-                  <button>Liên Hệ</button>
-                </div>
-              </div>
-              <div class="card animate-item animate-item__right">
-                <img src="../img/Anh1.jpg" alt="" />
-                <h2>Bạch Minh Tuyên</h2>
-                <p>Lớp 12DHTH17</p>
-                <div class="btn-container">
-                  <button>Liên Hệ</button>
-                </div>
-              </div>
-            </div>
+    <main>
+      <section class="carts">
+        <div class="container">
+          <h2 class="cart-title">Giỏ Hàng</h2>
+          <div class="header-carts">
+            <span>sản phẩm</span>
+            <span>Số Lượng</span>
+            <span>Số Tiền</span>
           </div>
+          <ul class="list-carts" id="list-carts"></ul>
         </div>
       </section>
     </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
     <footer class="footer">
       <div class="custom-shape-divider-bottom-1685005946">
         <svg
@@ -324,9 +359,13 @@
 
     <div class="cursor" data-cursor></div>
 
+    <script src="./assets/js/base.js"></script>
+    <script src="./assets/js/carts.js"></script>
+
     <!-- 
     - ionicon link
   -->
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -335,8 +374,5 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
-    <script src="./assets/js/base.js"></script>
   </body>
 </html>
