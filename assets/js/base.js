@@ -331,9 +331,8 @@ function signUp(e){
   var username = document.getElementById("usernameSignUp").value;
   var password = document.getElementById("passwordSignUp").value;
   var forgotPassword = document.getElementById("forgot-password-SignUp").value;
-  let pattern =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+  let pattern =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*#?&]{8,}$/;
   let result = pattern.test(password);
-console.log(result);
   if(username.length<=6)
   {
     alert("Tên đăng nhập phải lớn hơn 6 ký tự")
