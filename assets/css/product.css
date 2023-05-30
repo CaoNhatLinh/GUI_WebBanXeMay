@@ -213,11 +213,7 @@
   -o-transition: color 1s;
   transition: color 1s;
 }
-.product__item:hover:before,
-.product__item:hover:after {
-  -webkit-filter: scale(3);
-  filter: scale(3);
-}
+
 
 .product__item::before {
   content: "";

@@ -69,25 +69,24 @@ function convert(number) {
 const plus = $$(".plus");
 
 const minus = $$(".minus");
-const values = $$(".quantity");
 const quantity = $$(".quantity")
 const price = $$(".price")
 quantity.forEach((item,index)=>{
     plus[index].addEventListener("click",()=>{
-        let a = values[index].value;
+        let a = quantity[index].value;
         a++;
         if(a < 999){
-        values[index].value = a;
+          quantity[index].value = a;
         }
         else
         a = 999;
         changPrice()
     } )
     minus[index].addEventListener("click",()=>{
-        let a = values[index].value;
+        let a = quantity[index].value;
         if(a>0)
     { a--;
-        values[index].value = a
+      quantity[index].value = a
     }
     else a=0;
     changPrice();

@@ -104,25 +104,7 @@ addEventOnElements(buttons, "mousemove", buttonHoverRipple);
 
 
 
-/**
- * Scroll reveal
- */
 
-const revealElements = document.querySelectorAll("[data-reveal]");
-
-const revealElementOnScroll = function () {
-  for (let i = 0, len = revealElements.length; i < len; i++) {
-    const isElementInsideWindow = revealElements[i].getBoundingClientRect().top < window.innerHeight / 1.1;
-
-    if (isElementInsideWindow) {
-      revealElements[i].classList.add("revealed");
-    }
-  }
-}
-
-window.addEventListener("scroll", revealElementOnScroll);
-
-window.addEventListener("load", revealElementOnScroll);
 
 
 
@@ -138,8 +120,11 @@ const cursorMove = function (event) {
   cursor.style.left = `${event.clientX}px`;
 }
 
-window.addEventListener("mousemove", cursorMove);
-
+window.onwheel = e => {
+  if(e.deltaY >= 0){
+    window.addEventListener("mousemove", cursorMove);
+  } 
+}
 addEventOnElements(hoverElements, "mouseover", function () {
   cursor.classList.add("hovered");
 });
@@ -351,12 +336,12 @@ function signUp(e){
 console.log(result);
   if(username.length<=6)
   {
-    alert("tên đăng nhập phải lớn hơn 6 ký tự")
+    alert("Tên đăng nhập phải lớn hơn 6 ký tự")
   }
   else 
   {
     if(result==false){
-    alert("Mật khẩu chứa tôi thiểu tám ký tự, ít nhất một chữ hoa, một chữ thường và một số! ");
+    alert("Mật khẩu chứa tôi thiểu 8 ký tự, ít nhất một chữ hoa, một chữ thường và một số! ");
     }
     
     else if(password != forgotPassword)
