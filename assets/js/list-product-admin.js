@@ -13,7 +13,7 @@ let dataMotorbike = {
             
             name: "Air Blade 160",
             subName: "Xe tay ga",
-            price: 2500000,
+            price: 12500000,
             img: "https://phattien.com/wp-content/uploads/2020/01/ab.png",
             tag: 1,
             link: "./san-pham-admin/product-detail-3.html"

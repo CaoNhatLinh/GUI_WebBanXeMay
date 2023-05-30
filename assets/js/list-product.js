@@ -90,7 +90,7 @@ let dataMotorbike = {
             
             name: "Wave ALPHA 110",
             subName: "Xe Số",
-            price: 2500000,
+            price: 12500000,
             img: "https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-dac-biet-den-mo.png",
             tag: 2,
             link: "./san-pham/product-detail-3.html"

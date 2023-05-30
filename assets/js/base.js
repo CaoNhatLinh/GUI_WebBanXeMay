@@ -345,17 +345,41 @@ function signUp(e){
   const signUpModal = document.getElementById("signUp-modal");
   var username = document.getElementById("usernameSignUp").value;
   var password = document.getElementById("passwordSignUp").value;
-  var user = {
-    username : username,
-    password : password,
+  var forgotPassword = document.getElementById("forgot-password-SignUp").value;
+  let pattern =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+  let result = pattern.test(password);
+console.log(result);
+  if(username.length<=6)
+  {
+    alert("tên đăng nhập phải lớn hơn 6 ký tự")
   }
-  var json = JSON.stringify(user);
-  localStorage.setItem(username,json);
-  login.removeChild(signUpModal);
-  createCardSuccess();
-  successModal[0].classList.add("active");
+  else 
+  {
+    if(result==false){
+    alert("Mật khẩu chứa tôi thiểu tám ký tự, ít nhất một chữ hoa, một chữ thường và một số! ");
+    }
+    
+    else if(password != forgotPassword)
+    {
+      alert("mật khẩu không trùng khớp!");
+    }
+    else
+    {
+      var user = {
+        username : username,
+        password : password,
+      }
+      var json = JSON.stringify(user);
+      localStorage.setItem(username,json);
+      login.removeChild(signUpModal);
+      createCardSuccess();
+      successModal[0].classList.add("active");
+    }
+  }
   
 }
+
+
 const serviceClose = document.querySelector("#service");
 
 const serviceList = document.querySelector(".service");

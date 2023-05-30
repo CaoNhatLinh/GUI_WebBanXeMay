@@ -64,7 +64,6 @@ function renderXeConTay() {
     const htmls = dataMotorbike.xeConTay.map((motorbike, index) => {
         return renderConTay(motorbike, index);
     })
-    console.log(htmls);
     listXeConTay.innerHTML = htmls.join('');
 }
 
