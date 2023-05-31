@@ -5,20 +5,28 @@ const listgiohang = $("#list-carts");
 
 let giohang = [
     {
-        name: "SH 125i/160i",
+        name: "Honda VARIO 160",
         subName: "Xe tay ga",
-        price: 56490000,
-        img: "https://phattien.com/wp-content/uploads/2019/10/sh160.png",
+        price: 23130000,
+        img: "https://phattien.com/wp-content/uploads/2022/12/vario-the-thao-xam-den-bac1-e1672364326339-550x400.png",
         tag: 1
     },
     {
         id: 2,
-        name: "Wave ALPHA 110",
+        name: "Honda SH350i",
         subName: "Xe Số",
-        price: 12500000,
-        img: "https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-dac-biet-den-mo.png",
+        price: 56490000,
+        img: "https://phattien.com/wp-content/uploads/2019/10/SH350i-ban-dac-biet-bac-den.png",
         tag: 2,
-    }
+    },
+    {
+      id: 2,
+      name: "Wave ALPHA 110",
+      subName: "Xe Số",
+      price: 12500000,
+      img: "https://phattien.com/wp-content/uploads/2019/10/20220823-wave-alpha-2023-chi-tiet-xe-dac-biet-den-mo.png",
+      tag: 2,
+  }
 ]
 
 function renderGiohang(){
