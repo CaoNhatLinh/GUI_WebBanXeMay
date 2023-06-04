@@ -163,19 +163,19 @@
 
             <div class="form-input">
               <label>Họ và tên</label>
-              <input type="text" placeholder="VD: Nguyễn Văn A" required />
+              <input id="customer_name" type="text" placeholder="VD: Nguyễn Văn A" required />
             </div>
             <div class="form-contact">
               <div class="form-input">
                 <label>Email</label>
-                <input type="email" placeholder="email@example.com" required />
+                <input id="customer_email" type="email" placeholder="email@example.com" required />
               </div>
               <div class="form-input">
                 <label>Điện thoại</label>
                 <input
                   type="tel"
                   name=""
-                  id=""
+                  id="phone"
                   placeholder="0123 456789"
                   required
                 />
@@ -316,11 +316,11 @@
                 src="https://phattien.com/wp-content/uploads/2021/10/cbr150r-den-xam.png"
                 alt="CBR150R"
               />
-              <div class="payment-info__quantily">1</div>
+              <div class="payment-info__quantily" id="product_quantity">1</div>
             </div>
-            <div>
-              <span>Honda CBR150R</span>
-              <span>Phiên Bản Đặt Biệt / Đen Xám</span>
+            <div >
+              <span id="product_name">Honda CBR150R</span>
+              <span id="product_info">Phiên Bản Đặt Biệt / Đen Xám</span>
             </div>
             <span class="price"></span>
           </div>
@@ -337,23 +337,23 @@
             </div>
             <div class="money">
               <div>Phí ship</div>
-              <span>_</span>
+              <span id="delivery_fee">_</span>
             </div>
             <div class="money">
               <div>Phương thức vận chuyển</div>
-              <span>Giao hàng</span>
+              <span id="delivery_name">Giao hàng</span>
             </div>
             <div class="money">
               <div>Phương thức thanh toán</div>
-              <span>_</span>
+              <span id="payment_name">_</span>
             </div>
           </div>
 
           <div class="total">
             <span>Tổng tiền</span>
-            <div class="number">VND<span>73,290,000</span>₫</div>
+            <div class="number">VND <span>73,290,000</span>₫</div>
           </div>
-          <button type="submit" class="order">Đặt hàng</button>
+          <button type="submit" class="order" onclick="sendMail()">Đặt hàng</button>
         </section>
       </div>
     </main>
@@ -512,5 +512,14 @@
     ></script>
     <script src="./assets/js/base.js"></script>
     <script src="./assets/js/payment.js"></script>
+    <!-- TODO: EmailJS-->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("YOUR_PUBLIC_KEY");
+      })();
+    </script>
   </body>
 </html>
