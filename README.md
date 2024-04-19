@@ -6,9 +6,9 @@ link: [https://caonhatlinh.github.io/tkweb-project/](https://caonhatlinh.github.
 
 ## Mô tả dự án
 ### PC: 
-![image](https://github.com/CaoNhatLinh/GUI_WebBanXeMay/assets/103815659/3f665cca-0107-42d0-b08f-4dacbaf236fa)
-### MOBILE: 
 ![image](https://github.com/CaoNhatLinh/GUI_WebBanXeMay/assets/103815659/a1276108-950b-4813-9193-f14a2dfeddf9)
+### MOBILE: 
+![image](https://github.com/CaoNhatLinh/GUI_WebBanXeMay/assets/103815659/3f665cca-0107-42d0-b08f-4dacbaf236fa)
 ### Login:
 ![image](https://github.com/CaoNhatLinh/GUI_WebBanXeMay/assets/103815659/cc0a2249-4933-41be-862e-4eff7c7a302b)
 ### Register
