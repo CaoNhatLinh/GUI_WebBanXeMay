@@ -1,8 +1,7 @@
 # Tiểu Luận Môn Thiết Kế Web
 
-## tên đề tài:  Giao diện website bán xe máy
+## Đề tài:  Giao diện website bán xe máy
 
-link: [https://caonhatlinh.github.io/tkweb-project/](https://caonhatlinh.github.io/tkweb-project/)
 
 ## Mô tả dự án
 ### PC: 
